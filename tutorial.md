@@ -17,9 +17,9 @@ The View & Data web service consists of two APIs. The First API is a REST API wh
 
 Depending of your needs you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
 
-1-      If you need to translate only one (or very few) of your own models to be viewed by other people, then you may prefer to use a desktop application to do this, or one of our demo pages.
+1- If you need to translate only one (or very few) of your own models to be viewed by other people, then you may prefer to use a desktop application to do this, or one of our demo pages.
 
-2-      If you need to translate multiple models in a batch process or allow other users to upload their own files, then a webserver implementation will be needed.
+2- If you need to translate multiple models in a batch process or allow other users to upload their own files, then a webserver implementation will be needed.
 
 ## Obtaining an API Key
 
@@ -27,21 +27,21 @@ All View & Data API applications must access the service using an API key. Using
 
 To create your API key:
 
-*         Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and log in with your Autodesk Account.
+* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and log in with your Autodesk Account.
 
-*         Click the 'Create an App' link.
+* Click the 'Create an App' link.
 
  ![Create an App](img/createApp.png)
  
-*         Select the 'API you want to generate a key for. I.e. for this tutorial,  the 'View and Data API'.
+* Select the 'API you want to generate a key for. I.e. for this tutorial,  the 'View and Data API'.
 
  ![Choose view and data API](img/selectAPI.png)
  
-*         Fill the form, and submit your request by pushing the 'Create App' button. Your application should now appear in your application lists.
+* Fill the form, and submit your request by pushing the 'Create App' button. Your application should now appear in your application lists.
  
  ![](img/appCreated.png)
  
-*         Click on 'your application' item to access your Consumer Key and Secret. Your API key is available from the 'Application Details' page, in the 'My Apps' section.
+* Click on 'your application' item to access your Consumer Key and Secret. Your API key is available from the 'Application Details' page, in the 'My Apps' section.
 
  ![](img/showConsummkerKeys.png)
  
