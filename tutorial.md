@@ -1,13 +1,11 @@
 
 # Autodesk View & Data API - Getting Started Tutorial
 
-Contents
-
 
 
 ## Audience
 
-This documentation is designed for people familiar with [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) programming and object-oriented programming concepts. You should also be familiar with the Autodesk View & Data technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) - simply Drag 'n Drop a 2d/3d file, and enjoy the result in your browser with no extension or plug-in installed on your computer or device.
+This documentation is designed for people familiar with [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) programming and object-oriented programming concepts. You should also be familiar with the Autodesk View & Data technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) - simply Drag 'n Drop a 2D/3D file, and enjoy the result in your browser with no extension or plug-in installed on your computer or device.
 
 This conceptual documentation is designed to let you quickly start exploring and developing applications with the Autodesk View & Data API.
 
@@ -59,9 +57,9 @@ Upload one of your models to your account and get its URN using the following [w
 
 Alternately, you can also use one of the desktop solutions below if you prefer:
 
-  - with a [Windows .Net WPF application]( [https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api))
+  - with a [Windows .Net WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
 
-  - or with a [Swift Mac OS application]( [https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api))
+  - or with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
 
 There are some sample files included in [this GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) if you don't have your own. You can clone or download the repository.
 
@@ -73,7 +71,7 @@ If you prefer command line, using following command.
 	
 	git clone https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data.git
 	
-This command creates the tutorial-getting.started-view.and.data in your current directory. In this directory, you can find the sample files and finished files in following steps.
+This command creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
 
 If you do not have github client or Git installed, you can download the code by clicking "Download ZIP" and extract to a folder, which contains the sample files and finished files in following steps.
 
@@ -134,7 +132,7 @@ Once you have Node.js installed on your machine, and you cloned the repository, 
 
 	npm install
 
-This command will download the following tools, into the node\_modules directory:
+This command will download the following tools, into the node_modules directory:
 
 * express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 * request: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
@@ -279,7 +277,7 @@ Reference the extension file in your index.html by adding the following script e
 
 ### Step 3 – Load the extension in the viewer
 
-All that remains for index.js is to add some code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an event to wait for the GOEMETRY\_LOADED event, as some features may not be usable if the geometry in not fully loaded.
+All that remains for index.js is to add some code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an event to wait for the GOEMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded.
 
 Open index.js and locate the place where you load the viewable in your viewer code:
 
@@ -296,7 +294,7 @@ and add the event handler immediately before this line of code, then add a metho
 <pre>
 
 <b  style='background-color:yellow'>			   viewer.addEventListener(
-					Autodesk.Viewing.GEOMETRY\_LOADED\_EVENT,
+					Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
 					function(event) {
 						loadExtensions(viewer);
 				});
@@ -328,12 +326,12 @@ Your barebones extension should be ready to run now. All it does is display an a
 
 Now we will add some more interesting functionality to the basic extension:
 
-Start by adding a handler for SELECTION\_CHANGED event, which is triggered when user selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
+Start by adding a handler for SELECTION_CHANGED event, which is triggered when user selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
 
 	_self.load = function () {
 
 	  _viewer.addEventListener(
-		Autodesk.Viewing.SELECTION\_CHANGED\_EVENT,
+		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
 		_self.onSelectionChanged);
 
 
@@ -428,7 +426,7 @@ Instantiate the panel in your load method, uninitialize it in unload. Edit _self
 
 
 	  _viewer.addEventListener(
-		Autodesk.Viewing.SELECTION\_CHANGED\_EVENT,
+		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
 		_self.onSelectionChanged);
 
 <b  style='background-color:yellow'>
@@ -509,14 +507,14 @@ You've now finished writing your extension to respond to a user selecting a mode
 
 Finally, we'll add some camera animation – orbiting the camera around the model. We will use a simple approach with setInterval. For a more robust approach, take a look at this blog post:
 
-[http://adndevblog.typepad.com/cloud\_and\_mobile/2015/04/how-to-create-animations-in-the-viewer.html](http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html)
+[http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html](http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html)
 
 Add a property the extension to hold the interval Id, so we can cancel it.
 <pre>
 	_self.load = function () {
 
 	  _viewer.addEventListener(
-		Autodesk.Viewing.SELECTION\_CHANGED\_EVENT,
+		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
 		_self.onSelectionChanged);
 
 	  _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
@@ -670,9 +668,9 @@ The following line to instantiate the express routing module:
 
 and now you tell 'express' what your sever should do. The first line is to serve all the static files you want any browser to access such as html files, css files, images, zip files, or more. You simply tell express where to find them on your server disk. To secure your server, you want the public folder to be isolated from all the server files:
 
-	   app.use('/', express.static(\_\_dirname + '/www'));
+	   app.use('/', express.static(__dirname + '/www'));
 
-	   app.use(favicon(\_\_dirname + '/www/images/favicon.ico'));
+	   app.use(favicon(__dirname + '/www/images/favicon.ico'));
 
 On the following line, you tell express that url requests starting with '/api' should be routed to the api module you included before:
 
