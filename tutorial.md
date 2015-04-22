@@ -1126,8 +1126,7 @@ Create a file named "Viewing.Extension.Wokshop.js" (for example), and save it in
 
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
 
-    <script src="/index.js"></script>
-<b  style='background-color:yellow'>    <script src="/Viewing.Extension.Workshop.js"></script></b>
+    <script src="/Viewing.Extension.Workshop.js"></script>
 
 </head>
 
