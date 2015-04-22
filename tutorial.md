@@ -112,26 +112,26 @@ If you need to run different versions of node.js in your local environment, cons
 
 Clone the View & Data Node.js basic server to start your web application.
 
-If you have github client( [GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the source code from github.com. Go to [https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) and clone the source code by click the "Clone in Desktop" button.
+Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git). If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop).
+
+If you have github client installed, you can clone the source code from github.com. Go to [https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/node_githubClone.png)
 
 If you prefer command line, using following command.
-
-	git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
-
+```
+git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
+```
 This command creates the workflow-node.js-view.and.data.api in your current directory.
 
-Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git). If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop).
+If you do not have github client or Git installed, you can download the code by clicking "Download ZIP" and extract to a folder.
+
+ ![](img/node_githubDownload.png)
 
 Change your current directory to workflow-node.js-view.and.data.api
 ```
 cd workflow-node.js-view.and.data.api
 ```
-
-If you do not have github client or Git installed, you can download the code by clicking "Download ZIP" and extract to a folder.
-
- ![](img/node_githubDownload.png)
 
 The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
 
@@ -141,9 +141,9 @@ git checkout v1.0-workshop
 ```
 
 Once you have Node.js installed on your machine, and you cloned the repository, you can download the tool dependencies by running:
-
-	npm install
-
+```
+npm install
+```
 This command will download the following tools, into the node_modules directory:
 
 * express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
@@ -153,26 +153,28 @@ This command will download the following tools, into the node_modules directory:
 Rename or copy the ./credentials_.js file into ./credentials.js
 
 Windows
-
-	copy credentials_.js credentials.js
-
+```
+copy credentials_.js credentials.js
+```
 OSX/Linux
-
-    cp credentials_.js credentials.js
-
+```
+cp credentials_.js credentials.js
+```
 Configure your local server with your keys. Replace the placeholder with your own keys in credentials.js, line #29 and #30
+```
+credentials.ClientId = '<replace with your consumer key>';
 
-	credentials.ClientId = '<replace with your consumer key>';
-
-	credentials.ClientSecret = '<replace with your consumer secret>';
-
+credentials.ClientSecret = '<replace with your consumer secret>';
+```
 Copy the URN which you generated prior installing the server in file /www/index.js at line #18
-
-	var defaultUrn = '<replace with your encoded urn>';
-
+```
+var defaultUrn = '<replace with your encoded urn>';
+```
 Run the server from the Node.js console, by running the following command: 
+```
+node server.js
+```
 
-	node server.js
 
 ### View your model in a web browser
 
