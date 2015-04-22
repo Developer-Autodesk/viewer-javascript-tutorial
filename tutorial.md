@@ -11,7 +11,7 @@ This conceptual documentation is designed to let you quickly start exploring and
 
 ## What do you need for your project?
 
-The View & Data web service consists of two APIs. The First API is a REST API which allows you to upload and translate 2D/3D models into a light weight format that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
+The View & Data web service consists of two APIs. The First API is a REST API which allows you to upload and translate 2D/3D models into a light weight format that can be downloaded and displayed by the Second API â€“ a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
 
 Depending of your needs you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
 
@@ -61,7 +61,9 @@ Alternately, you can also use one of the desktop solutions below if you prefer:
 
   - or with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
 
-There are some sample files included in [this GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) if you don't have your own. You can clone or download the repository.
+If you prefer using cURL or another programming languages, there are more samples on our [github account](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), or our [developer page](http://developer-autodesk.github.io/).
+
+There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) if you don't have your own. You can clone or download the repository to access them.
 
 If you have github client( [GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
 
@@ -102,7 +104,7 @@ In Debian based distributions, there is a name clash with another utility called
 
 	nodejs --version
 
-	npm –version
+	npm â€“version
 
 If you need to run different versions of node.js in your local environment, consider installing [Node Version Manager (nvm)](https://github.com/creationix/nvm) .
 
@@ -196,7 +198,7 @@ Now you've got a basic 3D model displayed on your web page, let's customize the 
 
 (If you don't want to type the code, you cancopy the finished files for each step from the subfolders in the [GitHub repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), which was cloned or downloaded when preparing the models.)
 
-### Step 1 – Creating a basic extension
+### Step 1 â€“ Creating a basic extension
 
 Create a file named "Viewing.Extension.Wokshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api). Then copy the following basic extension skeleton code into the file and save it:
 
@@ -265,7 +267,7 @@ Create a file named "Viewing.Extension.Wokshop.js" (for example), and save it in
 	  Viewing.Extension.Workshop);
 
 
-### Step 2 – Reference the extension script
+### Step 2 â€“ Reference the extension script
 
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
 
@@ -275,7 +277,7 @@ Reference the extension file in your index.html by adding the following script e
 </head>
 
 
-### Step 3 – Load the extension in the viewer
+### Step 3 â€“ Load the extension in the viewer
 
 All that remains for index.js is to add some code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an event to wait for the GOEMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded.
 
@@ -318,11 +320,11 @@ and add the event handler immediately before this line of code, then add a metho
 
 Note: If you copy the modified index.js file from the Step 3 folder in the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), make sure you edit the defaultURN on line 18 to use the URN of the translated file you created at the beginning of the tutorial.
 
-### Step 4 – Testing the extension
+### Step 4 â€“ Testing the extension
 
 Your barebones extension should be ready to run now. All it does is display an alert when it's loaded. Test that the extension is loaded properly by running your sample. (Remember that you setup your node.js project to serve the client page to [http://localhost:3000/](http://localhost:3000/), so open your WebGL-enabled browser and type that address in the address bar). Since all our changes are on client side, you can just refresh your browser to test your changes.
 
-### Step 5 – Adding a selection handler
+### Step 5 â€“ Adding a selection handler
 
 Now we will add some more interesting functionality to the basic extension:
 
@@ -366,9 +368,9 @@ Every element in the displayed model has a unique ID called a dbId. The code you
 
 You can test your code now, if you like. Put a breakpoint in the event handler to check its being called when you select an element. You can use Developer Tool of Chrome or similar tools in other modern browsers to do debugging like setting breaking point, watch variable values, etc.  (Hint: You select a model element by clicking it with you mouse; elements are highlighted in blue when selected).
 
-### Step 6 – Displaying a panel
+### Step 6 â€“ Displaying a panel
 
-Now we'll get properties of selected component and display them in a custom viewer panel. Using the viewer UI to create your extensions will help migrating code from one project to another. It helps making your extension non-dependent of the client. However, you can manipulate any other component of your web application from the extension – you could read or write information stored in a separate database, or update a table somewhere else on the webpage., etc, etc.
+Now we'll get properties of selected component and display them in a custom viewer panel. Using the viewer UI to create your extensions will help migrating code from one project to another. It helps making your extension non-dependent of the client. However, you can manipulate any other component of your web application from the extension â€“ you could read or write information stored in a separate database, or update a table somewhere else on the webpage., etc, etc.
 
 Add some code to initialize an empty panel in the body of your extension:
 <pre>
@@ -503,9 +505,9 @@ Replace the implementation of the selection handler with the following code, so 
 </pre>
 You've now finished writing your extension to respond to a user selecting a model element by displaying that element's properties in a panel and isolating that element in the view. Launch the client page and select a model element by clicking on it. The model and camera view reset if you clear your selection or click in space.
 
-### Step 7 (Bonus step) – Moving the camera
+### Step 7 (Bonus step) â€“ Moving the camera
 
-Finally, we'll add some camera animation – orbiting the camera around the model. We will use a simple approach with setInterval. For a more robust approach, take a look at this blog post:
+Finally, we'll add some camera animation â€“ orbiting the camera around the model. We will use a simple approach with setInterval. For a more robust approach, take a look at this blog post:
 
 [http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html](http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html)
 
@@ -676,7 +678,7 @@ On the following line, you tell express that url requests starting with '/api' s
 
 	   app.use('/api', api);
 
-(This sample is a basic server – there is obviously a lot more setup you can (and should) perform on a production server).
+(This sample is a basic server â€“ there is obviously a lot more setup you can (and should) perform on a production server).
 
 Now, you configure your server to use port 3000 by default, or use the port specified by the system variable PORT.
 
