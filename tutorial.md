@@ -31,19 +31,19 @@ To create your API key:
 
  ![Create an App](img/createApp.png)
  
-* Select the 'API' you want to generate a key for. I.e. for this tutorial,  the 'View and Data API'.
+* Select the 'API' you want to generate a key for. For this tutorial, select the 'View and Data API'.
 
  ![Choose view and data API](img/selectAPI.png)
  
-* Fill the form, and submit your request by pushing the 'Create App' button. Your application should now appear in your application lists.
+* Complete the form, and submit your request by pushing the 'Create App' button. Your application should now appear in your application lists. (Note: The 'Redirect URL' field is a required field, but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
  
  ![](img/appCreated.png)
  
-* Click on 'your application' item to access your Consumer Key and Secret. Your API key is available from the 'Application Details' page, in the 'My Apps' section.
+* Click on the App you just created to access your Consumer Key and Secret. You can review your App and API keys whenever you like my clicking on the 'My Apps' link after signing in.
 
  ![](img/showConsummkerKeys.png)
  
-By default, a key can be used on any site / application. We strongly recommend that you restrict the use of your key to domains that you administer, to prevent use on unauthorized sites.
+By default, a key can be used on any site / application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent use on unauthorized sites. We also recommend you create a new App (API key) for every new application (rather than reusing the same key in multiple applications).
 
 
 
@@ -63,9 +63,9 @@ Alternately, you can also use one of the desktop solutions below if you prefer:
 
 If you prefer using cURL or another programming languages, there are more samples on our [github account](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), or our [developer page](http://developer-autodesk.github.io/).
 
-There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) if you don't have your own. You can clone or download the repository to access them.
+There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
 
-If you have github client( [GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
+If you have github client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/githubClone.png)
  
@@ -1045,12 +1045,13 @@ git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.a
 git checkout v1.0-workshop-server
 ```
 
+(If you chose to checkout the code instead of creating the files by hand, remember to run the 'npm install' commmand now).
 
 ## Customize the Viewer Behavior
 
 Now you've got a basic 3D model displayed on your web page, let's customize the viewer behavior. The simplest way to customize behavior is through the Extension mechanism. Extensions allow you to encapsulate your customized behavior in a separate JavaScript file that you can 'load' into the viewer when it's running (you can unload it whenever you like too).
 
-(If you don't want to type the code, you cancopy the finished files for each step from the subfolders in the [GitHub repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), which was cloned or downloaded when preparing the models.)
+(If you don't want to type the code, you can copy the finished files for each step from the subfolders in the [GitHub repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), which you should have cloned or downloaded earlier in this tutorial).
 
 ### Step 1 – Creating a basic extension
 
@@ -1126,7 +1127,7 @@ Create a file named "Viewing.Extension.Wokshop.js" (for example), and save it in
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
 
     <script src="/index.js"></script>
-	<script src=" Viewing.Extension.Wokshop.js "></script>
+<b  style='background-color:yellow'>    <script src="/Viewing.Extension.Workshop.js"></script></b>
 
 </head>
 
