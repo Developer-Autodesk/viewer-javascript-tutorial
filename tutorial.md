@@ -31,7 +31,7 @@ To create your API key:
 
  ![Create an App](img/createApp.png)
  
-* Select the 'API you want to generate a key for. I.e. for this tutorial,  the 'View and Data API'.
+* Select the 'API' you want to generate a key for. I.e. for this tutorial,  the 'View and Data API'.
 
  ![Choose view and data API](img/selectAPI.png)
  
