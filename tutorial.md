@@ -11,7 +11,7 @@ This conceptual documentation is designed to let you quickly start exploring and
 
 ## What do you need for your project?
 
-The View & Data web service consists of two APIs. The First API is a REST API which allows you to upload and translate 2D/3D models into a light weight format that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
+The View & Data web service consists of two APIs. The First API is a REST API which allows you to upload and translate 2D/3D models into a light weight ftormat that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
 
 Depending of your needs you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
 
@@ -928,8 +928,10 @@ app.use('/api', api);
 app.use('/api', upload);
 
 app.set('port', process.env.PORT || 3000);
+```
 
-Step 8: Next, add the following code to /www/upload.js and save it
+<b>Step 8:</b> Next, add the following code to /www/upload.js and save it
+```
 $(document).ready (function () {
 
 	$('#btnTranslateThisOne').click (function (evt) {
