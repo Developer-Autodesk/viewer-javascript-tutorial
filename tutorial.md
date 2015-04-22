@@ -184,7 +184,7 @@ Either choose ‘Translating from the client’ or ‘Translating from the serve
 
 #### Translating from the client
 
-<b>Step 1:</> Create a new html page and javascript file – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
+<b>Step 1:</b> Create a new html page and javascript file – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
 
 upload.html
 ```
@@ -266,7 +266,7 @@ $(document).ready (function () {
     </div>
 ```
 
-<b>Step 3:</b> add the following code in your javascript to handle translation.
+<b>Step 3:</b> Add the following code in your javascript to handle translation.
 ```
 $(document).ready (function () {
 	oViewDataClient =new Autodesk.ADN.Toolkit.ViewData.AdnViewDataClient (
@@ -404,7 +404,7 @@ function checkTranslationStatus (fileId, timeout, onSuccess) {
 	) ;
 }
 ```
-And replace the string ‘<my_consumer_key>’ by your consumer key (not the consumer secret).
+And replace the string ‘&lt;my_consumer_key&gt;’ by your consumer key (not the consumer secret).
 
 <b>Step 4:</b> Connect to your local server using a WebGL-compatible browser: 
 
