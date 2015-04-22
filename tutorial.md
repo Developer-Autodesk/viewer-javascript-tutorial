@@ -106,7 +106,7 @@ In Debian based distributions, there is a name clash with another utility called
 
 	npm –version
 
-If you need to run different versions of node.js in your local environment, consider installing [Node Version Manager (nvm)](https://github.com/creationix/nvm) .
+If you need to run different versions of node.js in your local environment, consider installing [Node Version Manager (nvm)](https://github.com/creationix/nvm).
 
 ### Download and setup your local server
 
@@ -122,13 +122,23 @@ If you prefer command line, using following command.
 
 This command creates the workflow-node.js-view.and.data.api in your current directory.
 
+Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git). If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop).
+
 Change your current directory to workflow-node.js-view.and.data.api
+```
+cd workflow-node.js-view.and.data.api
+```
 
 If you do not have github client or Git installed, you can download the code by clicking "Download ZIP" and extract to a folder.
 
  ![](img/node_githubDownload.png)
 
 The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
+
+Last, if you did use git and to make sure we work on the material made for this workshop, execute the following command:
+```
+git checkout v1.0-workshop
+```
 
 Once you have Node.js installed on your machine, and you cloned the repository, you can download the tool dependencies by running:
 
