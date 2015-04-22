@@ -25,7 +25,7 @@ All View & Data API applications must access the service using an API key. Using
 
 To create your API key:
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and log in with your Autodesk Account.
+* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and Sign In with your Autodesk Account (or click the Sign Up link can create an account for free if you don't already have one).
 
 * Click the 'Create an App' link.
 
