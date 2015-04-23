@@ -65,6 +65,8 @@ If you prefer using cURL or another programming languages, there are more sample
 
 There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
 
+Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git). 
+
 If you have GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/githubClone.png)
@@ -75,7 +77,7 @@ If you prefer command line, using following command.
 	
 This command creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
 
-If you do not have github client or Git installed, you can download the code by clicking "Download ZIP" and extract to a folder, which contains the sample files and finished files in following steps.
+If you wish to not install git, you can download a zip file of the sample model files and finished code snippets instead from [here](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/archive/master.zip), or download the zip file by clicking "Download ZIP" and extract to a folder, which contains the sample files and finished files in following steps.
 
  ![](img/githubDownload.png)
 
@@ -112,8 +114,6 @@ If you need to run different versions of node.js in your local environment, cons
 
 Clone the View & Data Node.js basic server to start your web application.
 
-Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git). If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop).
-
 If you have github client installed, you can clone the source code from github.com. Go to [https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/node_githubClone.png)
@@ -124,14 +124,14 @@ git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.a
 ```
 This command creates the workflow-node.js-view.and.data.api in your current directory.
 
-If you do not have github client or Git installed, you can download the code by clicking "Download ZIP" and extract to a folder.
-
- ![](img/node_githubDownload.png)
-
 Change your current directory to workflow-node.js-view.and.data.api
 ```
 cd workflow-node.js-view.and.data.api
 ```
+If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop) and or click "Download ZIP" as following screen-shot extract to a folder.
+
+ ![](img/node_githubDownload.png)
+
 
 The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
 
