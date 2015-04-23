@@ -90,7 +90,7 @@ $(document).ready (function () {
     </div>
 ```
 
-<b>Step 3:</b> Add the following code in your javascript to handle translation.
+<b>Step 3:</b> Add the following code in your JavaScript to handle translation.
 ```
 $(document).ready (function () {
 	oViewDataClient =new Autodesk.ADN.Toolkit.ViewData.AdnViewDataClient (
@@ -230,20 +230,20 @@ function checkTranslationStatus (fileId, timeout, onSuccess) {
 ```
 And replace the string ‘&lt;my_consumer_key&gt;’ by your consumer key (not the consumer secret).
 
-<b>Step 4:</b> Connect to your local server using a WebGL-compatible browser: 
-
-[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
-
 You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
 ```
 git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
 git checkout v1.0-workshop-client
 ```
 
+<b>Step 4:</b> Connect to your local server using a WebGL-compatible browser, please make sure your node server is running: 
+
+[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
+
 
 #### Translating from the server
 
-<b>Step 1:</b> Create a new html page and javascript file in folder /www – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
+<b>Step 1:</b> Create a new html page and JavaScript file in folder /www – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
 
 upload.html
 ```
@@ -334,7 +334,7 @@ $(document).ready (function () {
     "path": ">=0.11.14"
 }
 ```
-and execute the command
+Press "Ctrl + C" to exit the node server first if it is running, and execute the command,
 ```
 npm install
 ```
@@ -610,7 +610,7 @@ function initializeApp () {
 initializeApp () ;
 ```
 
-<b>Step 6:</b> Create a javascript file in the /routes folder – i.e. upload.js. Then copy the following code into the file and save it.
+<b>Step 6:</b> Create a JavaScript file in the /routes folder – i.e. upload.js. Then copy the following code into the file and save it.
 ```
 var express =require ('express') ;
 var bodyParser =require ('body-parser') ;
@@ -847,14 +847,15 @@ function translateProgress (urn) {
 }
 ```
 
-<b>Step 9:</b> Connect to your local server using a WebGL-compatible browser: 
-
-[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
-
 You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
 ```
 git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
 git checkout v1.0-workshop-server
 ```
 
-(If you chose to checkout the code instead of creating the files by hand, remember to run the 'npm install' commmand now).
+(If you chose to checkout the code instead of creating the files by hand, remember to run the 'npm install' command now).
+<b>Step 9:</b>Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser: 
+
+[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
+
+
