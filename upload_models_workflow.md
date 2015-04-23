@@ -11,7 +11,8 @@ Either choose ‘Translating from the client’ or ‘Translating from the serve
 	git commit -am 'save my changes'
 	git checkout master -f 
  
-And you can use following command to bring back your changes if you want: 
+And you can use following command to bring back your changes if you want:
+	
 	git checkout yourbrachname
 	
 #### Translating from the client
@@ -54,7 +55,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. There is a lot of tags required to have a nice layout, but the functional controls are marked in red.
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
 ```
 <div class="container">
         <div class="panel panel-default">
@@ -100,6 +101,8 @@ $(document).ready (function () {
 
 <b>Step 3:</b> Add the following code in your JavaScript to handle translation.
 ```
+var oViewDataClient =null ;
+
 $(document).ready (function () {
 	oViewDataClient =new Autodesk.ADN.Toolkit.ViewData.AdnViewDataClient (
 		'https://developer.api.autodesk.com',
@@ -257,7 +260,7 @@ upload.html
 ```
 <html>
 <head>
-    <title>ADN Viewer Demo (client upload)</title>
+    <title>ADN Viewer Demo (server upload)</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
     <!-- jquery -->
