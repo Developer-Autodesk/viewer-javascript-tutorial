@@ -186,7 +186,7 @@ Note that we use port 3000 and not the default http port 80 because if you are o
 
 ### Extend your web server to support the upload/translation workflow
 
-If you do not need the model translation workflow on your server or webpage, you can skip these steps and continue with the next chapter 'Customizing the Viewer Behavior'. If you need to implement this part, please refer to the [tutorial of uploading/translation workflow](upload_models_from_server.md).
+If you do not need the model translation workflow on your server or webpage, you can skip these steps and continue with the next chapter 'Customizing the Viewer Behavior'. If you need to implement this part, please refer to the [tutorial of uploading/translation workflow](upload_models_workflow.md).
 
 
 ## Customize the Viewer Behavior
