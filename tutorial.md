@@ -11,13 +11,13 @@ This conceptual documentation is designed to let you quickly start exploring and
 
 ## What do you need for your project?
 
-The View & Data web service consists of two APIs. The First API is a REST API which allows you to upload and translate 2D/3D models into a light weight ftormat that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
+The View & Data web service consists of two APIs. The first API is a REST API which allows you to upload and translate 2D/3D models into a light weight format that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
 
-Depending of your needs you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
+Depending on your needs you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
 
 1- If you need to translate only one (or very few) of your own models to be viewed by other people, then you may prefer to use a desktop application to do this, or one of our demo pages.
 
-2- If you need to translate multiple models in a batch process or allow other users to upload their own files, then a webserver implementation will be needed.
+2- If you need to translate multiple models in a batch process or allow other users to upload their own files, then a web server implementation will be needed.
 
 ## Obtaining an API Key
 
@@ -25,7 +25,7 @@ All View & Data API applications must access the service using an API key. Using
 
 To create your API key:
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and Sign In with your Autodesk Account (or click the Sign Up link can create an account for free if you don't already have one).
+* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and Sign In with your Autodesk Account (or click the Sign Up link to create an account for free if you don't already have one).
 
 * Click the 'Create an App' link.
 
@@ -37,9 +37,9 @@ To create your API key:
  
 * Complete the form, and submit your request by pushing the 'Create App' button. Your application should now appear in your application lists. (Note: The 'Redirect URL' field is a required field, but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
  
- ![](img/appCreated.png)
+ ![App is created](img/appCreated.png)
  
-* Click on the App you just created to access your Consumer Key and Secret. You can review your App and API keys whenever you like my clicking on the 'My Apps' link after signing in.
+* Click on the App you just created to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
 
  ![](img/showConsummkerKeys.png)
  
@@ -65,7 +65,7 @@ If you prefer using cURL or another programming languages, there are more sample
 
 There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
 
-If you have github client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
+If you have GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/githubClone.png)
  
