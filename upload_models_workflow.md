@@ -4,8 +4,16 @@ If you do not need the model translation workflow on your server or webpage, you
 
 Before you decide if you want to handle translation in your web application, you first need to decide if you want to do the translation from the server or the client. The only important step was to make sure the access token was generated on the server side to avoid anyone to steal your consumer key and secret. That step was done in the previous steps. Now, once you have a valid access token, you can do the translation either on the client (JavaScript code running in the browser) or on the server (JavaScript code running on the node.js server). The path you choose depends on what you want to achieve. Running on the client side means no files are transitioning via your server, and you aren’t using any server CPU time. Running from the server means that you control everything your users are doing.
 
-Either choose ‘Translating from the client’ or ‘Translating from the server’ as the next step.
+Either choose ‘Translating from the client’ or ‘Translating from the server’ as the next step. If you've already completed one of them and would like to try another, please revert back to the original status first. You can save your changes with git and checkout the master branch to get a clean start point.
 
+	git checkout -b yourbrachname
+	git add .
+	git commit -am 'save my changes'
+	git checkout master -f 
+ 
+And you can use following command to bring back your changes if you want: 
+	git checkout yourbrachname
+	
 #### Translating from the client
 
 <b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory. Then copy the following basic html skeleton code into the file and save it.
@@ -230,15 +238,15 @@ function checkTranslationStatus (fileId, timeout, onSuccess) {
 ```
 And replace the string ‘&lt;my_consumer_key&gt;’ by your consumer key (not the consumer secret).
 
+<b>Step 4:</b> Connect to your local server using a WebGL-compatible browser, please make sure your node server is running: 
+
+[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
+
 You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
 ```
 git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
 git checkout v1.0-workshop-client
 ```
-
-<b>Step 4:</b> Connect to your local server using a WebGL-compatible browser, please make sure your node server is running: 
-
-[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
 
 #### Translating from the server
@@ -847,6 +855,10 @@ function translateProgress (urn) {
 }
 ```
 
+<b>Step 9:</b>Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser: 
+
+[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
+
 You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
 ```
 git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
@@ -854,8 +866,5 @@ git checkout v1.0-workshop-server
 ```
 
 (If you chose to checkout the code instead of creating the files by hand, remember to run the 'npm install' command now).
-<b>Step 9:</b>Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser: 
-
-[http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
 
