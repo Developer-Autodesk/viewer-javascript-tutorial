@@ -495,9 +495,9 @@ Replace the implementation of the selection handler with the following code, so 
 		_viewer.fitToView();
 		_self.panel.setVisible(false);
 	  }
-
-	}
 </b>
+	}
+
 </pre>
 You've now finished writing your extension to respond to a user selecting a model element by displaying that element's properties in a panel and isolating that element in the view. Launch the client page and select a model element by clicking on it. The model and camera view reset if you clear your selection or click in space.
 
