@@ -193,7 +193,7 @@ Now you've got a basic 3D model displayed on your web page, let's customize the 
 
 ### Step 1 – Creating a basic extension
 
-Create a file named "Viewing.Extension.Wokshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api). Then copy the following basic extension skeleton code into the file and save it:
+Create a file named "Viewing.Extension.Workshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api). Then copy the following basic extension skeleton code into the file and save it:
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Demo Workshop Viewer Extension
@@ -321,19 +321,21 @@ Your barebones extension should be ready to run now. All it does is display an a
 Now we will add some more interesting functionality to the basic extension:
 
 Start by adding a handler for SELECTION_CHANGED event, which is triggered when user selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
-
+<pre>
 	_self.load = function () {
 
+	<b  style='background-color:yellow'>
 	  _viewer.addEventListener(
 		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
 		_self.onSelectionChanged);
-
+	</b>
 
 	  console.log('Viewing.Extension.Workshop loaded');
 
 	  return true;
 	};
 
+	<b  style='background-color:yellow'>
 	/////////////////////////////////////////////////////////////////
 	// selection changed callback
 	//
@@ -355,7 +357,9 @@ Start by adding a handler for SELECTION_CHANGED event, which is triggered when u
 		//all components unselected
 	  }
 	}
-
+	</b>
+</pre>
+	
 Every element in the displayed model has a unique ID called a dbId. The code you've just written simply stores the dbId of the first element in the list of elements that the user selected. (Usually, the user will only select a single element, but more complete code would handle multiple selected elements).
 
 You can test your code now, if you like. Put a breakpoint in the event handler to check its being called when you select an element. You can use Developer Tool of Chrome or similar tools in other modern browsers to do debugging like setting breaking point, watch variable values, etc.  (Hint: You select a model element by clicking it with you mouse; elements are highlighted in blue when selected).
