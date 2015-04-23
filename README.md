@@ -180,9 +180,11 @@ Connect to your local server using a WebGL-compatible browser:
 
 Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may be already in use. If you want to use port 80 to avoid having to specify the port in the URL, edit the server.js file and change the default port from 3000 to 80, and restart the node.js server.
 
-### Extend your web server to support the upload/translation workflow
+### (Optional) Extend your web server to support upload/translation workflow
 
-If you do not need the model translation workflow on your server or webpage, you can skip these steps and continue with the next chapter 'Customizing the Viewer Behavior'. If you need to implement this part, please refer to the [tutorial of uploading/translation workflow](upload_models_workflow.md).
+You already uploaded and translated a model earlier in this tutorial, so adding support for uploading/translating to your node.js server is optional. If you want to add it now, go to [the uploading/translation workflow tutorial](upload_models_workflow.md) and follow the instructions there.
+
+Once you've finished that additional tutorial, or if you choose to skip it, move on to the next section - 'Customize the Viewer Behavior'.
 
 
 ## Customize the Viewer Behavior
