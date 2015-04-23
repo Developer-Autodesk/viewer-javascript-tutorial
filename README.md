@@ -262,14 +262,20 @@ Create a file named "Viewing.Extension.Workshop.js" (for example), and save it i
 	  Viewing.Extension.Workshop);
 
 
+You can also checkout the changes of this step from github by running following command if you have git installed:
+
+	git checkout workshop-viewer-customization-step1
+	  
 ### Step 2 – Reference the extension script
 
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
 
-    <script src="/Viewing.Extension.Workshop.js"></script>
+	<script src="/Viewing.Extension.Workshop.js"></script>
 
-</head>
 
+You can also checkout the changes of this step from github by running following command if you have git installed:
+
+	git checkout workshop-viewer-customization-step2
 
 ### Step 3 – Load the extension in the viewer
 
@@ -313,6 +319,10 @@ and add the event handler immediately before this line of code, then add a metho
 </pre>
 
 Note: If you copy the modified index.js file from the Step 3 folder in the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), make sure you edit the defaultURN on line 18 to use the URN of the translated file you created at the beginning of the tutorial.
+
+You can also checkout the changes of this step from github by running following command if you have git installed:
+
+	git checkout workshop-viewer-customization-step3
 
 ### Step 4 – Testing the extension
 
@@ -362,9 +372,15 @@ Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e.
 	</b>
 </pre>
 	
+
+You can also checkout the changes of this step from github by running following command if you have git installed:
+
+	git checkout workshop-viewer-customization-step5	
+	
 Every element in the displayed model has a unique ID called a dbId. The code you've just written simply stores the dbId of the first element in the list of elements that the user selected. (Usually, the user will only select a single element, but more complete code would handle multiple selected elements).
 
 You can test your code now, if you like. Put a breakpoint in the event handler to check its being called when you select an element. You can use Developer Tool of Chrome or similar tools in other modern browsers to do debugging like setting breaking point, watch variable values, etc.  (Hint: You select a model element by clicking it with you mouse; elements are highlighted in blue when selected).
+
 
 ### Step 6 – Displaying a panel
 
@@ -501,6 +517,13 @@ Replace the implementation of the selection handler with the following code, so 
 	}
 
 </pre>
+
+
+You can also checkout the changes of this step from github by running following command if you have git installed:
+
+	git checkout workshop-viewer-customization-step6
+
+
 You've now finished writing your extension to respond to a user selecting a model element by displaying that element's properties in a panel and isolating that element in the view. Launch the client page and select a model element by clicking on it. The model and camera view reset if you clear your selection or click in space.
 
 ### Step 7 (Bonus step) – Moving the camera
@@ -618,6 +641,11 @@ Finally modify the selection handler to trigger the animation when a component i
 
 
 </pre>
+
+You can also checkout the changes of this step from github by running following command if you have git installed:
+
+	git checkout workshop-viewer-customization-step7
+
 Test your extension again. This time, in addition to displaying the panel, the camera (your view of the model) starts rotating when you select a model element.
 
 ### Even more bonus steps
