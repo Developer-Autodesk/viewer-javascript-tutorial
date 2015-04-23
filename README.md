@@ -184,7 +184,7 @@ Note that we use port 3000 and not the default http port 80 because if you are o
 
 You already uploaded and translated a model earlier in this tutorial, so adding support for uploading/translating to your node.js server is optional. If you want to add it now, go to [the uploading/translation workflow tutorial](upload_models_workflow.md) and follow the instructions there. Or you can come back and work through that later, if you prefer.
 
-Once you've finished that additional tutorial, or if you choose to skip it, move on to the next section - 'Customize the Viewer Behavior'.
+Once you've finished that additional tutorial, or if you chose to skip it, move on to the next section - 'Customize the Viewer Behavior'.
 
 
 ## Customize the Viewer Behavior
