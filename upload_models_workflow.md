@@ -1,6 +1,6 @@
 ## Extend your web server to support the upload/translation workflow
 
-(This is a sub-tutorial of the main 'getting started' tutorial, and depends on some steps from that tutorial. Please complete the first part of [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md](that tutorial) if you haven't already done so).
+(This is a sub-tutorial of the main 'getting started' tutorial, and depends on some steps from that tutorial. Please complete the first part of [that tutorial](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md) if you haven't already done so).
 
 Before you decide if you want to handle translation in your web application, you first need to decide if you want to do the translation from the server or the client. The only important step was to make sure the access token was generated on the server side to avoid anyone to steal your consumer key and secret. That step was done in the previous steps. Now, once you have a valid access token, you can do the translation either on the client (JavaScript code running in the browser) or on the server (JavaScript code running on the node.js server). The path you choose depends on what you want to achieve. Running on the client side means no files are transitioning via your server, and you aren’t using any server CPU time. Running from the server means that you control everything your users are doing.
 
@@ -870,4 +870,4 @@ git checkout v1.0-workshop-server
 
 (If you chose to checkout the code instead of creating the files by hand, remember to run the 'npm install' command now).
 
-If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md](go back there now) and continue at the 'Customize the Viewer Behavior' section.
+If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [go back there now](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md) and continue at the 'Customize the Viewer Behavior' section.
