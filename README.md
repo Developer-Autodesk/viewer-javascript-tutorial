@@ -81,10 +81,6 @@ If you wish to not install git, you can download a zip file of the sample model 
 
  ![](img/githubDownload.png)
 
-### View your model
-
-**TODO:**
-**To be done**
 
 
 
@@ -636,6 +632,7 @@ Here are two YouTube videos explaining how to use the gallery sample and a coupl
 
 ## Appendix A: More sample and demos
 
+Please refer to [http://developer-autodesk.github.io/](http://developer-autodesk.github.io/)
 
 
 ## Appendix B: Review of the node.js code
