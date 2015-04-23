@@ -180,9 +180,9 @@ Connect to your local server using a WebGL-compatible browser:
 
 Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may be already in use. If you want to use port 80 to avoid having to specify the port in the URL, edit the server.js file and change the default port from 3000 to 80, and restart the node.js server.
 
-### (Optional) Extend your web server to support upload/translation workflow
+### (Optional) Extend your web server to support upload/translation
 
-You already uploaded and translated a model earlier in this tutorial, so adding support for uploading/translating to your node.js server is optional. If you want to add it now, go to [the uploading/translation workflow tutorial](upload_models_workflow.md) and follow the instructions there.
+You already uploaded and translated a model earlier in this tutorial, so adding support for uploading/translating to your node.js server is optional. If you want to add it now, go to [the uploading/translation workflow tutorial](upload_models_workflow.md) and follow the instructions there. Or you can come back and work through that later, if you prefer.
 
 Once you've finished that additional tutorial, or if you choose to skip it, move on to the next section - 'Customize the Viewer Behavior'.
 
@@ -322,7 +322,7 @@ Your barebones extension should be ready to run now. All it does is display an a
 
 Now we will add some more interesting functionality to the basic extension:
 
-Start by adding a handler for SELECTION_CHANGED event, which is triggered when user selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
+Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e. editing the file 'Viewing.Extension.Workshop.js'). This event is triggered when user selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
 <pre>
 	_self.load = function () {
 
