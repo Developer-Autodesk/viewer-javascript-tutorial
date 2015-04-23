@@ -284,7 +284,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. There is a lot of tag required to have a nice layout, but the functional controls are marked in red.
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
 ```
 <div class="container">
         <div class="panel panel-default">
