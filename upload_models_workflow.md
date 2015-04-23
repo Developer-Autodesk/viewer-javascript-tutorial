@@ -6,14 +6,14 @@ Before you decide if you want to handle translation in your web application, you
 
 Either choose ‘Translating from the client’ or ‘Translating from the server’ as the next step. If you've already completed one of them and would like to try another, please revert back to the original status first. You can save your changes with git and checkout the master branch to get a clean start point.
 
-	git checkout -b yourbrachname
+	git checkout -b yourbranchname
 	git add .
 	git commit -am 'save my changes'
 	git checkout master -f 
  
 And you can use following command to bring back your changes if you want:
 	
-	git checkout yourbrachname
+	git checkout yourbranchname
 	
 #### Translating from the client
 
