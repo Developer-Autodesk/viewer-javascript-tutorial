@@ -15,7 +15,7 @@ if you don't already have one.
 
 * Click the 'Create an App' link.
 
- ![Create an App](img/createApp.png)
+ ![Create an App](img/createApp.png =826x328)
 
 * Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
 
@@ -39,6 +39,7 @@ use on unauthorized sites. We also recommend you create a new App (API key) for 
 
 Now you have your API key, the next step is to upload and translate a model so it can be displayed on your webpage.
 
+
 ### Upload a model on the Autodesk View & Data server
 
 Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).
@@ -52,7 +53,9 @@ Alternately, you can also use one of the desktop solutions below if you prefer:
 If you prefer using cURL or another programming languages, there are more samples in our [GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), 
 and on our [developer page](http://developer-autodesk.github.io/).
 
-If you don't have your own, some 2D/3D model samples are provided with this workshop, in the ['Sample files' folder](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files). 
+If you don't have your own, some 2D/3D model samples are provided with this workshop, in the ['Sample files'](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files) folder.
+
+Each of this solutions will upload and translate a model on your account which you can use/view later.
 
 
 ### Steps to translate a model using the [web page](http://models.autodesk.io).
