@@ -1,50 +1,51 @@
-this branch is under development
-
 # Autodesk View & Data API - Getting Started Tutorial
 
+* Introduction
+  - [Audience](#Audience)
+  - [What do you need for your project?](#WhatDoYouNeed)
+  - [What  are you going to achieve in this workshop?](#WhatAreYouGoingToAchieve.md)
 
+* Prerequisites
+  - Familiar with git?
+  - Install Node.js
+  - Download the sources
+  
+* View & Data API workshop
+  - [Obtaining an API Key](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/obtaining-an-api-key.md#ObtainingAnAPIKey)
+  
 
+<a name="Audience"></a>
 ## Audience
 
-This documentation is designed for people familiar with [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) programming and object-oriented programming concepts. You should also be familiar with the Autodesk View & Data technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) - simply Drag 'n Drop a 2D/3D file, and enjoy the result in your browser with no extension or plug-in installed on your computer or device.
+This documentation is designed for people familiar with [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) programming and object-oriented programming concepts. 
+You should also be familiar with the Autodesk View & Data technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) - simply Drag 'n Drop a 2D/3D file, 
+and enjoy the result in your browser with no extension or plug-in installed on your computer or device.
 
 This conceptual documentation is designed to let you quickly start exploring and developing applications with the Autodesk View & Data API.
 
+
+<a name="WhatDoYouNeed"></a>
 ## What do you need for your project?
 
-The View & Data web service consists of two APIs. The first API is a REST API which allows you to upload and translate 2D/3D models into a light-weight format that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed, customize and automate an interactive 2D/3D model viewer on your web page.
+The View & Data web service consists of two APIs. The first API is a REST API which allows you to upload and translate 2D/3D models into a light-weight format that can be 
+downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed, customize and automate an interactive 2D/3D model viewer on your web page.
 
-Depending on your needs, you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
+Depending on your needs, you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, 
+and the frequency:
 
 - If you need to translate only one (or very few) of your own models to be viewed by other people, then you may prefer to use a desktop application to do this, or one of our demo pages.
 
 - If you need to translate multiple models in a batch process or allow other users to upload their own files, then a web server implementation will be needed.
 
-## Obtaining an API Key
 
-All View & Data API applications accesses the service using an API key. The API key enables you to monitor your application's API usage, and ensures that Autodesk can contact you about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
+<a name="WhatAreYouGoingToAchieve"></a>
+## What are you going to achieve in this workshop?
 
-To create your API key:
+??
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and sign in with your Autodesk Account, or click the Sign Up link to create an account for free if you don't already have one.
 
-* Click the 'Create an App' link.
 
- ![Create an App](img/createApp.png)
 
-* Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
-
- ![Choose view and data API](img/selectAPI.png)
-
-* Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field, but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
-
- ![App is created](img/appCreated.png)
-
-* Click on the newly created App to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
-
- ![](img/showConsummkerKeys.png)
-
-By default, a key can be used on any site / application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent use on unauthorized sites. We also recommend you create a new App (API key) for every new application (rather than reusing the same key in multiple applications).
 
 
 
@@ -88,23 +89,7 @@ If you prefer not to install git, you can download a zip file instead containing
 
 For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files. If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
-### Install Node.js
 
-If you want to run the preconfigured local web-server and the test tools then you will also need [Node.js v0.12.2+](https://nodejs.org/download/).
-
-You can download a Node.js installer for your operating system from [nodejs.org](http://nodejs.org/download/). Check the version of Node.js that you have installed by running the following command:
-
-	node --version
-
-In Debian based distributions, there is a name clash with another utility called node. The suggested solution is to also install the nodejs-legacy apt package, which renames node to nodejs:
-
-	apt-get install nodejs-legacy npm
-
-	nodejs --version
-
-	npm –version
-
-If you need to run different versions of node.js in your local environment, consider installing [Node Version Manager (nvm)](https://github.com/creationix/nvm).
 
 ### Download and setup your local server
 
