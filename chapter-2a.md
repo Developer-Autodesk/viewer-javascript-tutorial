@@ -242,7 +242,7 @@ If you're working through this sub-tutorial as part of the main 'getting started
 and continue at the ['Customize the Viewer Behavior'](chapter-3.md#Chapter3) section.
 
 
-
+=========================
 [Next](chapter-3.md#Chapter3) - 
 [Parent](chapter-2.md#Chapter2) - 
 [Home](README.md)
