@@ -1,4 +1,3 @@
-
 # Autodesk View & Data API - Getting Started Tutorial
 
 
@@ -11,38 +10,38 @@ This conceptual documentation is designed to let you quickly start exploring and
 
 ## What do you need for your project?
 
-The View & Data web service consists of two APIs. The first API is a REST API which allows you to upload and translate 2D/3D models into a light weight format that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed and customize/automate an interactive 2D/3D model viewer on your web page.
+The View & Data web service consists of two APIs. The first API is a REST API which allows you to upload and translate 2D/3D models into a light-weight format that can be downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed, customize and automate an interactive 2D/3D model viewer on your web page.
 
-Depending on your needs you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
+Depending on your needs, you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate, and the frequency:
 
-1- If you need to translate only one (or very few) of your own models to be viewed by other people, then you may prefer to use a desktop application to do this, or one of our demo pages.
+- If you need to translate only one (or very few) of your own models to be viewed by other people, then you may prefer to use a desktop application to do this, or one of our demo pages.
 
-2- If you need to translate multiple models in a batch process or allow other users to upload their own files, then a web server implementation will be needed.
+- If you need to translate multiple models in a batch process or allow other users to upload their own files, then a web server implementation will be needed.
 
 ## Obtaining an API Key
 
-All View & Data API applications must access the service using an API key. Using an API key enables you to monitor your application's API usage, and ensures that Autodesk can contact you about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
+All View & Data API applications accesses the service using an API key. The API key enables you to monitor your application's API usage, and ensures that Autodesk can contact you about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
 
 To create your API key:
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and Sign In with your Autodesk Account (or click the Sign Up link to create an account for free if you don't already have one).
+* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and sign in with your Autodesk Account, or click the Sign Up link to create an account for free if you don't already have one.
 
 * Click the 'Create an App' link.
 
  ![Create an App](img/createApp.png)
- 
-* Select the 'API' you want to generate a key for. For this tutorial, select the 'View and Data API'.
+
+* Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
 
  ![Choose view and data API](img/selectAPI.png)
- 
-* Complete the form, and submit your request by pushing the 'Create App' button. Your application should now appear in your application lists. (Note: The 'Redirect URL' field is a required field, but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
- 
+
+* Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field, but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
+
  ![App is created](img/appCreated.png)
- 
-* Click on the App you just created to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
+
+* Click on the newly created App to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
 
  ![](img/showConsummkerKeys.png)
- 
+
 By default, a key can be used on any site / application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent use on unauthorized sites. We also recommend you create a new App (API key) for every new application (rather than reusing the same key in multiple applications).
 
 
@@ -53,7 +52,7 @@ Now you have your API key, the next step is to upload and translate a model so i
 
 ### Upload a model on the Autodesk View & Data server
 
-Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).  
+Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).
 
 Alternately, you can also use one of the desktop solutions below if you prefer:
 
@@ -65,16 +64,16 @@ If you prefer using cURL or another programming languages, there are more sample
 
 There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
 
-Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git). 
+Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git).
 
 If you have GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/githubClone.png)
- 
+
 If you prefer command line, using following command.
-	
+
 	git clone https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data.git
-	
+
 This command creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
 
 If you wish to not install git, you can download a zip file of the sample model files and finished code snippets instead from [here](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/archive/master.zip), or download the zip file by clicking "Download ZIP" and extract to a folder, which contains the sample files and finished files in following steps.
@@ -166,7 +165,7 @@ Copy the URN which you generated prior installing the server in file /www/index.
 ```
 var defaultUrn = '<replace with your encoded urn>';
 ```
-Run the server from the Node.js console, by running the following command: 
+Run the server from the Node.js console, by running the following command:
 ```
 node server.js
 ```
@@ -265,7 +264,7 @@ Create a file named "Viewing.Extension.Workshop.js" (for example), and save it i
 You can also checkout the changes of this step from github by running following command if you have git installed:
 
 	git checkout workshop-viewer-customization-step1
-	  
+
 ### Step 2 – Reference the extension script
 
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
@@ -371,12 +370,12 @@ Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e.
 	}
 	</b>
 </pre>
-	
+
 
 You can also checkout the changes of this step from github by running following command if you have git installed:
 
-	git checkout workshop-viewer-customization-step5	
-	
+	git checkout workshop-viewer-customization-step5
+
 Every element in the displayed model has a unique ID called a dbId. The code you've just written simply stores the dbId of the first element in the list of elements that the user selected. (Usually, the user will only select a single element, but more complete code would handle multiple selected elements).
 
 You can test your code now, if you like. Put a breakpoint in the event handler to check its being called when you select an element. You can use Developer Tool of Chrome or similar tools in other modern browsers to do debugging like setting breaking point, watch variable values, etc.  (Hint: You select a model element by clicking it with you mouse; elements are highlighted in blue when selected).
@@ -430,7 +429,7 @@ Add some code to initialize an empty panel in the body of your extension:
 
 	  _self.load = function () {
 </pre>
-	  
+
 Instantiate the panel in your load method, uninitialize it in unload. Edit _self.load and _self.unload as follows
 <pre>
 
@@ -567,7 +566,7 @@ Add following methods to handle the animation immediately below the end of the _
 		  pos.x, pos.y, pos.z);
 		var rAxis = new THREE.Vector3(
 		  axis.x, axis.y, axis.z);
-		  
+
 		var matrix = new THREE.Matrix4().makeRotationAxis(
 		  rAxis,
 		  angle);
