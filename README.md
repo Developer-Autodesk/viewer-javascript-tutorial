@@ -90,7 +90,7 @@ For this tutorial, we'll create a minimal Node.js web server to serve your html/
 
 If you want to run the preconfigured local web-server and the test tools then you will also need [Node.js v0.12.2+](https://nodejs.org/download/).
 
-You can download a Node.js installer for your operating system from [http://nodejs.org/download/](http://nodejs.org/download/). Check the version of Node.js that you have installed by running the following command:
+You can download a Node.js installer for your operating system from [nodejs.org](http://nodejs.org/download/). Check the version of Node.js that you have installed by running the following command:
 
 	node --version
 
@@ -108,7 +108,7 @@ If you need to run different versions of node.js in your local environment, cons
 
 Clone the View & Data Node.js basic server to start your web application.
 
-If you have github client installed, you can clone the source code from github.com. Go to [https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) and clone the source code by click the "Clone in Desktop" button.
+If you have GitHub client installed, you can clone the source code from github.com. Go to [https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) and clone the source code by click the "Clone in Desktop" button.
 
  ![](img/node_githubClone.png)
 
