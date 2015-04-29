@@ -1,6 +1,10 @@
 <a name="Prerequisites"></a>
 # Prerequisites
 
+  - [Familiar with git?](#FamiliarWithGit)
+  - [Install Node.js](#InstallNodeJs)
+  - [Download the sources](#DownloadTheSources)
+  
 
 <a name="FamiliarWithGit"></a>
 ## Familiar with git?
