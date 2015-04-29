@@ -5,13 +5,15 @@
   - [What do you need for your project?](#WhatDoYouNeed)
   - [What  are you going to achieve in this workshop?](#WhatAreYouGoingToAchieve)
 
-* [Prerequisites](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#Prerequisites)
-  - [Familiar with git?](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#FamiliarWithGit)
-  - [Install Node.js](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#InstallNodeJs)
-  - [Download the sources](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#DownloadTheSources)
+* [Prerequisites](prerequisites.md#Prerequisites)
+  - [Familiar with git?](prerequisites.md#FamiliarWithGit)
+  - [Install Node.js](prerequisites.md#InstallNodeJs)
+  - [Download the sources](prerequisites.md#DownloadTheSources)
   
-* View & Data API workshop
-  - [Obtaining an API Key](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/obtaining-an-api-key.md#ObtainingAnAPIKey)
+* [Chapter 1 - Get ready with the View & Data API](chapter-1.md#Chapter1)
+  - [Obtaining an API Key](chapter-1.md#ObtainingAnAPIKey)
+  - [Prepare a model](chapter-1.md#PrepareAModel)
+  
   
 
 <a name="Audience"></a>
@@ -60,39 +62,6 @@ to learn more about the Autodesk View & Data API and the application you are bui
 
 
 
-## Prepare a model
-
-Now you have your API key, the next step is to upload and translate a model so it can be displayed on your webpage.
-
-### Upload a model on the Autodesk View & Data server
-
-Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).
-
-Alternately, you can also use one of the desktop solutions below if you prefer:
-
-- with a [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
-
-- with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
-
-If you prefer using cURL or another programming languages, there are more samples in our [GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), and on our [developer page](http://developer-autodesk.github.io/).
-
-Some 3D model samples are provided right here in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
-
-Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git).
-
-If you have a GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from GitHub. Go to the [Developer-Autodesk/tutorial-getting.started-view.and.data repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) and clone the source code by clicking the "Clone in Desktop" button.
-
- ![](img/githubClone.png)
-
-Heren is the equivalent command line:
-
-	git clone https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data.git
-
-This creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
-
-If you prefer not to install git, you can download a zip file instead containing the sample model files and finished code snippets from [here](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/archive/master.zip), or by clicking "Download ZIP" button.
-
- ![](img/githubDownload.png)
 
 
 

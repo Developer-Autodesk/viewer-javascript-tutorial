@@ -19,7 +19,7 @@ provides access control and several collaboration features, such as a wikis and 
 Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial, but you may prefer the GUI or WEB interfaces.
 
 If you have a GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone 
-a repository from GitHub. Go to the the repository you want to download locally and clone the source code by clicking the "Clone in Desktop" button.
+a repository from GitHub. Go to the the repository you want to download locally and clone the source code by clicking the 'Clone in Desktop' button.
 
  ![](img/githubClone.png)
 
@@ -34,16 +34,23 @@ Your repository git url can be obtain from the 'HTTPs clone URL'
 
 This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with.
 
-If you prefer not to install git, you can download a zip file instead by clicking the "Download ZIP" button.
+If you prefer not to install git, you can download a zip file instead by clicking the 'Download ZIP' button.
 
  ![](img/githubDownload.png)
 
 In this workshop, we will provide the command line instructions, but feel free to use the method you prefer.
 
+### git command line
+
+Using git from the command line on Mac OSX or Linux is straight forward, just open a console window. git, node, and npm should work from there if present on your system.
+On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel. 
+You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list.
+
+
 ### Fork option
 
 Last, someone may want to work on the wokshop and saves this results on his own github account - in this case, you need to 'fork' the repository from your account and clone the 'forked' repository.
-To fork a repository, log in Github using your account, go to the repository you want to fork, and press the 
+To fork a repository, log in Github using your account, go to the repository you want to fork, and press the 'Fork' button.
 
  ![](img/githubFork.png)
  
@@ -71,6 +78,8 @@ If you need to run different versions of node.js in your local environment, cons
 <a name="DownloadTheSources"></a>
 ## Download the sources
 
+??
 
-[Next](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0#) - 
-[Home](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0)
+
+[Next](chapter-1.md#Chapter1) - 
+[Home](README.md)
