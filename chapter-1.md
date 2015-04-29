@@ -1,6 +1,10 @@
 <a name="Chapter1"></a>
 # Chapter 1 - Get ready with the View & Data API
 
+- [Obtaining an API Key](#ObtainingAnAPIKey)
+- [Prepare a model](#PrepareAModel)
+- [Create your web server](#CreateYourWebServer)
+
 
 <a name="ObtainingAnAPIKey"></a>
 ## Obtaining an API Key
@@ -15,7 +19,7 @@ if you don't already have one.
 
 * Click the 'Create an App' link.
 
- ![Create an App](img/createApp.png){width=826px height=328px}
+ ![Create an App](img/createApp.png)
 
 * Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
 
@@ -67,6 +71,84 @@ Each of this solutions will upload and translate a model on your account which y
 3. You should see a progress bar in the 'Currently translating...' area, please give it some time, ...
 
 4. Once the translation is over, You would see your model listed int he 'Ready"' section with the 'urn' that you need later. Make sure to copy and save that urn somewhere for later use.
+
+
+<a name="CreateYourWebServer"></a>
+## Create your web server
+
+For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files.
+If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
+
+
+### Download the sources
+
+Clone the [View & Data Node.js basic server](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) to start your web application.
+```
+git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
+git checkout v1.0-workshop
+```
+This first command creates the workflow-node.js-view.and.data.api in your current directory.
+The second command is optional and is there to make sure we work on the correct version of the material made for this instructions.
+
+Change your current directory to workflow-node.js-view.and.data.api
+```
+cd workflow-node.js-view.and.data.api
+```
+
+If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop).
+
+The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
+
+
+### Download the sample' node.js dependencies
+
+Before you can run the sample, you need to download the node.js dependency modules used by the sample. You do this by executing the following command:
+```
+npm install
+```
+This command will download the following modules, into the node_modules directory:
+
+* express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+* request: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+* serve-favicon: Node.js middleware for serving a favicon.
+
+### Setup your local server
+
+Rename or copy the ./credentials_.js file into ./credentials.js
+
+Windows
+```
+copy credentials_.js credentials.js
+```
+OSX/Linux
+```
+cp credentials_.js credentials.js
+```
+Configure your local server with your keys. Replace the placeholder with your own keys in credentials.js, line #29 and #30
+```
+credentials.ClientId = '<replace with your consumer key>';
+
+credentials.ClientSecret = '<replace with your consumer secret>';
+```
+Copy the URN which you generated prior installing the server in file /www/index.js at line #18
+```
+var defaultUrn = '<replace with your encoded urn>';
+```
+Run the server from the Node.js console, by running the following command:
+```
+node server.js
+```
+
+
+### View your model in a web browser
+
+Connect to your local server using a WebGL-compatible browser:
+
+[http://localhost:3000/](http://localhost:3000/)
+
+Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may be already in use. If you want to use port 80 to avoid 
+having to specify the port in the URL, edit the server.js file and change the default port from 3000 to 80, and restart the node.js server.
+
 
 
 [Next](chapter-2.md#Chapter2) - 
