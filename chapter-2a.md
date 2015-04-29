@@ -1,10 +1,8 @@
 <a name="Chapter2a"></a>
-# Chapter 2 - (Optional) Extend your web server to support upload/translation
+# Chapter 2 - Translating from the client
 
 	
-## Translating from the client
-
-### <b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory. Then copy the following basic html skeleton code into the file and save it.
+<b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory. Then copy the following basic html skeleton code into the file and save it.
 
 upload.html
 ```
@@ -42,7 +40,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-### <b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
 ```
 <div class="container">
         <div class="panel panel-default">
@@ -86,7 +84,7 @@ $(document).ready (function () {
     </div>
 ```
 
-### <b>Step 3:</b> Add the following code in your JavaScript to handle translation.
+<b>Step 3:</b> Add the following code in your JavaScript to handle translation.
 ```
 var oViewDataClient =null ;
 

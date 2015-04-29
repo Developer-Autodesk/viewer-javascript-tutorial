@@ -1,10 +1,8 @@
 <a name="Chapter2b"></a>
-# Chapter 2 - (Optional) Extend your web server to support upload/translation
+# Chapter 2 - Translating from the server
 
 
-## Translating from the server
-
-### <b>Step 1:</b> Create a new html page and JavaScript file in folder /www – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
+<b>Step 1:</b> Create a new html page and JavaScript file in folder /www – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
 
 upload.html
 ```
@@ -34,7 +32,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-### <b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
 ```
 <div class="container">
         <div class="panel panel-default">
@@ -78,9 +76,9 @@ $(document).ready (function () {
     </div>
 ```
 
-### <b>Step 3:</b> Create a folder named ‘data’ in the root of the repo.
+<b>Step 3:</b> Create a folder named ‘data’ in the root of the repo.
 
-### <b>Step 4:</b> Add the following node.js modules to the package.json file "dependencies" list. I.e.:
+<b>Step 4:</b> Add the following node.js modules to the package.json file "dependencies" list. I.e.:
 ```
 "dependencies": {
     "express": "*",
@@ -100,7 +98,7 @@ Press "Ctrl + C" to exit the node server first if it is running, and execute the
 npm install
 ```
 
-### <b>Step 5:</b> Create a file named ‘lmv.js’ in the /routes folder. Then copy the following content into the file and save it.
+<b>Step 5:</b> Create a file named ‘lmv.js’ in the /routes folder. Then copy the following content into the file and save it.
 ```
 var express =require ('express') ;
 var request =require ('request') ;
@@ -371,7 +369,7 @@ function initializeApp () {
 initializeApp () ;
 ```
 
-### <b>Step 6:</b> Create a JavaScript file in the /routes folder – i.e. upload.js. Then copy the following code into the file and save it.
+<b>Step 6:</b> Create a JavaScript file in the /routes folder – i.e. upload.js. Then copy the following code into the file and save it.
 ```
 var express =require ('express') ;
 var bodyParser =require ('body-parser') ;
@@ -498,7 +496,7 @@ router.get ('/translate/:urn/progress', function (req, res) {
 module.exports =router ;
 ```
 
-### <b>Step 7:</b> Edit /server.js to add a reference to upload.js and instantiate it
+<b>Step 7:</b> Edit /server.js to add a reference to upload.js and instantiate it
 ```
 var favicon = require('serve-favicon');
 var api = require('./routes/api');
@@ -515,7 +513,7 @@ app.use('/api', upload);
 app.set('port', process.env.PORT || 3000);
 ```
 
-### <b>Step 8:</b> Next, add the following code to /www/upload.js and save it
+<b>Step 8:</b> Next, add the following code to /www/upload.js and save it
 ```
 $(document).ready (function () {
 
@@ -608,7 +606,7 @@ function translateProgress (urn) {
 }
 ```
 
-### <b>Step 9:</b>Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser: 
+<b>Step 9:</b>Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser: 
 
 [http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
