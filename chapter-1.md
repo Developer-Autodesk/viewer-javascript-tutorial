@@ -15,7 +15,7 @@ if you don't already have one.
 
 * Click the 'Create an App' link.
 
- ![Create an App](img/createApp.png =826x328)
+ ![Create an App](img/createApp.png {width=826px height=328px})
 
 * Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
 
