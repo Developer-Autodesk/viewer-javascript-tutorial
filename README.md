@@ -56,30 +56,29 @@ Upload one of your models to your account and get its URN using the following [w
 
 Alternately, you can also use one of the desktop solutions below if you prefer:
 
-  - with a [Windows .Net WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
+- with a [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
 
-  - or with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
+- with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
 
-If you prefer using cURL or another programming languages, there are more samples on our [github account](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), or our [developer page](http://developer-autodesk.github.io/).
+If you prefer using cURL or another programming languages, there are more samples in our [GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), and on our [developer page](http://developer-autodesk.github.io/).
 
-There are some 3D model samples available in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
+Some 3D model samples are provided right here in this [GitHub tutorial repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) (in the 'Sample files' folder) if you don't have your own. You can clone or download the repository to access them.
 
 Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). And get additional setup instructions [here](https://help.github.com/articles/set-up-git).
 
-If you have GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from github.com. Go to [https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data)  and clone the source code by click the "Clone in Desktop" button.
+If you have a GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from GitHub. Go to the [Developer-Autodesk/tutorial-getting.started-view.and.data repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) and clone the source code by clicking the "Clone in Desktop" button.
 
  ![](img/githubClone.png)
 
-If you prefer command line, using following command.
+Heren is the equivalent command line:
 
 	git clone https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data.git
 
-This command creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
+This creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
 
-If you wish to not install git, you can download a zip file of the sample model files and finished code snippets instead from [here](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/archive/master.zip), or download the zip file by clicking "Download ZIP" and extract to a folder, which contains the sample files and finished files in following steps.
+If you prefer not to install git, you can download a zip file instead containing the sample model files and finished code snippets from [here](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/archive/master.zip), or by clicking "Download ZIP" button.
 
  ![](img/githubDownload.png)
-
 
 
 
