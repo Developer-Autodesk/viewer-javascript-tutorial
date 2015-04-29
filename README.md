@@ -84,7 +84,7 @@ If you prefer not to install git, you can download a zip file instead containing
 
 ## Create your web server
 
-For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files. If you prefer to use another web server technology, then you'll have to adapt these instructions yourself to serve the index.html file included with the project.
+For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files. If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
 ### Install Node.js
 
