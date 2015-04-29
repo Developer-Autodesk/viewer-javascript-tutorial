@@ -244,5 +244,5 @@ and continue at the ['Customize the Viewer Behavior'](chapter-3.md#Chapter3) sec
 
 
 [Next](chapter-3.md#Chapter3) - 
-[Parent](chapter-2.mdChapter2) - 
+[Parent](chapter-2.md#Chapter2) - 
 [Home](README.md)

@@ -21,7 +21,8 @@ which you should have cloned or downloaded earlier in this tutorial).
 <a name="Step1"></a>
 ## Step 1 – Creating a basic extension
 
-Create a file named "Viewing.Extension.Workshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api). Then copy the following basic extension skeleton code into the file and save it:
+Create a file named "Viewing.Extension.Workshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api).
+Then copy the following basic extension skeleton code into the file and save it:
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Demo Workshop Viewer Extension
@@ -88,11 +89,6 @@ Create a file named "Viewing.Extension.Workshop.js" (for example), and save it i
 	  Viewing.Extension.Workshop);
 
 
-You can also checkout the changes of this step from github by running following command if you have git installed:
-
-	git checkout workshop-viewer-customization-step1
-
-	
 <a name="Step2"></a>
 ## Step 2 – Reference the extension script
 
@@ -100,16 +96,12 @@ Reference the extension file in your index.html by adding the following script e
 
 	<script src="/Viewing.Extension.Workshop.js"></script>
 
-
-You can also checkout the changes of this step from github by running following command if you have git installed:
-
-	git checkout workshop-viewer-customization-step2
-
 	
 <a name="Step3"></a>
 ## Step 3 – Load the extension in the viewer
 
-All that remains for index.js is to add some code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an event to wait for the GOEMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded.
+All that remains for index.js is to add some code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an 
+event to wait for the GOEMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded.
 
 Open index.js and locate the place where you load the viewable in your viewer code:
 
@@ -148,17 +140,16 @@ and add the event handler immediately before this line of code, then add a metho
 	};
 </pre>
 
-Note: If you copy the modified index.js file from the Step 3 folder in the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), make sure you edit the defaultURN on line 18 to use the URN of the translated file you created at the beginning of the tutorial.
-
-You can also checkout the changes of this step from github by running following command if you have git installed:
-
-	git checkout workshop-viewer-customization-step3
+Note: If you copy the modified index.js file from the Step 3 folder in the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), make sure 
+you edit the defaultURN on line 18 to use the URN of the translated file you created at the beginning of the tutorial.
 
 	
 <a name="Step4"></a>
 ## Step 4 – Testing the extension
 
-Your barebones extension should be ready to run now. All it does is display an alert when it's loaded. Test that the extension is loaded properly by running your sample. (Remember that you setup your node.js project to serve the client page to [http://localhost:3000/](http://localhost:3000/), so open your WebGL-enabled browser and type that address in the address bar). Since all our changes are on client side, you can just refresh your browser to test your changes.
+Your barebones extension should be ready to run now. All it does is display an alert when it's loaded. Test that the extension is loaded properly by running your sample. 
+(Remember that you setup your node.js project to serve the client page to [http://localhost:3000/](http://localhost:3000/), so open your WebGL-enabled browser and type 
+that address in the address bar). Since all our changes are on client side, you can just refresh your browser to test your changes.
 
 
 <a name="Step5"></a>
@@ -166,7 +157,8 @@ Your barebones extension should be ready to run now. All it does is display an a
 
 Now we will add some more interesting functionality to the basic extension:
 
-Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e. editing the file 'Viewing.Extension.Workshop.js'). This event is triggered when user selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
+Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e. editing the file 'Viewing.Extension.Workshop.js'). This event is triggered when user 
+selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
 <pre>
 	_self.load = function () {
 
@@ -207,19 +199,20 @@ Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e.
 </pre>
 
 
-You can also checkout the changes of this step from github by running following command if you have git installed:
+Every element in the displayed model has a unique ID called a dbId. The code you've just written simply stores the dbId of the first element in the list of elements that the 
+user selected. (Usually, the user will only select a single element, but more complete code would handle multiple selected elements).
 
-	git checkout workshop-viewer-customization-step5
-
-Every element in the displayed model has a unique ID called a dbId. The code you've just written simply stores the dbId of the first element in the list of elements that the user selected. (Usually, the user will only select a single element, but more complete code would handle multiple selected elements).
-
-You can test your code now, if you like. Put a breakpoint in the event handler to check its being called when you select an element. You can use Developer Tool of Chrome or similar tools in other modern browsers to do debugging like setting breaking point, watch variable values, etc.  (Hint: You select a model element by clicking it with you mouse; elements are highlighted in blue when selected).
+You can test your code now, if you like. Put a breakpoint in the event handler to check its being called when you select an element. You can use Developer 
+Tool of Chrome or similar tools in other modern browsers to do debugging like setting breaking point, watch variable values, etc.  (Hint: You select a model 
+element by clicking it with you mouse; elements are highlighted in blue when selected).
 
 
 <a name="Step6"></a>
 ## Step 6 – Displaying a panel
 
-Now we'll get properties of selected component and display them in a custom viewer panel. Using the viewer UI to create your extensions will help migrating code from one project to another. It helps making your extension non-dependent of the client. However, you can manipulate any other component of your web application from the extension – you could read or write information stored in a separate database, or update a table somewhere else on the webpage., etc, etc.
+Now we'll get properties of selected component and display them in a custom viewer panel. Using the viewer UI to create your extensions will help migrating code from one 
+project to another. It helps making your extension non-dependent of the client. However, you can manipulate any other component of your web application from the extension – 
+you could read or write information stored in a separate database, or update a table somewhere else on the webpage., etc, etc.
 
 Add some code to initialize an empty panel in the body of your extension:
 <pre>
@@ -312,7 +305,8 @@ Instantiate the panel in your load method, uninitialize it in unload. Edit _self
 	};
 </pre>
 
-Replace the implementation of the selection handler with the following code, so the panel is populated with the properties of the selected element and displayed when an item is selected. Just for fun, we also isolate the component that is clicked:
+Replace the implementation of the selection handler with the following code, so the panel is populated with the properties of the selected element and displayed when an item is selected. 
+Just for fun, we also isolate the component that is clicked:
 <pre>
 
 	/////////////////////////////////////////////////////////////////
@@ -354,12 +348,8 @@ Replace the implementation of the selection handler with the following code, so 
 </pre>
 
 
-You can also checkout the changes of this step from github by running following command if you have git installed:
-
-	git checkout workshop-viewer-customization-step6
-
-
-You've now finished writing your extension to respond to a user selecting a model element by displaying that element's properties in a panel and isolating that element in the view. Launch the client page and select a model element by clicking on it. The model and camera view reset if you clear your selection or click in space.
+You've now finished writing your extension to respond to a user selecting a model element by displaying that element's properties in a panel and isolating that element in the view. 
+Launch the client page and select a model element by clicking on it. The model and camera view reset if you clear your selection or click in space.
 
 
 <a name="Step7"></a>
@@ -479,9 +469,6 @@ Finally modify the selection handler to trigger the animation when a component i
 
 </pre>
 
-You can also checkout the changes of this step from github by running following command if you have git installed:
-
-	git checkout workshop-viewer-customization-step7
 
 Test your extension again. This time, in addition to displaying the panel, the camera (your view of the model) starts rotating when you select a model element.
 
@@ -489,7 +476,11 @@ Test your extension again. This time, in addition to displaying the panel, the c
 <a name="More"></a>
 ## Even more bonus steps
 
-If you've still got some time, go to [http://gallery.autodesk.io](http://gallery.autodesk.io) and play with some of the models and sample extensions available there. The 'Car' model is reasonably detailed ( [http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4](http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4)). To test one of the sample Extensions, click on the Extensions menu, then click Manage and click on an Extension's name to enable or disable it. We recommend you only enable one Extension at a time (i.e. disable the last Extension you used before enabling another), because not all the Extensions have been written to play nicely with other Extensions.
+If you've still got some time, go to [http://gallery.autodesk.io](http://gallery.autodesk.io) and play with some of the models and sample extensions available there. 
+The 'Car' model is reasonably detailed ( [http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4](http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4)). 
+To test one of the sample Extensions, click on the Extensions menu, then click Manage and click on an Extension's name to enable or disable it. We recommend you only 
+enable one Extension at a time (i.e. disable the last Extension you used before enabling another), because not all the Extensions have been written to play nicely with 
+other Extensions.
 
 To see the source code for those Extensions, go to Extensions and select Source.  Then click on the name of the Extension you're interested in.
 
