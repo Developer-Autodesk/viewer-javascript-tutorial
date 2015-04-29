@@ -15,22 +15,33 @@ provides access control and several collaboration features, such as a wikis and 
 Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial, but you may prefer the GUI or WEB interfaces.
 
 If you have a GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone 
-the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) from GitHub. 
-Go to the [Developer-Autodesk/tutorial-getting.started-view.and.data repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data) and clone the source 
-code by clicking the "Clone in Desktop" button.
+a repository from GitHub. Go to the the repository you want to download locally and clone the source code by clicking the "Clone in Desktop" button.
 
  ![](img/githubClone.png)
 
 Here is the equivalent command line:
 ```
-git clone https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data.git
+git clone <your repository git url>
 ```
 
-This creates the *tutorial-getting.started-view.and.data* directory in your current directory. In this directory, you can find the sample files and finished files in following steps.
+Your repository git url can be obtain from the 'HTTPs clone URL'
 
-If you prefer not to install git, you can download a zip file instead containing the sample model files and finished code snippets from [here](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/archive/master.zip), or by clicking "Download ZIP" button.
+ ![](img/githubCloneURL.png)
+
+This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with.
+
+If you prefer not to install git, you can download a zip file instead by clicking the "Download ZIP" button.
 
  ![](img/githubDownload.png)
+
+In this workshop, we will provide the command line instructions, but feel free to use the method you prefer.
+
+### Fork option
+
+Last, someone may want to work on the wokshop and saves this results on his own github account - in this case, you need to 'fork' the repository from your account and clone the 'forked' repository.
+To fork a repository, log in Github using your account, go to the repository you want to fork, and press the 
+
+ ![](img/githubFork.png)
  
 
 <a name="InstallNodeJs"></a>
@@ -57,4 +68,5 @@ If you need to run different versions of node.js in your local environment, cons
 ## Download the sources
 
 
-[Next](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0#)
+[Next](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0#) - 
+[Home](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0)
