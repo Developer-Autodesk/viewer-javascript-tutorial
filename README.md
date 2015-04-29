@@ -75,8 +75,4 @@ to learn more about the Autodesk View & Data API and the application you are bui
 
 
 
-
-
-
-
-
+[Start](prerequisites.md)
