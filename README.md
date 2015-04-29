@@ -3,12 +3,12 @@
 * Introduction
   - [Audience](#Audience)
   - [What do you need for your project?](#WhatDoYouNeed)
-  - [What  are you going to achieve in this workshop?](#WhatAreYouGoingToAchieve.md)
+  - [What  are you going to achieve in this workshop?](#WhatAreYouGoingToAchieve)
 
-* Prerequisites
-  - Familiar with git?
-  - Install Node.js
-  - Download the sources
+* [Prerequisites](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#Prerequisites)
+  - [Familiar with git?](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#FamiliarWithGit)
+  - [Install Node.js](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#InstallNodeJs)
+  - [Download the sources](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/prerequisites.md#DownloadTheSources)
   
 * View & Data API workshop
   - [Obtaining an API Key](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/dev-2.0/obtaining-an-api-key.md#ObtainingAnAPIKey)
@@ -37,11 +37,22 @@ and the frequency:
 
 - If you need to translate multiple models in a batch process or allow other users to upload their own files, then a web server implementation will be needed.
 
+Later in this workshop, you will need to decide which routes you want to go with depending of your needs.
+
 
 <a name="WhatAreYouGoingToAchieve"></a>
 ## What are you going to achieve in this workshop?
 
-??
+When you finish the workshop you will be able to:
+
+- Create a dynamic application that works in all modern browsers.
+- View 2D/3D models in a browser or device without plug-in or additional software.
+- Create and run Node.js application .
+- Extend the View & Data API WEBGL viewer to interact with the 2D/3D models.
+- Identify resources for learning more about the Autodesk View & Data API.
+
+The tutorial guides you through the entire process of building a simple application, including writing and running viewer extensions. Experiments at the end of each step provide suggestions for you 
+to learn more about the Autodesk View & Data API and the application you are building.
 
 
 
