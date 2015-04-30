@@ -83,7 +83,7 @@ Either checkout a tag version or a branch. Updates files in the working tree to 
 
 Using git from the command line on Mac OSX or Linux is straight forward, just open a console window. git, node, and npm commands should work from there if present on your system.
 On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel. 
-You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which are 
+You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which is 
 different from GitHub.
 
 
@@ -135,11 +135,33 @@ Note, they are not listed in the order of preference.
 [WebStorm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
 	
 
-<a name="DownloadTheSources"></a>
-## Download the sources
+<a name="GetTheSources"></a>
+## Get the sources
 
-??
+We assume you want to start a project and work as a team. For this reason, you want to use 'git' and be able to share the sources across the members of your team, 
+and later deploy it on a web server. Your first action will be to fork the material repository on your 'github' account. 
+If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
+* Using git
+   - Sign in using your Github account at [ttp://www.github.com](http://www.github.com)
+   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
+   - Fork the project
+   - Copy your fork 'HTTPS clone URL'
+   - In the git console, run the following command:
+     ```
+	 git clone <your HTTPS clone URL>
+	 ```
+   - Change your working directory
+     ```
+	 cd workflow-node.js-view.and.data.api
+	 ```
+
+* Not using git
+  - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
+  - Download the ZIP file
+  - Inflate the ZIP file on your hard drive
+  
+  
 
 =========================
 [Next](chapter-1.md#Chapter1) - 
