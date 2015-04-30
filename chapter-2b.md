@@ -32,7 +32,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the <body></body> tags. 
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the &lt;body&gt;&lt;/body&gt; tags. 
 ```
 <div class="container">
         <div class="panel panel-default">
