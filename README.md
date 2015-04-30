@@ -8,6 +8,7 @@
 * [Prerequisites](prerequisites.md#Prerequisites)
   - [Familiar with git?](prerequisites.md#FamiliarWithGit)
   - [Install Node.js](prerequisites.md#InstallNodeJs)
+  - [Install a code editor](prerequisites.md#InstallCodeEditor)
   - [Download the sources](prerequisites.md#DownloadTheSources)
   
 * [Chapter 1 - Get ready with the View & Data API](chapter-1.md#Chapter1)

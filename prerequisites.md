@@ -3,6 +3,7 @@
 
   - [Familiar with git?](#FamiliarWithGit)
   - [Install Node.js](#InstallNodeJs)
+  - [Install a code editor](#InstallCodeEditor)
   - [Download the sources](#DownloadTheSources)
   
 
@@ -74,6 +75,25 @@ In Debian based distributions, there is a name clash with another utility called
 
 If you need to run different versions of node.js in your local environment, consider installing [Node Version Manager (nvm)](https://github.com/creationix/nvm).
 
+
+<a name="InstallCodeEditor"></a>
+## Install a code editor
+
+If you have programmed before, you may already have a favorite programmer's editor. However, if you do not, or were thinking about trying other editors anyway, 
+spend some time trying and considering these options common in the javascript/node.js community ...
+
+Note, they are not listed in the order of preference.
+
+    | Windows | Mac OSX | Linux | Free/Paid
+--- | ------------- | -------------- | -------- | --------------
+[Brackets](http://brackets.io/) | X | X | X | Free
+[Eclipse](http://eclipse.org/) | X | X | X | Free
+[Emacs](http://www.gnu.org/software/emacs/) | X | X | X | Free
+[Notepad++](http://notepad-plus-plus.org/) | 	X | - | - | Free
+[textmate](http://macromates.com/) | - | X | - | Paid
+[Sublime Text](http://www.sublimetext.com/) | X | X | X | Paid
+[WEB Storm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
+	
 
 <a name="DownloadTheSources"></a>
 ## Download the sources
