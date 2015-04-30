@@ -158,7 +158,7 @@ that address in the address bar). Since all our changes are on client side, you 
 Now we will add some more interesting functionality to the basic extension:
 
 Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e. editing the file 'Viewing.Extension.Workshop.js'). This event is triggered when user 
-selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below that function.
+selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below.
 <pre>
 	_self.load = function () {
 
@@ -493,7 +493,7 @@ Here are two YouTube videos explaining how to use the gallery sample and a coupl
 
 You can get the final source code as zip from [here](https://github.com/cyrillef/workflow-node.js-view.and.data.api/archive/workshop-viewer-customization-step7.zip), or using git:
 ```
-git checkout workshop-viewer-customization-step7
+git checkout v1.0-workshop-extension
 ```
 
 =========================
