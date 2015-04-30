@@ -491,9 +491,8 @@ Here are two YouTube videos explaining how to use the gallery sample and a coupl
 [https://www.youtube.com/watch?v=tK2ndbvchIM](https://www.youtube.com/watch?v=tK2ndbvchIM)
 
 
-You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
+You can get the final source code as zip from [here](https://github.com/cyrillef/workflow-node.js-view.and.data.api/archive/workshop-viewer-customization-step7.zip), or using git:
 ```
-git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
 git checkout workshop-viewer-customization-step7
 ```
 
