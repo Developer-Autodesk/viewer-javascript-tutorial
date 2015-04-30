@@ -150,8 +150,10 @@ If you prefer not to use git, you can still download the zip files and inflate t
    - In the git console, run the following commands:<br />
      ```
 	 git clone <your HTTPS clone URL>
+	 
 	 git checkout v1.0-workshop
 	 ```
+	 <br />
 	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on 
 	 the correct version of the material made for this instructions.
    - Change your working directory
