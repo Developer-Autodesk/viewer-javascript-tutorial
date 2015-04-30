@@ -81,7 +81,7 @@ Either checkout a tag version or a branch. Updates files in the working tree to 
 
 ### git command line
 
-Using git from the command line on Mac OSX or Linux is straight forward, just open a console window. git, node, and npm commands should work from there if present on your system.
+Using git from the command line on Mac OSX or Linux is straight forward, just open a terminal window (on Mac OSx - Applications -> Utilities -> Terminal.app). git, node, and npm commands should work from there if present on your system.
 On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel. 
 You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which is 
 different from GitHub.
