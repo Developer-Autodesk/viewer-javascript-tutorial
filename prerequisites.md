@@ -29,25 +29,65 @@ Here is the equivalent command line:
 git clone <your repository git url>
 ```
 
-Your repository git url can be obtain from the 'HTTPs clone URL'
+Your repository git url can be obtain from the 'HTTPs clone URL' box.
 
  ![](img/githubCloneURL.png)
 
-This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with.
+This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with. 
+However, it is important to note here that unless you got write permission, you would not be able to save your changes in the repo. To be able to save in the repo you clone, 
+you either need to be a contributor on that repo, or have cloned one of your own repo. If you want to work from someone else repo, and be able to edit and save your changes, 
+please consider to 'fork' the repo in your account, and clone that repo instead from your account. See below instructions [how to fork a repo](#Fork).
 
 If you prefer not to install git, you can download a zip file instead by clicking the 'Download ZIP' button.
 
  ![](img/githubDownload.png)
-
+ 
 In this workshop, we will provide the command line instructions, but feel free to use the method you prefer.
+
+
+### Major 'git' operations
+
+'''
+git status
+'''
+Gives you the list of changes in your working tree vs the repo on GitHub
+
+'''
+git add <file> [<file>] ...
+'''
+This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
+A shortcut to add all changes for the next commit is to use `git add -A`
+
+```
+git commit -m "my message"
+```
+Stores the current contents of the index in a new commit along with a log message from the user describing the changes.
+
+```
+git push
+```
+Updates the remote repo with your commit.
+
+```
+git pull
+```
+Get changes from the remote repo in your working tree.
+
+```
+git checkout <name>
+```
+Either checkout a tag version or a branch. Updates files in the working tree to match the version in the index or the specified tree.
+
 
 ### git command line
 
-Using git from the command line on Mac OSX or Linux is straight forward, just open a console window. git, node, and npm should work from there if present on your system.
+Using git from the command line on Mac OSX or Linux is straight forward, just open a console window. git, node, and npm commands should work from there if present on your system.
 On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel. 
-You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list.
+You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which are 
+different from GitHub.
 
 
+<a name="Fork"></a>
 ### Fork option
 
 Last, someone may want to work on the wokshop and saves this results on his own github account - in this case, you need to 'fork' the repository from your account and clone the 'forked' repository.
