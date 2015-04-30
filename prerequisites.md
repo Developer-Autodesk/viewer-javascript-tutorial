@@ -153,10 +153,9 @@ If you prefer not to use git, you can still download the zip files and inflate t
 	 
 	 git checkout v1.0-workshop
 	 ```
-	 <br />
 	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on 
 	 the correct version of the material made for this instructions.
-   - Change your working directory
+   - Change your working directory <br />
      ```
 	 cd workflow-node.js-view.and.data.api
 	 ```
