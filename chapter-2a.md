@@ -231,6 +231,9 @@ And replace the string ‘&lt;my_consumer_key&gt;’ by your consumer key (not t
 [http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
 
+<a name="End"></a>
+## Solution
+
 You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
 ```
 git checkout v1.0-workshop-client

@@ -14,9 +14,6 @@
 Now you've got a basic 2D/3D model displayed on your web page, let's customize the viewer behavior. The simplest way to customize behavior is through the Extension mechanism. 
 Extensions allow you to encapsulate your customized behavior in a separate JavaScript file that you can 'load' into the viewer when it's running (you can unload it whenever you like too).
 
-(If you don't want to type the code, you can copy the finished files for each step from the subfolders in the [GitHub repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), 
-which you should have cloned or downloaded earlier in this tutorial).
-
 
 <a name="Step1"></a>
 ## Step 1 – Creating a basic extension
@@ -491,7 +488,10 @@ Here are two YouTube videos explaining how to use the gallery sample and a coupl
 [https://www.youtube.com/watch?v=tK2ndbvchIM](https://www.youtube.com/watch?v=tK2ndbvchIM)
 
 
-You can get the final source code as zip from [here](https://github.com/cyrillef/workflow-node.js-view.and.data.api/archive/workshop-viewer-customization-step7.zip), or using git:
+<a name="End"></a>
+## Solution
+
+You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-extension.zip), or using git:
 ```
 git checkout v1.0-workshop-extension
 ```
