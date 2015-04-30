@@ -4,7 +4,7 @@
   - [Familiar with git?](#FamiliarWithGit)
   - [Install Node.js](#InstallNodeJs)
   - [Install a code editor](#InstallCodeEditor)
-  - [Download the sources](#DownloadTheSources)
+  - [Get the sources](#GetTheSources)
   
 
 <a name="FamiliarWithGit"></a>

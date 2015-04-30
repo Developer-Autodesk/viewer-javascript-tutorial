@@ -9,7 +9,7 @@
   - [Familiar with git?](prerequisites.md#FamiliarWithGit)
   - [Install Node.js](prerequisites.md#InstallNodeJs)
   - [Install a code editor](prerequisites.md#InstallCodeEditor)
-  - [Download the sources](prerequisites.md#DownloadTheSources)
+  - [Get the sources](prerequisites.md#GetTheSources)
   
 * [Chapter 1 - Get ready with the View & Data API](chapter-1.md#Chapter1)
   - [Obtaining an API Key](chapter-1.md#ObtainingAnAPIKey)
