@@ -10,7 +10,7 @@ on a web server.
 
 A very easy way to do this is to use ['heroku'](https://www.heroku.com/) which has a nice feature to a web site deploy from github.
 
-<b>Step 1</b> Sign up on [herokuc.com](https://www.heroku.com/) for a free account
+<b>Step 1</b> Sign up on [heroku.com](https://www.heroku.com/) for a free account
 
 <b>Step 2</b> Create a node.js server by selecting the '+' sign on the top-right corner
 
@@ -54,6 +54,39 @@ A very easy way to do this is to use ['heroku'](https://www.heroku.com/) which h
 This is actually needed for the first time unless you push a change on github.
 
 <b>Note</b> On the 'Activity' tab, you can see when and if your site was rebuilt successfully or not.
+
+<b>Important: </b> to let heroku know how to build the web site automatically, you need to provide a proper '<b>package.json</b>' file where you mention the dependencies 
+and the main server script. An example is provided below:
+'''
+{
+	"name": "AdnViewerBasic",
+	"description": "A node.js server sample",
+	"version": "1.0.0",
+	"dependencies": {
+		"serve-favicon": ">= 0.0.2",
+		"express": ">= 4.12.3",
+		"request": ">= 2.55.0"
+	},
+	"files": [
+		"LICENSE",
+		"README.md"
+	],
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"contributors": [
+		"Cyrille Fauvel <cyrille@autodesk.com>"
+	],
+	"license": "MIT",
+	"scripts": {
+		"start": "node start.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git"
+	}
+}
+'''
 
 
 =========================  
