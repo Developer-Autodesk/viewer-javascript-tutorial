@@ -32,6 +32,7 @@
 
 * [Appendix A - More sample and demos](appendix-a.md)
 * [Appendix B - Review of the node.js code](appendix-b.md)
+* [Appendix C - Deploy on the web](appendix-c.md)
 
 <a name="Audience"></a>
 ## Audience
