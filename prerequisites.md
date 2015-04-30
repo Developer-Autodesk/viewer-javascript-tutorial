@@ -147,7 +147,7 @@ If you prefer not to use git, you can still download the zip files and inflate t
    - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
    - Fork the project
    - Copy your fork 'HTTPS clone URL'
-   - In the git console, run the following commands:
+   - In the git console, run the following commands:<br />
      ```
 	 git clone <your HTTPS clone URL>
 	 git checkout v1.0-workshop
