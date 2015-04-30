@@ -92,7 +92,7 @@ Note, they are not listed in the order of preference.
 [Notepad++](http://notepad-plus-plus.org/) | 	X | - | - | Free
 [textmate](http://macromates.com/) | - | X | - | Paid
 [Sublime Text](http://www.sublimetext.com/) | X | X | X | Paid
-[WEB Storm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
+[WebStorm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
 	
 
 <a name="DownloadTheSources"></a>
