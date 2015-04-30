@@ -233,7 +233,6 @@ And replace the string ‘&lt;my_consumer_key&gt;’ by your consumer key (not t
 
 You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
 ```
-git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
 git checkout v1.0-workshop-client
 ```
 

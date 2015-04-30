@@ -342,9 +342,8 @@ function translateProgress (urn) {
 
 [http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
-You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-client.zip), or using git:
+You can get the final source code as zip from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/archive/v1.0-workshop-server.zip), or using git:
 ```
-git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
 git checkout v1.0-workshop-server
 ```
 
