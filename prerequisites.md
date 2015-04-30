@@ -47,14 +47,14 @@ In this workshop, we will provide the command line instructions, but feel free t
 
 ### Major 'git' operations
 
-'''
+```
 git status
-'''
+```
 Gives you the list of changes in your working tree vs the repo on GitHub
 
-'''
+```
 git add <file> [<file>] ...
-'''
+```
 This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
 A shortcut to add all changes for the next commit is to use `git add -A`
 
