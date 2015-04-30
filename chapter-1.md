@@ -80,26 +80,6 @@ For this tutorial, we'll create a minimal Node.js web server to serve your html/
 If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
 
-### Download the sources
-
-Clone the [View & Data Node.js basic server](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api) to start your web application.
-```
-git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git
-git checkout v1.0-workshop
-```
-This first command creates the workflow-node.js-view.and.data.api in your current directory.
-The second command is optional and is there to make sure we work on the correct version of the material made for this instructions.
-
-Change your current directory to workflow-node.js-view.and.data.api
-```
-cd workflow-node.js-view.and.data.api
-```
-
-If you wish to not install git, you can download a zip file of the sources instead from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop).
-
-The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
-
-
 ### Download the sample' node.js dependencies
 
 Before you can run the sample, you need to download the node.js dependency modules used by the sample. You do this by executing the following command:
