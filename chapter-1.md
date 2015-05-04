@@ -128,8 +128,8 @@ Connect to your local server using a WebGL-compatible browser:
 
 [http://localhost:3000/](http://localhost:3000/)
 
-Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may be already in use. If you want to use port 80 to avoid
-having to specify the port in the URL, edit the server.js file and change the default port from 3000 to 80, and restart the node.js server.
+Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may already be in use.
+If you want to use port 80 to avoid having to specify the port in the URL, edit the server.js file, change the default port from 3000 to 80 and restart the node.js server.
 
 
 =========================
