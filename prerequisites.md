@@ -5,22 +5,36 @@
   - [Install Node.js](#InstallNodeJs)
   - [Install a code editor](#InstallCodeEditor)
   - [Get the sources](#GetTheSources)
-  
+
 
 <a name="FamiliarWithGit"></a>
 ## Familiar with git?
 
-Note that, if you do not have git installed already, you can get it from here: [Windows](https://windows.github.com/), [Mac OSX](https://mac.github.com/), and [Linux](http://git-scm.com/download/linux). 
-And get additional setup instructions [here](https://help.github.com/articles/set-up-git).
+[Git](http://www.git-scm.com) is a free and open source distributed version control system.
+It enables teams to work together efficiently, all using the same files.
 
-Git allows a team of people to work together, all using the same files. And it helps the team cope with the confusion that tends to happen when multiple people are editing the same files. 
-GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface and a GUI tools. It also 
-provides access control and several collaboration features, such as a wikis and basic task management tools for every project..
+It also helps teams cope with the confusion that can happen when multiple people are editing the same files.
+
+This tutorial is hosted on GitHub, a Git repository hosting service, that also adds many of its own additional features.
+
+While Git is a command line tool, GitHub provides a Web-based graphical interface and a GUI tools.
+
+It also provides access control and several collaboration features, such as a Wiki and basic task management tools for every project.
+
+If you do not have git installed already, you can get it from here:
+
+- [Windows](https://windows.github.com)
+- [Mac OSX](https://mac.github.com)
+- [Linux](http://git-scm.com/download/linux)
+
+Here are some [additional setup instructions](https://help.github.com/articles/set-up-git), and many other questions are covered by the [GitHub Help](https://help.github.com).
 
 Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial, but you may prefer the GUI or WEB interfaces.
 
-If you have a GitHub client ([GitHub for Windows](https://windows.github.com/) or [GitHub for Mac](https://mac.github.com/)) installed, you can clone 
-a repository from GitHub. Go to the the repository you want to download locally and clone the source code by clicking the 'Clone in Desktop' button.
+Once you have a GitHub client installed, you can clone
+a repository from GitHub.
+
+Go to the the repository you want to download locally and clone the source code by clicking the 'Clone in Desktop' button.
 
  ![](img/githubClone.png)
 
@@ -33,15 +47,15 @@ Your repository git url can be obtain from the 'HTTPs clone URL' box.
 
  ![](img/githubCloneURL.png)
 
-This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with. 
-However, it is important to note here that unless you got write permission, you would not be able to save your changes in the repo. To be able to save in the repo you clone, 
-you either need to be a contributor on that repo, or have cloned one of your own repo. If you want to work from someone else repo, and be able to edit and save your changes, 
+This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with.
+However, it is important to note here that unless you got write permission, you would not be able to save your changes in the repo. To be able to save in the repo you clone,
+you either need to be a contributor on that repo, or have cloned one of your own repo. If you want to work from someone else repo, and be able to edit and save your changes,
 please consider to 'fork' the repo in your account, and clone that repo instead from your account. See below instructions [how to fork a repo](#Fork).
 
 If you prefer not to install git, you can download a zip file instead by clicking the 'Download ZIP' button.
 
  ![](img/githubDownload.png)
- 
+
 In this workshop, we will provide the command line instructions, but feel free to use the method you prefer.
 
 
@@ -82,8 +96,8 @@ Either checkout a tag version or a branch. Updates files in the working tree to 
 ### git command line
 
 Using git from the command line on Mac OSX or Linux is straight forward, just open a terminal window (on Mac OSx - Applications -> Utilities -> Terminal.app). git, node, and npm commands should work from there if present on your system.
-On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel. 
-You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which is 
+On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel.
+You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which is
 different from GitHub.
 
 
@@ -94,7 +108,7 @@ Last, someone may want to work on the wokshop and saves this results on his own 
 To fork a repository, log in Github using your account, go to the repository you want to fork, and press the 'Fork' button.
 
  ![](img/githubFork.png)
- 
+
 
 <a name="InstallNodeJs"></a>
 ## Install Node.js
@@ -119,7 +133,7 @@ If you need to run different versions of node.js in your local environment, cons
 <a name="InstallCodeEditor"></a>
 ## Install a code editor
 
-If you have programmed before, you may already have a favorite programmer's editor. However, if you do not, or were thinking about trying other editors anyway, 
+If you have programmed before, you may already have a favorite programmer's editor. However, if you do not, or were thinking about trying other editors anyway,
 spend some time trying and considering these options common in the javascript/node.js community ...
 
 Note, they are not listed in the order of preference.
@@ -133,13 +147,13 @@ Note, they are not listed in the order of preference.
 [textmate](http://macromates.com/) | - | X | - | Paid
 [Sublime Text](http://www.sublimetext.com/) | X | X | X | Paid
 [WebStorm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
-	
+
 
 <a name="GetTheSources"></a>
 ## Get the sources
 
-We assume you want to start a project and work as a team. For this reason, you want to use 'git' and be able to share the sources across the members of your team, 
-and later deploy it on a web server. Your first action will be to fork the material repository on your 'github' account. 
+We assume you want to start a project and work as a team. For this reason, you want to use 'git' and be able to share the sources across the members of your team,
+and later deploy it on a web server. Your first action will be to fork the material repository on your 'github' account.
 If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
 * Using git
@@ -150,10 +164,10 @@ If you prefer not to use git, you can still download the zip files and inflate t
    - In the git console, run the following commands:<br />
      ```
 	 git clone <your HTTPS clone URL>
-	 
+
 	 git checkout v1.0-workshop
 	 ```
-	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on 
+	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on
 	 the correct version of the material made for this instructions.
    - Change your working directory <br />
      ```
@@ -165,12 +179,12 @@ If you prefer not to use git, you can still download the zip files and inflate t
   - Download the ZIP file from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop)
   - Inflate the ZIP file on your hard drive
   - Make the inflated directory your current directory
-  
+
 
 The tutorial instructions, from now on, assumes you are running all commands from the *workflow-node.js-view.and.data.api* directory.
 
-  
+
 
 =========================
-[Next](chapter-1.md#Chapter1) - 
+[Next](chapter-1.md#Chapter1) -
 [Home](README.md)
