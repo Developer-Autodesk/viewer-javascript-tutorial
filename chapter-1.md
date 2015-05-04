@@ -1,5 +1,5 @@
 <a name="Chapter1"></a>
-# Chapter 1 - Get ready with the View & Data API
+# Chapter 1 – Get ready with the View & Data API
 
 - [Obtaining an API Key](#ObtainingAnAPIKey)
 - [Prepare a model](#PrepareAModel)
@@ -27,7 +27,7 @@ if you don't already have one.
  ![Choose view and data API](img/selectAPI.png)
 
 * Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field,
-but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
+but you don't have to provide a real URL if you don't have one – just add something like 'http://www.mysite.com').
 
  ![App is created](img/appCreated.png)
 
