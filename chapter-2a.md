@@ -1,7 +1,7 @@
 <a name="Chapter2a"></a>
-# Chapter 2 - Translating from the client
+# Chapter 2 – Translating from the client
 
-	
+
 <b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory. Then copy the following basic html skeleton code into the file and save it.
 
 upload.html
@@ -16,7 +16,7 @@ upload.html
 
     <!-- Bootstrap CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
-   
+
     <!-- Autodesk.ADN.Toolkit.Viewer -->
     <script src=" https://rawgit.com/Developer-Autodesk/library-javascript-view.and.data.api/master/js/Autodesk.ADN.Toolkit.ViewData.js"></script>
     <script src="/upload.js"></script>
@@ -40,7 +40,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the &lt;body&gt;&lt;/body&gt; tags. 
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the &lt;body&gt;&lt;/body&gt; tags.
 ```
 <div class="container">
         <div class="panel panel-default">
@@ -226,7 +226,7 @@ function checkTranslationStatus (fileId, timeout, onSuccess) {
 ```
 And replace the string ‘&lt;my_consumer_key&gt;’ by your consumer key (not the consumer secret).
 
-<b>Step 4:</b> Connect to your local server using a WebGL-compatible browser, please make sure your node server is running: 
+<b>Step 4:</b> Connect to your local server using a WebGL-compatible browser, please make sure your node server is running:
 
 [http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
@@ -240,11 +240,11 @@ git checkout v1.0-workshop-client
 ```
 
 
-If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [go back there now](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md) 
-and continue at the ['Customize the Viewer Behavior'](chapter-3.md#Chapter3) section.
+If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [go back there now](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md)
+and continue with the section [Customize the Viewer Behavior](chapter-3.md#Chapter3).
 
 
 =========================
-[Next](chapter-3.md#Chapter3) - 
-[Parent](chapter-2.md#Chapter2) - 
+[Next](chapter-3.md#Chapter3) –
+[Parent](chapter-2.md#Chapter2) – 
 [Home](README.md)

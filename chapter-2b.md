@@ -1,5 +1,5 @@
 <a name="Chapter2b"></a>
-# Chapter 2 - Translating from the server
+# Chapter 2 – Translating from the server
 
 
 <b>Step 1:</b> Create a new html page and JavaScript file in folder /www – i.e. upload.html and upload.js. Then copy the following basic html skeleton code into the file and save it.
@@ -16,7 +16,7 @@ upload.html
 
     <!-- Bootstrap CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
-   
+
     <script src="/upload.js"></script>
 </head>
 
@@ -32,7 +32,7 @@ $(document).ready (function () {
 }) ;
 ```
 
-<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the &lt;body&gt;&lt;/body&gt; tags. 
+<b>Step 2:</b> Add controls in your html page to post files for translation. Add the following code between the &lt;body&gt;&lt;/body&gt; tags.
 ```
 <div class="container">
         <div class="panel panel-default">
@@ -98,7 +98,7 @@ Press "Ctrl + C" to exit the node server first if it is running, and execute the
 npm install
 ```
 
-<b>Step 5:</b> Create a file named ‘lmv.js’ in the /routes folder. Then copy the following [content](https://raw.githubusercontent.com/Developer-Autodesk/workflow-node.js-view.and.data.api/workshop-server/routes/lmv.js) 
+<b>Step 5:</b> Create a file named ‘lmv.js’ in the /routes folder. Then copy the following [content](https://raw.githubusercontent.com/Developer-Autodesk/workflow-node.js-view.and.data.api/workshop-server/routes/lmv.js)
 into the file and save it. This lmv.js is a javascript library which hides the complexity of accessing the REST API.
 
 <b>Step 6:</b> Create a JavaScript file in the /routes folder – i.e. upload.js. Then copy the following code into the file and save it.
@@ -338,7 +338,7 @@ function translateProgress (urn) {
 }
 ```
 
-<b>Step 9:</b> Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser: 
+<b>Step 9:</b> Press "Ctrl + C" to exit your node server if it is running and restart it by running `node server.js`, connect to your local server using a WebGL-compatible browser:
 
 [http://localhost:3000/upload.html](http://localhost:3000/upload.html)
 
@@ -354,11 +354,11 @@ git checkout v1.0-workshop-server
 (If you chose to checkout the code instead of creating the files by hand, remember to run the 'npm install' command now).
 
 
-If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [go back there now](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md) 
-and continue at the ['Customize the Viewer Behavior'](chapter-3.md#Chapter3) section.
+If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [go back there now](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md)
+and continue with the section [Customize the Viewer Behavior](chapter-3.md#Chapter3).
 
 
 =========================
-[Next](chapter-3.md#Chapter3) - 
-[Parent](chapter-2.md#Chapter2) - 
+[Next](chapter-3.md#Chapter3) –
+[Parent](chapter-2.md#Chapter2) – 
 [Home](README.md)
