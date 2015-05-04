@@ -18,15 +18,18 @@ After you've finished or skipped this optional step, move on to the next section
 ## Choose your option
 
 Before you decide if you want to handle translation in your web application, you first need to decide if you want to do the translation from the server or the client.
-The only important step was to make sure the access token was generated on the server side to avoid anyone to steal your consumer key and secret.
-That step was done in the previous steps. Now, once you have a valid access token, you can do the translation either on the client (JavaScript code running
-in the browser) or on the server (JavaScript code running on the node.js server). The path you choose depends on what you want to achieve. Running on the client
-side means no files are transitioning via your server, and you aren’t using any server CPU time. Running from the server means that you control everything your
-users are doing.
+It is important to make sure that your access token is generated on the server side, though, to avoid anyone being able to steal your consumer key and secret.
+You learned how to generate an access token in the previous steps.
+Now that you have a valid access token, you can do the translation either on the client side, e.g., in JavaScript code running
+in the browser, or on the server, e.g., JavaScript code running on the node.js server.
+The path you choose depends on what you want to achieve.
+Running on the client side removes the need for the files to transition via your server, saving some resources and server CPU time.
+Running from the server gives you more complete control over what your users are doing.
 
-Either choose [‘Translating from the client’](chapter-2a.md#Chapter2a) or [‘Translating from the server’](chapter-2b.md#Chapter2b) as the next step. If you've already
-completed one of them and would like to try another,  please revert back to the original status first. You can save your changes with git and checkout the master branch
-to get a clean start point.
+You can choose either [Translating from the client](chapter-2a.md#Chapter2a) or
+[Translating from the server](chapter-2b.md#Chapter2b) as the next step.
+If you've already completed one of them and would like to try another,  please revert back to the original status first.
+You can save your changes with git and checkout the master branch to get a clean starting point:
 ```
 git checkout -b yourbranchname
 git add .
@@ -34,7 +37,7 @@ git commit -am 'save my changes'
 git checkout master -f
 ```
 
-And you can use following command to bring back your changes if you want:
+You can use the following command to bring back your changes, if you want:
 ```
 git checkout yourbranchname
 ```
