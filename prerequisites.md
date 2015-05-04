@@ -181,7 +181,7 @@ If you prefer not to use git, you can still download the zip files and inflate t
   - Make the inflated directory your current directory
 
 
-The tutorial instructions, from now on, assumes you are running all commands from the *workflow-node.js-view.and.data.api* directory.
+The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
 
 
 
