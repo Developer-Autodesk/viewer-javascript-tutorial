@@ -9,12 +9,13 @@
 <a name="ObtainingAnAPIKey"></a>
 ## Obtaining an API Key
 
-All View & Data API applications accesses the service using an API key. The API key enables you to monitor your application's API usage, and ensures that Autodesk can contact you 
+All View & Data API applications access the service using an API key.
+The API key enables you to monitor your application's API usage and ensures that Autodesk can contact you
 about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
 
 To create your API key:
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and sign in with your Autodesk Account, or click the Sign Up link to create an account for free 
+* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and sign in with your Autodesk Account, or click the Sign Up link to create an account for free
 if you don't already have one.
 
 * Click the 'Create an App' link.
@@ -25,7 +26,7 @@ if you don't already have one.
 
  ![Choose view and data API](img/selectAPI.png)
 
-* Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field, 
+* Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field,
 but you don't have to provide a real URL if you don't have one - just add something like 'http://www.mysite.com').
 
  ![App is created](img/appCreated.png)
@@ -34,8 +35,8 @@ but you don't have to provide a real URL if you don't have one - just add someth
 
  ![](img/showConsummkerKeys.png)
 
-By default, a key can be used on any site / application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent 
-use on unauthorized sites. We also recommend you create a new App (API key) for every new application (rather than reusing the same key in multiple applications).
+By default, a key can be used on any site and application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent
+use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reusing the same key in multiple applications.
 
 
 <a name="PrepareAModel"></a>
@@ -48,18 +49,19 @@ Now you have your API key, the next step is to upload and translate a model so i
 
 Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).
 
-Alternately, you can also use one of the desktop solutions below if you prefer:
+Alternatively, you can use one of the following desktop solutions instead if you prefer:
 
 - with a [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
 
 - with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
 
-If you prefer using cURL or another programming languages, there are more samples in our [GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow), 
-and on our [developer page](http://developer-autodesk.github.io/).
+If you prefer using cURL or some other programming language, there are more samples in our
+[GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow),
+and on our [developer page](http://developer-autodesk.github.io).
 
-If you don't have your own, some 2D/3D model samples are provided with this workshop, in the ['Sample files'](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files) folder.
+If you don't have your own model to work with, some 2D and 3D sample models are provided with this workshop, in the [Sample files](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files) folder.
 
-Each of this solutions will upload and translate a model on your account which you can use/view later.
+Each of this solutions will upload and translate a model on your account which you can use and view later.
 
 
 ### Steps to translate a model using the [web page](http://models.autodesk.io).
@@ -126,10 +128,10 @@ Connect to your local server using a WebGL-compatible browser:
 
 [http://localhost:3000/](http://localhost:3000/)
 
-Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may be already in use. If you want to use port 80 to avoid 
+Note that we use port 3000 and not the default http port 80 because if you are on Mac OSX or use Skype, port 80 may be already in use. If you want to use port 80 to avoid
 having to specify the port in the URL, edit the server.js file and change the default port from 3000 to 80, and restart the node.js server.
 
 
 =========================
-[Next](chapter-2.md#Chapter2) - 
+[Next](chapter-2.md#Chapter2) -
 [Home](README.md)
