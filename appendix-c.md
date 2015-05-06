@@ -10,6 +10,24 @@ on a web server.
 
 A very easy way to do this is to use ['heroku'](https://www.heroku.com/) which is pretty easy to use to host a website, and it provides up to 5 free apps.
 
+<b>Step 0</b> Create a separate branch, say, named as "deployment", edit the .gitignore file to include the credentials.js.
+
+```
+$ git checkout -b deployment
+
+```
+
+Open .gitignore file, scroll down to the bottom, delete "credentials.js" or comment it out by putting a hash in front of it: 
+
+```
+# API credentials file
+# credentials.js
+
+# webstorm project files
+.idea
+credentials_.js
+```
+
 <b>Step 1</b> Sign up on [heroku.com](https://www.heroku.com/) for a free account
 
 <b>Step 2</b> Download and install the [Heroku Toolbelt](https://toolbelt.heroku.com/) , you can learn more about the [Heroku Command Line Interface](https://devcenter.heroku.com/categories/command-line) if you are want to know detailed instruction of the usage.
@@ -41,10 +59,22 @@ $ git commit -am 'a running version'
 
 ````
 
+To deploy your web application on heroku, the credential.js is required, while it is ignored by Github, according to the .gitignore file. We need to add this implicitly. Please note that  
+```
+$ git add --force credentials.js
+```
+
 <b>Step 6</b> Deploy your website to Heroku using Git once your are ready. Heroku will detect your app and setup the corresponding hosting environment, and then host it for you. 
 
 ```
 $ git push heroku master
+
+```
+
+Once the deployment process is completed, ensure that at least one instance of the app is running(do this only once):
+
+```
+$ heroku ps:scale web=1
 
 ```
 
@@ -55,6 +85,10 @@ $ git push heroku master
 Opening quiet-shore-6917... done
 
  ```
+ 
+<b>Step 7</b> Switch to "master branch" keep working, 
+
+<b>Step 8</b> Merge master branch to "development" for deployment 
  
 You can repeat step 5 ~ 7 to keep working on your project and redeploy it. Heroku will redeploy your app with the updated version. 
  
