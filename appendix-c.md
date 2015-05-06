@@ -35,7 +35,7 @@ git commit -am 'edit the gitignore to include credentials.js to changeset'
 
 <b>Step 2</b> Sign up on [heroku.com](https://www.heroku.com/) for a free account
 
-<b>Step 3</b> Download and install the [Heroku Toolbelt](https://toolbelt.heroku.com/) , you can learn more about the [Heroku Command Line Interface](https://devcenter.heroku.com/categories/command-line) if you are want to know detailed instruction of the usage.
+<b>Step 3</b> Download and install the [Heroku Toolbelt](https://toolbelt.heroku.com/) , you can learn more about the [Heroku Command Line Interface](https://devcenter.heroku.com/categories/command-line) if you want to know detailed instruction of the usage.
 
 <b>Step 4</b> Log in to your Heroku account and follow the prompts to create a new SSH public key.
 
