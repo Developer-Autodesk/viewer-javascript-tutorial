@@ -10,29 +10,37 @@ on a web server.
 
 A very easy way to do this is to use ['heroku'](https://www.heroku.com/) which is pretty easy to use to host a website, and it provides up to 5 free apps.
 
-<b>Step 0</b> Create a separate branch, say, named as "deployment", edit the .gitignore file to include the credentials.js.
+<b>Step 1</b> Create a separate branch, named as "deployment"
 
 ```
 $ git checkout -b deployment
 
 ```
 
-Open .gitignore file, scroll down to the bottom, delete "credentials.js" or comment it out by putting a hash in front of it: 
+Edit the .gitignore file so that the credentials.js is included when committing and pushing. Open .gitignore file, scroll down to the bottom, find "credentials.js" and comment it out by putting a hash in front of it: 
 
 ```
 # API credentials file
-# credentials.js
+<b># credentials.js </b>
 
 # webstorm project files
 .idea
 credentials_.js
 ```
 
-<b>Step 1</b> Sign up on [heroku.com](https://www.heroku.com/) for a free account
+Commit the changes to "deployment" branch.
 
-<b>Step 2</b> Download and install the [Heroku Toolbelt](https://toolbelt.heroku.com/) , you can learn more about the [Heroku Command Line Interface](https://devcenter.heroku.com/categories/command-line) if you are want to know detailed instruction of the usage.
+```
+git commit -am 'edit the gitignore to include credentials.js to changeset'
 
-<b>Step 3</b> Log in to your Heroku account and follow the prompts to create a new SSH public key.
+```
+
+<b>Step 2</b> Sign up on [heroku.com](https://www.heroku.com/) for a free account
+
+<b>Step 3</b> Download and install the [Heroku Toolbelt](https://toolbelt.heroku.com/) , you can learn more about the [Heroku Command Line Interface](https://devcenter.heroku.com/categories/command-line) if you are want to know detailed instruction of the usage.
+
+<b>Step 4</b> Log in to your Heroku account and follow the prompts to create a new SSH public key.
+
 ```
 $ heroku login
 Enter your Heroku credentials.
@@ -42,7 +50,7 @@ Authentication successful.
 
 ```
 
-<b>Step 4</b> Create a new Heroku app through command line, it will create an app with random name if you do not give one in command line, it also add a git remote to Heroku so that you can deploy your code by git push.
+<b>Step 5</b> Create a new Heroku app through command line, it will create an app with random name if you do not give one in command line, it also add a git remote to Heroku so that you can deploy your code by git push.
 ```
 $ heroku create
 Creating quiet-shore-6917... done, stack is cedar-14
@@ -51,7 +59,7 @@ Git remote heroku added
 
 ```
 
-<b>Step 5</b> Working on your app following the tutorial, and commit your changes to the repository, please note that your changes is not pushed to remote Github or Heroku yet. 
+<b>Step 6</b> Working on your app following the tutorial, and commit your changes to the repository, please note that your changes is not pushed to remote Github or Heroku yet. 
 
 ```
 $ git add .
@@ -64,7 +72,7 @@ To deploy your web application on heroku, the credential.js is required, while i
 $ git add --force credentials.js
 ```
 
-<b>Step 6</b> Deploy your website to Heroku using Git once your are ready. Heroku will detect your app and setup the corresponding hosting environment, and then host it for you. 
+<b>Step 7</b> Deploy your website to Heroku using Git once your are ready. Heroku will detect your app and setup the corresponding hosting environment, and then host it for you. 
 
 ```
 $ git push heroku master
@@ -78,7 +86,7 @@ $ heroku ps:scale web=1
 
 ```
 
-<b>Step 7</b> Once the deployment is done, you can open the website by following command line, it launches your website in your default web browser. You can note down the URL if you'd like to switch to another browser.
+<b>Step 8</b> Once the deployment is done, you can open the website by following command line, it launches your website in your default web browser. You can note down the URL if you'd like to switch to another browser. "heroku open" uses HTTPS by default, you need to use HTTP instead for now due to some known issue of viewer, i.e. browse to <b>http://</b>quiet-shore-6917.heroku.com instead of https://quiet-shore-6917.heroku.com
  
  ```
  $ heroku open
@@ -86,11 +94,32 @@ Opening quiet-shore-6917... done
 
  ```
  
-<b>Step 7</b> Switch to "master branch" keep working, 
+<b>Step 9</b> Now you can keep working on the project. Switch to "master" branch.
 
-<b>Step 8</b> Merge master branch to "development" for deployment 
+```
+git checkout master
+
+``` 
+
+Working on the project on your local machine, making some changes and commit to "master" branch, you can working on "master" branch until you are ready to deploy.
+
+```
+git add .
+git commit -am 'some other changes'
+
+``` 
  
-You can repeat step 5 ~ 7 to keep working on your project and redeploy it. Heroku will redeploy your app with the updated version. 
+
+<b>Step 10</b> Now you are ready to deploy, switch "deployment" branch and merge "master" branch to "deployment", and deploy your changes to heroku by git push.
+
+```
+git checkout deployment
+git merge master -m 'merge from master for the latest changes'
+git push heroku master
+
+``` 
+ 
+You can repeat step 9 ~ 10 to keep working on your project and redeploy it. Heroku will redeploy your app with the updated version. 
  
 
 <b>Note</b>  Go to [heroku.com ](https://dashboard.heroku.com), on the 'Activity' tab of your app, you can see when and if your site was rebuilt successfully or not.
