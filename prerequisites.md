@@ -162,12 +162,21 @@ If you prefer not to use git, you can still download the zip files and inflate t
    - Fork the project
    - Copy your fork 'HTTPS clone URL'
    - In the git console, run the following command:
+
+    ```
     git clone <your HTTPS clone URL>
+    ```
 This creates the workflow-node.js-view.and.data.api in your current directory.
    - Change directory into it:
+
+    ```
     cd workflow-node.js-view.and.data.api
+    ```
    - Checkout the proper tutorial starting point:
+
+    ```
     git checkout v1.0-workshop
+    ```
 This command is optional and ensures that we work on the correct version of the material corresponding to these instructions.
 
 * Not using git
