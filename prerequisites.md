@@ -161,18 +161,23 @@ If you prefer not to use git, you can still download the zip files and inflate t
    - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
    - Fork the project
    - Copy your fork 'HTTPS clone URL'
-   - In the git console, run the following commands:<br />
-     ```
-	 git clone <your HTTPS clone URL>
+   - In the git console, run the following command:
 
-	 git checkout v1.0-workshop
-	 ```
-	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on
-	 the correct version of the material made for this instructions.
-   - Change your working directory <br />
-     ```
-	 cd workflow-node.js-view.and.data.api
-	 ```
+      ```
+      git clone <your HTTPS clone URL>
+      ```
+This creates the workflow-node.js-view.and.data.api in your current directory.
+   - Change directory into it:
+
+      ```
+      cd workflow-node.js-view.and.data.api
+      ```
+   - Checkout the proper tutorial starting point:
+
+      ```
+      git checkout v1.0-workshop
+      ```
+This command is optional and ensures that we work on the correct version of the material corresponding to these instructions.
 
 * Not using git
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
