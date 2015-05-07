@@ -30,6 +30,7 @@ credentials_.js
 Commit the changes to "deployment" branch.
 
 ```
+git add .
 git commit -am 'edit the gitignore to include credentials.js to changeset'
 ```
 
@@ -56,7 +57,7 @@ https://quiet-shore-6917.herokuapp.com/ | https://git.heroku.com/quiet-shore-691
 Git remote heroku added
 ```
 
-<b>Step 6</b> Working on your app following the tutorial, and commit your changes to the repository, please note that your changes is not pushed to remote Github or Heroku yet. 
+<b>Step 6</b>Now your development is ready, you can work on your app following the tutorial [Chapter2](Chapter-2.md) or [Chapter3](Chapter-3.md), and commit your changes to the repository, please note that your changes is not pushed to remote Github or Heroku yet. 
 
 ```
 git add .
@@ -81,13 +82,7 @@ $ heroku ps:scale web=1
 heroku open
  ```
  
-<b>Step 9</b> Now you can keep working on the project. Switch to "master" branch.
-
-```
-git checkout master
-``` 
-
-Working on the project on your local machine, making some changes and commit to "master" branch, you can working on "master" branch until you are ready to deploy.
+<b>Step 9</b> Now you can keep working on the project on your local machine, making some changes, testing on local machine and commit when the test is passed until you are ready to deploy.
 
 ```
 git add .
@@ -95,11 +90,9 @@ git commit -am 'some other changes'
 ``` 
  
 
-<b>Step 10</b> Now you are ready to deploy, switch "deployment" branch and merge "master" branch to "deployment", and deploy your changes to heroku by git push.
+<b>Step 10</b> Now you are ready to deploy, deploy your changes to heroku by git push.
 
 ```
-git checkout deployment
-git merge master -m 'merge from master for the latest changes'
 git push heroku master
 ``` 
  
