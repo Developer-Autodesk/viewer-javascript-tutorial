@@ -10,7 +10,7 @@ on a web server.
 
 A very easy way to do this is to use ['heroku'](https://www.heroku.com/) which is pretty easy to use to host a website, and it provides up to 5 free apps.
 
-<b>Step 1</b> Create a separate branch, named as "deployment"
+<b>Step 1</b> Create a separate branch, named as "deployment", from now on, you are always working on "deployment" branch.
 
 ```
 $ git checkout -b deployment
