@@ -75,7 +75,7 @@ and the main server script. An example is provided below:
 		"node": ">= 0.10.0"
 	},
 	"contributors": [
-		"Cyrille Fauvel <cyrille@autodesk.com>"
+		"MyName <myname@mydomain.org>"
 	],
 	"license": "MIT",
 	"scripts": {
