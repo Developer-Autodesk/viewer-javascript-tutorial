@@ -57,7 +57,7 @@ This is actually needed for the first time unless you push a change on github.
 
 <b>Important: </b> to let heroku know how to build the web site automatically, you need to provide a proper '<b>package.json</b>' file where you mention the dependencies 
 and the main server script. An example is provided below:
-'''
+```
 {
 	"name": "AdnViewerBasic",
 	"description": "A node.js server sample",
@@ -75,7 +75,7 @@ and the main server script. An example is provided below:
 		"node": ">= 0.10.0"
 	},
 	"contributors": [
-		"Cyrille Fauvel <cyrille@autodesk.com>"
+		"MyName <myname@mydomain.org>"
 	],
 	"license": "MIT",
 	"scripts": {
@@ -86,7 +86,7 @@ and the main server script. An example is provided below:
 		"url": "https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api.git"
 	}
 }
-'''
+```
 
 
 =========================  
