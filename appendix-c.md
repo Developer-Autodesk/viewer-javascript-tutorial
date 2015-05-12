@@ -85,7 +85,7 @@ heroku open
 ```
 This will launch your website in your default web browser. `heroku open` uses HTTPS by default, however,
 you need to use HTTP instead for now. This limitation is due to some known issue of the 3D viewer.
-For example, browse to <b>http://</b>quiet-shore-6917.heroku.com instead of https://quiet-shore-6917.heroku.com
+For example, browse to <b>http://</b>quiet-shore-6917.heroku.com instead of <b>https</b>://quiet-shore-6917.heroku.com
  
 <b>Step 9</b> Now you can keep working on the project on your local machine, making some changes, 
 testing on local machine and commit when the tests have passed until you are ready to deploy.
@@ -94,7 +94,7 @@ git add .
 git commit -am 'some other changes'
 ``` 
  
-<b>Step 10</b> Now you are ready to deploy, deploy your changes to heroku using git push.
+<b>Step 10</b> Now you are ready to deploy. Deploy your changes to heroku using git push.
 ```
 git push heroku master
 ``` 

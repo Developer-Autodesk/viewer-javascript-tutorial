@@ -35,6 +35,7 @@ a private repo (ignore Step 4-6), or store your keys as system variables on the 
 credentials.ClientId =process.env.LMV_CONSUMER ;
 credentials.ClientSecret =process.env.LMV_SECRET ;
 ```
+and push your changes on the repo.
 
 <b>Step 7</b> Switch to the 'Deploy' page by selecting 'Deploy'
 
