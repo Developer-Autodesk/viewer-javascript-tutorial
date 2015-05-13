@@ -138,15 +138,16 @@ spend some time trying and considering these options common in the javascript/no
 
 Note, they are not listed in the order of preference.
 
-    | Windows | Mac OSX | Linux | Free/Paid
---- | ------------- | -------------- | -------- | --------------
-[Brackets](http://brackets.io/) | X | X | X | Free
-[Eclipse](http://eclipse.org/) | X | X | X | Free
-[Emacs](http://www.gnu.org/software/emacs/) | X | X | X | Free
-[Notepad++](http://notepad-plus-plus.org/) | 	X | - | - | Free
-[textmate](http://macromates.com/) | - | X | - | Paid
-[Sublime Text](http://www.sublimetext.com/) | X | X | X | Paid
-[WebStorm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
+    | Windows | Mac OSX | Linux | Free/Paid | Git integration | Includes a node.js server
+--- | ------------- | -------------- | -------- | -------------- | -------------------- | ----------------------------------
+[Brackets](http://brackets.io/) | yes | yes | yes | Free | yes | yes
+[Eclipse](http://eclipse.org/) | yes | yes | yes | Free | yes | yes
+[Emacs](http://www.gnu.org/software/emacs/) | yes | yes | yes | Free | yes | -
+[Notepad++](http://notepad-plus-plus.org/) | yes | - | - | Free | - | -
+[textmate](http://macromates.com/) | - | yes | - | Paid | via scripting | -
+[Sublime Text](http://www.sublimetext.com/) | yes | yes | yes | Paid | via a plugin | -
+[WebMatrix](http://www.microsoft.com/web/webmatrix/) | yes | - | - | Free | yes | yes
+[WebStorm](https://www.jetbrains.com/webstorm/) | yes| yes | yes | Paid | yes | yes
 
 
 <a name="GetTheSources"></a>
@@ -161,23 +162,18 @@ If you prefer not to use git, you can still download the zip files and inflate t
    - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
    - Fork the project
    - Copy your fork 'HTTPS clone URL'
-   - In the git console, run the following command:
-
+   - In the git console, run the following commands:<br />
       ```
       git clone <your HTTPS clone URL>
-      ```
-This creates the workflow-node.js-view.and.data.api in your current directory.
-   - Change directory into it:
 
+      git checkout v1.0-workshop
+      ```
+	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on
+	 the correct version of the material made for this instructions.
+   - Change your working directory <br />
       ```
       cd workflow-node.js-view.and.data.api
       ```
-   - Checkout the proper tutorial starting point:
-
-      ```
-      git checkout v1.0-workshop
-      ```
-This command is optional and ensures that we work on the correct version of the material corresponding to these instructions.
 
 * Not using git
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)

@@ -108,9 +108,9 @@ cp credentials_.js credentials.js
 ```
 Configure your local server with your keys. Replace the placeholder with your own keys in credentials.js, line #29 and #30
 ```
-credentials.ClientId = '<replace with your consumer key>';
+credentials.ConsumerKey =process.env.CONSUMERKEY || '<replace with your consumer key>';
 
-credentials.ClientSecret = '<replace with your consumer secret>';
+credentials.ConsumerSecret =process.env.CONSUMERSECRET || '<replace with your consumer secret>';
 ```
 Copy the URN which you generated prior installing the server in file /www/index.js at line #18
 ```
