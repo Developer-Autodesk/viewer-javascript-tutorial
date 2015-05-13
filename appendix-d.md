@@ -30,34 +30,27 @@ a private repo (ignore Step 4-6), or store your keys as system variables on the 
 
  ![](img/heroku-vars.png)
 
-<b>Step 6</b> Edit credentials.js like this. 
-```
-credentials.ClientId =process.env.LMV_CONSUMER ;
-credentials.ClientSecret =process.env.LMV_SECRET ;
-```
-and push your changes on the repo.
-
-<b>Step 7</b> Switch to the 'Deploy' page by selecting 'Deploy'
+<b>Step 6</b> Switch to the 'Deploy' page by selecting 'Deploy'
 
  ![](img/heroku-deploy.png)
  
-<b>Step 8</b> Next, select 'GitHub - Connect to GitHub'
+<b>Step 7</b> Next, select 'GitHub - Connect to GitHub'
 
  ![](img/heroku-github.png)
 
-<b>Step 9</b> Next, Press 'Connect to GitHub'
+<b>Step 8</b> Next, Press 'Connect to GitHub'
 
  ![](img/heroku-connect.png)
 
-<b>Step 10</b> Search for your repo
+<b>Step 9</b> Search for your repo
 
  ![](img/heroku-search.png)
 
-<b>Step 11</b> When your repo was found, press the connect button
+<b>Step 10</b> When your repo was found, press the connect button
 
  ![](img/heroku-github-connect.png)
 
-<b>Step 12</b> Finally, choose the branch you want to auto-deploy (usually master), and press the 'Enable Automatic Deploys' button.
+<b>Step 11</b> Finally, choose the branch you want to auto-deploy (usually master), and press the 'Enable Automatic Deploys' button.
 
  ![](img/heroku-auto-deploy.png)
 
@@ -78,7 +71,7 @@ and the main server script. An example is provided below:
 ```
 {
 	"name": "AdnViewerBasic",
-	"description": "A node.js server sample",
+	"description": "A basic node.js server sample",
 	"version": "1.0.0",
 	"dependencies": {
 		"serve-favicon": ">= 0.0.2",
@@ -97,7 +90,7 @@ and the main server script. An example is provided below:
 	],
 	"license": "MIT",
 	"scripts": {
-		"start": "node start.js"
+		"start": "node server.js"
 	},
 	"repository": {
 		"type": "git",

@@ -111,7 +111,7 @@ and the main server script. An example is provided below:
 ```
 {
 	"name": "AdnViewerBasic",
-	"description": "A node.js server sample",
+	"description": "A basic node.js server sample",
 	"version": "1.0.0",
 	"dependencies": {
 		"serve-favicon": ">= 0.0.2",
@@ -130,7 +130,7 @@ and the main server script. An example is provided below:
 	],
 	"license": "MIT",
 	"scripts": {
-		"start": "node start.js"
+		"start": "node server.js"
 	},
 	"repository": {
 		"type": "git",

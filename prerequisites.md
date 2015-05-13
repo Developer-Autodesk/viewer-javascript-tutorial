@@ -138,15 +138,16 @@ spend some time trying and considering these options common in the javascript/no
 
 Note, they are not listed in the order of preference.
 
-    | Windows | Mac OSX | Linux | Free/Paid
---- | ------------- | -------------- | -------- | --------------
-[Brackets](http://brackets.io/) | X | X | X | Free
-[Eclipse](http://eclipse.org/) | X | X | X | Free
-[Emacs](http://www.gnu.org/software/emacs/) | X | X | X | Free
-[Notepad++](http://notepad-plus-plus.org/) | 	X | - | - | Free
-[textmate](http://macromates.com/) | - | X | - | Paid
-[Sublime Text](http://www.sublimetext.com/) | X | X | X | Paid
-[WebStorm](https://www.jetbrains.com/webstorm/) | X | X | X | Paid
+    | Windows | Mac OSX | Linux | Free/Paid | Git integration | Includes a node.js server
+--- | ------------- | -------------- | -------- | -------------- | -------------------- | ----------------------------------
+[Brackets](http://brackets.io/) | yes | yes | yes | Free | yes | yes
+[Eclipse](http://eclipse.org/) | yes | yes | yes | Free | yes | yes
+[Emacs](http://www.gnu.org/software/emacs/) | yes | yes | yes | Free | yes | -
+[Notepad++](http://notepad-plus-plus.org/) | yes | - | - | Free | - | -
+[textmate](http://macromates.com/) | - | yes | - | Paid | via scripting | -
+[Sublime Text](http://www.sublimetext.com/) | yes | yes | yes | Paid | via a plugin | -
+[WebMatrix](http://www.microsoft.com/web/webmatrix/) | yes | - | - | Free | yes | yes
+[WebStorm](https://www.jetbrains.com/webstorm/) | yes| yes | yes | Paid | yes | yes
 
 
 <a name="GetTheSources"></a>
