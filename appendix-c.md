@@ -94,9 +94,9 @@ git add .
 git commit -am 'some other changes'
 ``` 
  
-<b>Step 10</b> Now you are ready to deploy. Deploy your changes to heroku using git push.
+<b>Step 10</b> Now you are ready to deploy. Deploy your changes to heroku using git push.You need to push your currenty local branch `deploymnent` to the `master` branch on heroku to redeploy it.
 ```
-git push heroku master
+git push heroku deployment:master
 ``` 
  
 You can repeat step 9 ~ 10 to keep working on your project and redeploy it. Heroku will redeploy 
