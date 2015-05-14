@@ -68,9 +68,9 @@ git commit -am 'a running version'
 ````
 
 <b>Step 7</b> Deploy your website to Heroku using Git. Heroku will detect your app and setup the 
-corresponding hosting environment, and then host it for you. 
+corresponding hosting environment, and then host it for you. You need to push your currenty local branch `deploymnent` to the `master` branch on heroku to redeploy it.
 ```
-git push heroku master
+git push heroku deployment:master
 ```
 
 Once the deployment process is completed, ensure that at least one instance of the app is 
