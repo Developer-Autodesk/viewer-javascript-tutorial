@@ -86,11 +86,8 @@ $(document).ready (function () {
     "serve-favicon": "*",
     "body-parser": ">= 1.11.0",
     "formidable": ">= 1.0.17",
-    "fs": ">= 0.0.2",
     "unirest": ">= 0.4.0",
-    "async": ">= 0.9.0",
-    "util": ">= 0.10.3",
-    "path": ">=0.11.14"
+    "async": ">= 0.9.0"
 }
 ```
 Press "Ctrl + C" to exit the node server first if it is running, and execute the command,

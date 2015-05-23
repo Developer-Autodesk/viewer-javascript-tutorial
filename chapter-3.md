@@ -137,9 +137,6 @@ and add the event handler immediately before this line of code, then add a metho
 	};
 </pre>
 
-Note: If you copy the modified index.js file from the Step 3 folder in the tutorial [repository](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data), make sure 
-you edit the defaultURN on line 18 to use the URN of the translated file you created at the beginning of the tutorial.
-
 	
 <a name="Step4"></a>
 ## Step 4 – Testing the extension
