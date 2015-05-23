@@ -32,7 +32,7 @@
      Consumer Key & Secret in a 'credentials.js' file. The sample is using a synchronous HttpRequest to query the access token,
      with an infinite timeout, and it never returns. After a while the browser will display a 'Page(s) Unresponsive' dialog.
 
-  2. If the page returned, but blank. It might be because you did not provided a valid url reference in '/www/index.js' or via the urn
+  2. If the page returned, but blank. It might be because you did not provided a valid urn reference in '/www/index.js' or via the urn
       query parameter. The urn might not be base64 encoded either. Display the javascript console, you should find a message saying 
 	  something like 'Failed to load resource: the server responded with a status of 400 (Bad Request)   index.js:54    Error: 7'
   
@@ -51,8 +51,8 @@
   In both the basic server (Chapter 1 - Get ready with the View & Data API) and client extension (Chapter 3 - Customize the Viewer Behavior),
   you can use local data for your hack and tests.
   
-  You do not have to worry anymore about the access token generation, but you would need to edit the /www/index.js and /www/index.html files as is:
-  /www/index.js:
+  You do not have to worry anymore about the access token generation, but you would need to edit the /www/index.js and /www/index.html files as follow: <br />
+  /www/index.js: remove the whole content of index.js and replace with this:
   ```
   var oViewer =null ;
 
@@ -83,13 +83,13 @@
     <link type="text/css" rel="stylesheet" href="/style.css"/>
     <script src="/viewer3D.min.js"></script>
   ```
-  Note the path, is either relative or absolute from the the html page or web server root. It is not the path on your local drive.
+  Note: The path is either relative or absolute from the the html page or web server root. It is not the path on your local drive.
   
   You can get various model from [here](https://www.dropbox.com/sh/kfuvxi8aygyo9o6/AADz7wcK-xMV-gwUUFlPgm2da?dl=0)
-  Once you downloaded the 'bubbles' files:
-  i. unzip the model zip file into the 'www' folder
-  ii. download and unzip the 'Autodesk viewer engine' in the 'www' folder
-  iii. put the path to the viewable in placeholder in the code above. For example, '/13358513-V8Enginef3d/0/1/Design.svf'
+  Once you downloaded the 'bubbles' files: <br />
+  i. unzip the model zip file into the 'www' folder <br />
+  ii. download and unzip the 'Autodesk viewer engine' in the 'www' folder <br />
+  iii. put the path to the viewable in placeholder in the code above. For example, '/13358513-V8Enginef3d/0/1/Design.svf' <br />
   
   
 =========================  
