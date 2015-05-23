@@ -85,7 +85,7 @@
   ```
   Note: The path is either relative or absolute from the the html page or web server root. It is not the path on your local drive.
   
-  You can get various model from [here](https://www.dropbox.com/sh/kfuvxi8aygyo9o6/AADz7wcK-xMV-gwUUFlPgm2da?dl=0)
+  You can get various sample models from [here](https://www.dropbox.com/sh/kfuvxi8aygyo9o6/AADz7wcK-xMV-gwUUFlPgm2da?dl=0)
   Once you downloaded the 'bubbles' files: <br />
   i. unzip the model zip file into the 'www' folder <br />
   ii. download and unzip the 'Autodesk viewer engine' in the 'www' folder <br />
