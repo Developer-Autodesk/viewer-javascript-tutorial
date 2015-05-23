@@ -1,5 +1,5 @@
 <a name="Chapter3"></a>
-# Customize the Viewer Behavior
+# Chapter 3 - Customize the Viewer Behavior
 
 - [Step 1 – Creating a basic extension](#Step1)
 - [Step 2 – Reference the extension script](#Step2)

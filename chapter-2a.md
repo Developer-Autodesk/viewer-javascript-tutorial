@@ -1,5 +1,5 @@
 <a name="Chapter2a"></a>
-# Chapter 2 – Translating from the client
+# Chapter 2 – (Optional) Translating from the client
 
 
 <b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory. Then copy the following basic html skeleton code into the file and save it.
