@@ -83,7 +83,7 @@ For this tutorial, we'll create a minimal Node.js web server to serve your html/
 If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
 
-### Download the Node.js Simple Server
+### Download the node.js basic server sample
 
 Check out the appropriate workshop starting point version of the node.js skeleton application from the
 [View and Data API Node.js basic sample](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
@@ -96,7 +96,7 @@ Before you can run the sample, you need to download the node.js dependency modul
 ```
 npm install
 ```
-This command will download the following modules, into the node_modules directory:
+This command will download the following modules into the node_modules directory:
 
 * express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 * request: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.

@@ -172,7 +172,7 @@ If you prefer not to use git, you can still download the zip files and inflate t
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
   - Fork the project
   - Copy your fork URL, e.g. `https://github.com/username/workflow-node.js-view.and.data.api`
-  - Clone your fork locally to a new directory, e.g.:
+  - Clone your fork locally to a new directory, e.g. `nodevadasample`:
   ```
   git clone https://github.com/username/workflow-node.js-view.and.data.api nodevadasample
   ```
