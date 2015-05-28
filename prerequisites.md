@@ -29,10 +29,9 @@ If you do not have git installed already, you can get it from here:
 
 Here are some [additional setup instructions](https://help.github.com/articles/set-up-git), and many other questions are covered by the [GitHub Help](https://help.github.com).
 
-Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial, but you may prefer the GUI or WEB interfaces.
+Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial; you may prefer the GUI or WEB interfaces instead.
 
-Once you have a GitHub client installed, you can clone
-a repository from GitHub.
+Once you have a GitHub client installed, you can clone a repository from GitHub.
 
 Go to the the repository you want to download locally and clone the source code by clicking the 'Clone in Desktop' button.
 
@@ -43,20 +42,22 @@ Here is the equivalent command line:
 git clone <your repository git url>
 ```
 
-Your repository git url can be obtain from the 'HTTPs clone URL' box.
+Your repository git url can be obtain from the 'HTTPs clone URL' box or by copying it from the GitHub repository web page.
 
  ![](img/githubCloneURL.png)
 
-This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with.
-However, it is important to note here that unless you got write permission, you would not be able to save your changes in the repo. To be able to save in the repo you clone,
-you either need to be a contributor on that repo, or have cloned one of your own repo. If you want to work from someone else repo, and be able to edit and save your changes,
-please consider to 'fork' the repo in your account, and clone that repo instead from your account. See below instructions [how to fork a repo](#Fork).
+This creates the a copy of the entire repository source on your local drive.
+This 'clone' directory contains copies of the repository files for you to work with.
+However, it is important to note here that you cannot save your changes back to the source repo unless you got write permission.
+To be able to save back to the repo you cloned, you either need to be a contributor to that repo, or have cloned one of your own repos.
+If you want to work from somebody else's repo and be able to edit and save your changes, please consider 'forking' the repo in your own account, then cloning that repo instead.
+See the instructions below on [how to fork a repo](#Fork).
 
 If you prefer not to install git, you can download a zip file instead by clicking the 'Download ZIP' button.
 
  ![](img/githubDownload.png)
 
-In this workshop, we will provide the command line instructions, but feel free to use the method you prefer.
+In this workshop, we will provide the command line instructions, but please feel free to use whichever method you prefer.
 
 
 ### Major 'git' operations
