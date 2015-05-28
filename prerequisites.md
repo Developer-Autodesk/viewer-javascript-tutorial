@@ -168,22 +168,22 @@ Your first action will be to fork the material repository on your 'github' accou
 If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
 * Using git
-   - Sign in using your GitHub account at [http://www.github.com](http://www.github.com)
-   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
-   - Fork the project
-   - Copy your fork URL, e.g. `https://github.com/username/workflow-node.js-view.and.data.api`
-   - Clone your fork locally to a new directory, e.g.:
-```
-git clone https://github.com/username/workflow-node.js-view.and.data.api nodevadasample
-```
-   - Enter the new directory:
-```
-cd nodevadasample
-```
-   - Check out the workshop starting point to ensure the correct version of the material made for the following instructions:
-```
-git checkout v1.0-workshop
-```
+  - Sign in using your GitHub account at [http://www.github.com](http://www.github.com)
+  - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
+  - Fork the project
+  - Copy your fork URL, e.g. `https://github.com/username/workflow-node.js-view.and.data.api`
+  - Clone your fork locally to a new directory, e.g.:
+  ```
+  git clone https://github.com/username/workflow-node.js-view.and.data.api nodevadasample
+  ```
+  - Enter the new directory:
+  ```
+  cd nodevadasample
+  ```
+  - Check out the workshop starting point to ensure the correct version of the material made for the following instructions:
+  ```
+  git checkout v1.0-workshop
+  ```
 
 * Not using git
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
