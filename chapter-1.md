@@ -61,7 +61,7 @@ and on the [developer page](http://developer-autodesk.github.io).
 
 If you don't have your own model to work with, some 2D and 3D sample models are provided with this workshop, in the [Sample files](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files) folder.
 
-Each of this solutions will upload and translate a model on your account which you can use and view later.
+Each of these solutions will upload and translate models on your account which you can use and view later.
 
 
 ### Steps to translate a model using the [web page](http://models.autodesk.io).
