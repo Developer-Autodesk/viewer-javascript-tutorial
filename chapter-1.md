@@ -79,10 +79,18 @@ Each of these solutions will upload and translate models on your account which y
 ## Create your web server
 
 For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files.
+
 If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
 
-### Download the sample' node.js dependencies
+### Download the Node.js Simple Server
+
+Check out the appropriate workshop starting point version of the node.js skeleton application from the
+[View and Data API Node.js basic sample](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
+as explained in [Prerequisites - Get the sources](prerequisites.md#GetTheSources).
+
+
+### Download the sample node.js dependencies
 
 Before you can run the sample, you need to download the node.js dependency modules used by the sample. You do this by executing the following command:
 ```
