@@ -144,7 +144,7 @@ If you have programmed before, you may already have a favorite programmer's edit
 However, if you do not, or were thinking about trying other editors anyway,
 spend some time trying and considering these options common in the javascript/node.js community ...
 
-Note, they are not listed in any order of preference.
+Note that they are listed in alphabetical order, not in any order of preference.
 
     | Windows | Mac OSX | Linux | Free/Paid | Git integration | Includes a node.js server
 --- | ------------- | -------------- | -------- | -------------- | -------------------- | ----------------------------------
@@ -152,7 +152,7 @@ Note, they are not listed in any order of preference.
 [Eclipse](http://eclipse.org/) | yes | yes | yes | Free | yes | yes
 [Emacs](http://www.gnu.org/software/emacs/) | yes | yes | yes | Free | yes | -
 [Notepad++](http://notepad-plus-plus.org/) | yes | - | - | Free | - | -
-[textmate](http://macromates.com/) | - | yes | - | Paid | via scripting | -
+[Textmate](http://macromates.com/) | - | yes | - | Paid | via scripting | -
 [Sublime Text](http://www.sublimetext.com/) | yes | yes | yes | Paid | via a plugin | -
 [WebMatrix](http://www.microsoft.com/web/webmatrix/) | yes | - | - | Free | yes | yes
 [WebStorm](https://www.jetbrains.com/webstorm/) | yes| yes | yes | Paid | yes | yes
