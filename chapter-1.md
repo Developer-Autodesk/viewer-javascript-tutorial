@@ -51,11 +51,11 @@ Upload one of your models to your account and get its URN using the following [w
 
 Alternatively, you can use one of the following desktop solutions instead if you prefer:
 
-- with a [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
+- [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
+- [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
+- [Mac OS cURL command line scripts](https://github.com/Developer-Autodesk/workflow-curl-view.and.data.api)
 
-- with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
-
-If you prefer using cURL or some other programming language, there are more samples in our
+If you prefer using other programming languages or methods, there are even more samples in our
 [GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow),
 and on our [developer page](http://developer-autodesk.github.io).
 
@@ -109,7 +109,7 @@ cp credentials_.js credentials.js
 Configure your local server with your keys. Replace the placeholder with your own keys in credentials.js, line #29 and #30
 ```
 client_id: process.env.CONSUMERKEY || '<replace with your consumer key>';
-  
+
 client_secret: process.env.CONSUMERSECRET || '<replace with your consumer secret>';
 ```
 Copy the URN which you generated prior installing the server in file /www/index.js at line #18
