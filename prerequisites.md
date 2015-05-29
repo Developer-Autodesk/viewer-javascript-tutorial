@@ -29,10 +29,9 @@ If you do not have git installed already, you can get it from here:
 
 Here are some [additional setup instructions](https://help.github.com/articles/set-up-git), and many other questions are covered by the [GitHub Help](https://help.github.com).
 
-Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial, but you may prefer the GUI or WEB interfaces.
+Here is a [github quick learning tutorial](https://try.github.io/levels/1/challenges/1) if you never used git before. Note it is a command line tutorial; you may prefer the GUI or WEB interfaces instead.
 
-Once you have a GitHub client installed, you can clone
-a repository from GitHub.
+Once you have a GitHub client installed, you can clone a repository from GitHub.
 
 Go to the the repository you want to download locally and clone the source code by clicking the 'Clone in Desktop' button.
 
@@ -43,34 +42,36 @@ Here is the equivalent command line:
 git clone <your repository git url>
 ```
 
-Your repository git url can be obtain from the 'HTTPs clone URL' box.
+Your repository git url can be obtain from the 'HTTPs clone URL' box or by copying it from the GitHub repository web page.
 
  ![](img/githubCloneURL.png)
 
-This creates the a copy of all the source of the repository on your local drive. In this 'clone' directory, you can find the files from the repository which you can work with.
-However, it is important to note here that unless you got write permission, you would not be able to save your changes in the repo. To be able to save in the repo you clone,
-you either need to be a contributor on that repo, or have cloned one of your own repo. If you want to work from someone else repo, and be able to edit and save your changes,
-please consider to 'fork' the repo in your account, and clone that repo instead from your account. See below instructions [how to fork a repo](#Fork).
+This creates the a copy of the entire repository source on your local drive.
+This 'clone' directory contains copies of the repository files for you to work with.
+However, it is important to note here that you cannot save your changes back to the source repo unless you got write permission.
+To be able to save back to the repo you cloned, you either need to be a contributor to that repo, or have cloned one of your own repos.
+If you want to work from somebody else's repo and be able to edit and save your changes, please consider 'forking' the repo in your own account, then cloning that repo instead.
+See the instructions below on [how to fork a repo](#Fork).
 
 If you prefer not to install git, you can download a zip file instead by clicking the 'Download ZIP' button.
 
  ![](img/githubDownload.png)
 
-In this workshop, we will provide the command line instructions, but feel free to use the method you prefer.
+In this workshop, we will provide the command line instructions, but please feel free to use whichever method you prefer.
 
 
-### Major 'git' operations
+### Main 'git' operations
 
 ```
 git status
 ```
-Gives you the list of changes in your working tree vs the repo on GitHub
+Displays the list of changes in your working tree vs the repo on GitHub.
 
 ```
 git add <file> [<file>] ...
 ```
 This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
-A shortcut to add all changes for the next commit is to use `git add -A`
+A shortcut to add all changes for the next commit is to use `git add -A`.
 
 ```
 git commit -m "my message"
@@ -85,7 +86,7 @@ Updates the remote repo with your commit.
 ```
 git pull
 ```
-Get changes from the remote repo in your working tree.
+Retrieves changes from the remote repo into your working tree.
 
 ```
 git checkout <name>
@@ -95,17 +96,21 @@ Either checkout a tag version or a branch. Updates files in the working tree to 
 
 ### git command line
 
-Using git from the command line on Mac OSX or Linux is straight forward, just open a terminal window (on Mac OSx - Applications -> Utilities -> Terminal.app). git, node, and npm commands should work from there if present on your system.
-On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt. You can decide which one to use from the Github tool in the settings panel.
-You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list. Node and npm commands have their own command prompt window which is
-different from GitHub.
+Using git from the command line on Mac OSX or Linux is straight forward; just open a terminal window (on Mac OSx - Applications -> Utilities -> Terminal.app).
+git, node, and npm commands should work from there if present on your system.
+
+On Windows, you can choose between few options: a bash console, a powershell console, or the standard command prompt.
+You can decide which one to use from the GitHub tool in the settings panel.
+You would access the git console by running the 'Git Shell' icon which should be on your Desktop or in your Programs list.
+Node and npm commands have their own command prompt window which is different from GitHub.
 
 
 <a name="Fork"></a>
 ### Fork option
 
-Last, someone may want to work on the wokshop and saves this results on his own github account - in this case, you need to 'fork' the repository from your account and clone the 'forked' repository.
-To fork a repository, log in Github using your account, go to the repository you want to fork, and press the 'Fork' button.
+Last, someone may want to work with the workshop material and save modifications to it to their own github account.
+In this case, you need to 'fork' the repository from your account and clone the 'forked' repository.
+To fork a repository, log in to GitHub using your account, go to the repository you want to fork, and press the 'Fork' button.
 
  ![](img/githubFork.png)
 
@@ -115,11 +120,13 @@ To fork a repository, log in Github using your account, go to the repository you
 
 If you want to run the preconfigured local web-server and the test tools then you will also need [Node.js v0.12.2+](https://nodejs.org/download/).
 
-You can download a Node.js installer for your operating system from [nodejs.org](http://nodejs.org/download/). Check the version of Node.js that you have installed by running the following command:
+You can download a Node.js installer for your operating system from [nodejs.org](http://nodejs.org/download/).
+Check the version of Node.js that you have installed by running the following command:
 
 	node --version
 
-In Debian based distributions, there is a name clash with another utility called node. The suggested solution is to also install the nodejs-legacy apt package, which renames node to nodejs:
+In Debian based distributions, there is a name clash with another utility called node.
+The suggested solution is to also install the nodejs-legacy apt package, which renames node to nodejs:
 
 	apt-get install nodejs-legacy npm
 
@@ -133,10 +140,11 @@ If you need to run different versions of node.js in your local environment, cons
 <a name="InstallCodeEditor"></a>
 ## Install a code editor
 
-If you have programmed before, you may already have a favorite programmer's editor. However, if you do not, or were thinking about trying other editors anyway,
+If you have programmed before, you may already have a favorite programmer's editor.
+However, if you do not, or were thinking about trying other editors anyway,
 spend some time trying and considering these options common in the javascript/node.js community ...
 
-Note, they are not listed in the order of preference.
+Note that they are listed in alphabetical order, not in any order of preference.
 
     | Windows | Mac OSX | Linux | Free/Paid | Git integration | Includes a node.js server
 --- | ------------- | -------------- | -------- | -------------- | -------------------- | ----------------------------------
@@ -153,34 +161,35 @@ Note, they are not listed in the order of preference.
 <a name="GetTheSources"></a>
 ## Get the sources
 
-We assume you want to start a project and work as a team. For this reason, you want to use 'git' and be able to share the sources across the members of your team,
-and later deploy it on a web server. Your first action will be to fork the material repository on your 'github' account.
+We assume you want to start a project and work as a team.
+For this reason, you want to use 'git' and be able to share the sources across the members of your team,
+and later deploy it on a web server.
+Your first action will be to fork the material repository on your 'github' account.
 If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
 * Using git
-   - Sign in using your Github account at [http://www.github.com](http://www.github.com)
-   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
-   - Fork the project
-   - Copy your fork 'HTTPS clone URL'
-   - In the git console, run the following commands:<br />
-      ```
-      git clone <your HTTPS clone URL>
-
-      git checkout v1.0-workshop
-      ```
-	 The first command creates the workflow-node.js-view.and.data.api in your current directory. The second command is optional and is there to make sure we work on
-	 the correct version of the material made for this instructions.
-   - Change your working directory <br />
-      ```
-      cd workflow-node.js-view.and.data.api
-      ```
+  - Sign in using your GitHub account at [http://www.github.com](http://www.github.com)
+  - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
+  - Fork the project
+  - Copy your fork URL, e.g. `https://github.com/username/workflow-node.js-view.and.data.api`
+  - Clone your fork locally to a new directory, e.g. `nodevadasample`:
+  ```
+  git clone https://github.com/username/workflow-node.js-view.and.data.api nodevadasample
+  ```
+  - Enter the new directory:
+  ```
+  cd nodevadasample
+  ```
+  - Check out the workshop starting point to ensure you have the correct version of the material for the following instructions:
+  ```
+  git checkout v1.0-workshop
+  ```
 
 * Not using git
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
   - Download the ZIP file from [here](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api/releases/tag/v1.0-workshop)
   - Inflate the ZIP file on your hard drive
   - Make the inflated directory your current directory
-
 
 The tutorial instructions, from now on, assume you are running all commands from the *workflow-node.js-view.and.data.api* directory.
 

@@ -51,17 +51,17 @@ Upload one of your models to your account and get its URN using the following [w
 
 Alternatively, you can use one of the following desktop solutions instead if you prefer:
 
-- with a [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
+- [Windows .NET WPF application](https://github.com/Developer-Autodesk/workflow-wpf-view.and.data.api)
+- [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
+- [Mac OS cURL command line scripts](https://github.com/Developer-Autodesk/workflow-curl-view.and.data.api)
 
-- with a [Swift Mac OS application](https://github.com/Developer-Autodesk/workflow-macos-swift-view.and.data.api)
-
-If you prefer using cURL or some other programming language, there are more samples in our
-[GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow),
-and on our [developer page](http://developer-autodesk.github.io).
+If you prefer using other programming languages or methods, there are even more samples in our
+[GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow)
+and on the [developer page](http://developer-autodesk.github.io).
 
 If you don't have your own model to work with, some 2D and 3D sample models are provided with this workshop, in the [Sample files](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files) folder.
 
-Each of this solutions will upload and translate a model on your account which you can use and view later.
+Each of these solutions will upload and translate models on your account which you can use and view later.
 
 
 ### Steps to translate a model using the [web page](http://models.autodesk.io).
@@ -79,16 +79,24 @@ Each of this solutions will upload and translate a model on your account which y
 ## Create your web server
 
 For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files.
+
 If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
 
-### Download the sample' node.js dependencies
+### Download the node.js basic server sample
+
+Check out the appropriate workshop starting point version of the node.js skeleton application from the
+[View and Data API Node.js basic sample](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
+as explained in [Prerequisites - Get the sources](prerequisites.md#GetTheSources).
+
+
+### Download the sample node.js dependencies
 
 Before you can run the sample, you need to download the node.js dependency modules used by the sample. You do this by executing the following command:
 ```
 npm install
 ```
-This command will download the following modules, into the node_modules directory:
+This command will download the following modules into the node_modules directory:
 
 * express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 * request: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
@@ -108,9 +116,9 @@ cp credentials_.js credentials.js
 ```
 Configure your local server with your keys. Replace the placeholder with your own keys in credentials.js, line #29 and #30
 ```
-credentials.ConsumerKey =process.env.CONSUMERKEY || '<replace with your consumer key>';
+client_id: process.env.CONSUMERKEY || '<replace with your consumer key>';
 
-credentials.ConsumerSecret =process.env.CONSUMERSECRET || '<replace with your consumer secret>';
+client_secret: process.env.CONSUMERSECRET || '<replace with your consumer secret>';
 ```
 Copy the URN which you generated prior installing the server in file /www/index.js at line #18
 ```
