@@ -132,7 +132,7 @@ The suggested solution is to also install the nodejs-legacy apt package, which r
 
 	nodejs --version
 
-	npm –version
+	npm â€“version
 
 If you need to run different versions of node.js in your local environment, consider installing [Node Version Manager (nvm)](https://github.com/creationix/nvm).
 
@@ -167,14 +167,17 @@ and later deploy it on a web server.
 Your first action will be to fork the material repository on your 'github' account.
 If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
+<b>Note:</b> This tutorial is having is own set of instructions, please ignore any of the instructions you will find
+in the sample repo you a re going to fork.
+
 * Using git
   - Sign in using your GitHub account at [http://www.github.com](http://www.github.com)
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
   - Fork the project
-  - Copy your fork URL, e.g. `https://github.com/username/workflow-node.js-view.and.data.api`
+  - Copy your fork URL, e.g. `https://github.com/myusername/workflow-node.js-view.and.data.api`
   - Clone your fork locally to a new directory, e.g. `nodevadasample`:
   ```
-  git clone https://github.com/username/workflow-node.js-view.and.data.api nodevadasample
+  git clone https://github.com/myusername/workflow-node.js-view.and.data.api nodevadasample
   ```
   - Enter the new directory:
   ```
