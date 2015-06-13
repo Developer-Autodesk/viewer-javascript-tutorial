@@ -167,7 +167,7 @@ and later deploy it on a web server.
 Your first action will be to fork the material repository on your 'github' account.
 If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
-<b>Note:</b> This tutorial is having is own set of instructions, please ignore any of the instructions you will find
+<b>Note:</b> This tutorial is having its own set of instructions, please ignore any of the instructions you will find
 in the sample repo you are going to fork.
 
 * Using git
