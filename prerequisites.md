@@ -168,7 +168,7 @@ Your first action will be to fork the material repository on your 'github' accou
 If you prefer not to use git, you can still download the zip files and inflate their contents on your local drive.
 
 <b>Note:</b> This tutorial is having is own set of instructions, please ignore any of the instructions you will find
-in the sample repo you a re going to fork.
+in the sample repo you are going to fork.
 
 * Using git
   - Sign in using your GitHub account at [http://www.github.com](http://www.github.com)
