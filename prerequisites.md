@@ -175,13 +175,13 @@ in the sample repo you are going to fork.
   - Go to the [Node.js simple server project](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
   - Fork the project
   - Copy your fork URL, e.g. `https://github.com/myusername/workflow-node.js-view.and.data.api`
-  - Clone your fork locally to a new directory, e.g. `nodevadasample`:
+  - Clone your fork locally to a new directory. If no directory name is specified, the repository name is used:
   ```
-  git clone https://github.com/myusername/workflow-node.js-view.and.data.api nodevadasample
+  git clone https://github.com/myusername/workflow-node.js-view.and.data.api
   ```
   - Enter the new directory:
   ```
-  cd nodevadasample
+  cd workflow-node.js-view.and.data.api
   ```
   - Check out the workshop starting point to ensure you have the correct version of the material for the following instructions:
   ```
