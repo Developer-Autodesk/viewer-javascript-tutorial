@@ -147,9 +147,12 @@ Add a method that loads the extension:
 <a name="Step4"></a>
 ## Step 4 – Testing the extension
 
-Your barebones extension should be ready to run now. All it does is display an alert when it's loaded. Test that the extension is loaded properly by running your sample.
+Your barebones extension should be ready to run now.
+All it does is display an alert when it's loaded.
+Test that the extension is loaded properly by running your sample.
 (Remember that you setup your node.js project to serve the client page to [http://localhost:3000/](http://localhost:3000/), so open your WebGL-enabled browser and type
-that address in the address bar). Since all our changes are on client side, you can just refresh your browser to test your changes.
+that address in the address bar).
+Since all our changes are on client side, you can just refresh your browser to test your changes.
 
 
 <a name="Step5"></a>
@@ -159,21 +162,19 @@ Now we will add some more interesting functionality to the basic extension:
 
 Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e. editing the file 'Viewing.Extension.Workshop.js'). This event is triggered when user
 selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below.
-<pre>
+
+```js
   _self.load = function () {
 
-  <b  style='background-color:yellow'>
     _viewer.addEventListener(
-    Autodesk.Viewing.SELECTION_CHANGED_EVENT,
-    _self.onSelectionChanged);
-  </b>
+      Autodesk.Viewing.SELECTION_CHANGED_EVENT,
+      _self.onSelectionChanged);
 
     console.log('Viewing.Extension.Workshop loaded');
 
     return true;
   };
 
-  <b  style='background-color:yellow'>
   /////////////////////////////////////////////////////////////////
   // selection changed callback
   //
@@ -185,19 +186,15 @@ selects a component in the model. Register your handler callback in the _self.lo
     // in that case event.dbIdArray is an empty array
     if(event.dbIdArray.length) {
 
-    var dbId = event.dbIdArray[0];
+      var dbId = event.dbIdArray[0];
 
-    //do stuff with selected component
-   }
+      // do stuff with selected component
+    }
     else {
-
-
-    //all components unselected
+      // all components unselected
     }
   }
-  </b>
-</pre>
-
+```
 
 Every element in the displayed model has a unique ID called a dbId. The code you've just written simply stores the dbId of the first element in the list of elements that the
 user selected. (Usually, the user will only select a single element, but more complete code would handle multiple selected elements).
