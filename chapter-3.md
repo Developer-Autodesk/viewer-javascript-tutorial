@@ -22,6 +22,7 @@ Extensions allow you to encapsulate your customized behavior in a separate JavaS
 Create a file named "Viewing.Extension.Workshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api).
 Then copy the following basic extension skeleton code into the file and save it:
 
+```js
 	///////////////////////////////////////////////////////////////////////////////
 	// Demo Workshop Viewer Extension
 	// by Philippe Leefsma, April 2015
@@ -85,7 +86,7 @@ Then copy the following basic extension skeleton code into the file and save it:
 	Autodesk.Viewing.theExtensionManager.registerExtension(
 	  'Viewing.Extension.Workshop',
 	  Viewing.Extension.Workshop);
-
+```
 
 <a name="Step2"></a>
 ## Step 2 – Reference the extension script
