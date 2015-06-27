@@ -59,7 +59,9 @@ If you prefer using other programming languages or methods, there are even more 
 [GitHub collection](https://github.com/Developer-Autodesk?utf8=%E2%9C%93&query=workflow)
 and on the [developer page](http://developer-autodesk.github.io).
 
-If you don't have your own model to work with, some 2D and 3D sample models are provided with this workshop, in the [Sample files](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/dev-2.0/Sample%20files) folder.
+If you don't have your own model to work with, some 2D and 3D sample models are provided with this workshop, in the
+[Sample files](
+https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/tree/master/Sample%20files) folder.
 
 Each of these solutions will upload and translate models on your account which you can use and view later.
 
