@@ -298,26 +298,25 @@ Edit _self.load and _self.unload as follows:
 
 Replace the implementation of the selection handler with the following code, so the panel is populated with the properties of the selected element and displayed when an item is selected.
 Just for fun, we also isolate the component that is clicked:
-<pre>
 
+```js
   /////////////////////////////////////////////////////////////////
   // selection changed callback
   //
   /////////////////////////////////////////////////////////////////
   _self.onSelectionChanged = function (event) {
 
-<b  style='background-color:yellow'>
-   function propertiesHandler(result) {
+  function propertiesHandler(result) {
 
     if (result.properties) {
       _self.panel.setProperties(
       result.properties);
       _self.panel.setVisible(true);
     }
-    }
+  }
 
 
-    if(event.dbIdArray.length) {
+  if(event.dbIdArray.length) {
     var dbId = event.dbIdArray[0];
 
     _viewer.getProperties(
@@ -326,73 +325,74 @@ Just for fun, we also isolate the component that is clicked:
 
     _viewer.fitToView(dbId);
     _viewer.isolateById(dbId);
-    }
-    else {
+  }
+  else {
 
     _viewer.isolateById([]);
     _viewer.fitToView();
     _self.panel.setVisible(false);
     }
-</b>
   }
+```
 
-</pre>
-
-
-You've now finished writing your extension to respond to a user selecting a model element by displaying that element's properties in a panel and isolating that element in the view.
-Launch the client page and select a model element by clicking on it. The model and camera view reset if you clear your selection or click in space.
+You've now finished writing your extension to respond to a user selecting a model element by displaying its properties in a panel and isolating it in the view.
+Launch the client page and select a model element by clicking on it.
+The model and camera view reset if you clear your selection or click in space.
 
 
 <a name="Step7"></a>
 ## Step 7 (Bonus step) – Moving the camera
 
-Finally, we'll add some camera animation – orbiting the camera around the model. We will use a simple approach with setInterval. For a more robust approach, take a look at the blog post article describing
+Finally, we'll add some camera animation orbiting the camera around the model.
+We will use a simple approach with setInterval.
+For a more robust approach, take a look at the blog post article describing
 [http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html](how to create animations in the viewer).
 
 Add a property the extension to hold the interval Id, so we can cancel it.
-<pre>
+
+```js
   _self.load = function () {
 
     _viewer.addEventListener(
-    Autodesk.Viewing.SELECTION_CHANGED_EVENT,
-    _self.onSelectionChanged);
+      Autodesk.Viewing.SELECTION_CHANGED_EVENT,
+      _self.onSelectionChanged);
 
     _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
-    _viewer.container,
-    'WorkshopPanelId',
-    'Workshop Panel');
+      _viewer.container,
+      'WorkshopPanelId',
+      'Workshop Panel');
 
-<b  style='background-color:yellow'>
     _self.interval = 0;
-</b>
 
     console.log('Viewing.Extension.Workshop loaded');
 
     return true;
   };
-</pre>
+```
+
 Add following methods to handle the animation immediately below the end of the _self.onSelectionChanged function implementation.
 
+```js
     /////////////////////////////////////////////////////////////////
-    // rotates camera around axis with center origin
+    // rotate camera around axis with center origin
     //
     /////////////////////////////////////////////////////////////////
     _self.rotateCamera = function(angle, axis) {
-    var pos = _viewer.navigation.getPosition();
+      var pos = _viewer.navigation.getPosition();
 
-    var position = new THREE.Vector3( // Point?
-      pos.x, pos.y, pos.z);
-    var rAxis = new THREE.Vector3(
-      axis.x, axis.y, axis.z);
+      var position = new THREE.Vector3( // Point?
+        pos.x, pos.y, pos.z);
 
-    var matrix = new THREE.Matrix4().makeRotationAxis(
-      rAxis,
-      angle);
+      var rAxis = new THREE.Vector3(
+        axis.x, axis.y, axis.z);
 
-    position.applyMatrix4(matrix);
+      var matrix = new THREE.Matrix4().makeRotationAxis(
+        rAxis,
+        angle);
 
-    _viewer.navigation.setPosition(position);
+      position.applyMatrix4(matrix);
 
+      _viewer.navigation.setPosition(position);
     };
 
     /////////////////////////////////////////////////////////////////
@@ -401,19 +401,20 @@ Add following methods to handle the animation immediately below the end of the _
     /////////////////////////////////////////////////////////////////
 
     _self.startRotation = function() {
-    clearInterval(_self.interval);
+      clearInterval(_self.interval);
 
-    // sets small delay before starting rotation
+      // sets small delay before starting rotation
 
-    setTimeout(function() {
-      _self.interval = setInterval(function () {
-      _self.rotateCamera(0.05, {x:0, y:1, z:0});
-      }, 100)}, 500);
-
+      setTimeout(function() {
+        _self.interval = setInterval(function () {
+        _self.rotateCamera(0.05, {x:0, y:1, z:0});
+        }, 100)}, 500);
     };
+```
 
 Finally modify the selection handler to trigger the animation when a component is selected:
-<pre>
+
+```js
   /////////////////////////////////////////////////////////////////
   // selection changed callback
   //
@@ -422,45 +423,40 @@ Finally modify the selection handler to trigger the animation when a component i
 
     function propertiesHandler(result) {
 
-    if (result.properties) {
+      if (result.properties) {
 
-      _self.panel.setProperties(
-      result.properties);
+        _self.panel.setProperties(
+        result.properties);
 
-      _self.panel.setVisible(true);
+        _self.panel.setVisible(true);
+      }
     }
-    }
-
 
     if(event.dbIdArray.length) {
 
-    var dbId = event.dbIdArray[0];
+      var dbId = event.dbIdArray[0];
 
-    _viewer.getProperties(
-      dbId,
-      propertiesHandler);
+      _viewer.getProperties(
+        dbId,
+        propertiesHandler);
 
-    _viewer.fitToView(dbId);
-    _viewer.isolateById(dbId);
-<b  style='background-color:yellow'>
-    _self.startRotation();
-</b>
+      _viewer.fitToView(dbId);
+      _viewer.isolateById(dbId);
+
+      _self.startRotation();
     }
     else {
-<b  style='background-color:yellow'>
-    clearInterval(_self.interval); // where is this function defined?
-</b>
-    _viewer.isolateById([]);
-    _viewer.fitToView();
-    _self.panel.setVisible(false);
+      clearInterval(_self.interval); // where is this function defined?
+
+      _viewer.isolateById([]);
+      _viewer.fitToView();
+      _self.panel.setVisible(false);
     }
   }
+```
 
-
-</pre>
-
-
-Test your extension again. This time, in addition to displaying the panel, the camera (your view of the model) starts rotating when you select a model element.
+Test your extension again.
+This time, in addition to displaying the panel, the camera (your view of the model) starts rotating when you select a model element.
 
 
 <a name="More"></a>
