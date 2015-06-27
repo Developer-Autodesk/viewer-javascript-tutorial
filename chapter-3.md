@@ -130,7 +130,7 @@ Add the event handler immediately before the call to viewer.load:
     onError);
 
   });
-``
+```
 
 Add a method that loads the extension:
 
