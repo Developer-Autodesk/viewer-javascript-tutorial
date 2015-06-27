@@ -106,9 +106,9 @@ event to wait for the GOEMETRY_LOADED event, as some features may not be usable 
 Open index.js and locate the place where you load the viewable in your viewer code:
 
 ```js
-        viewer.load(pathInfoCollection.path3d[0].path);
-      },
-      onError);
+      viewer.load(pathInfoCollection.path3d[0].path);
+    },
+    onError);
   });
 
   function onError(error) {
@@ -119,14 +119,14 @@ Open index.js and locate the place where you load the viewable in your viewer co
 Add the event handler immediately before the call to viewer.load:
 
 ```js
-        viewer.addEventListener(
-          Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
-          function(event) {
-            loadExtensions(viewer);
-        });
+      viewer.addEventListener(
+        Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
+        function(event) {
+          loadExtensions(viewer);
+      });
 
-        viewer.load(pathInfoCollection.path3d[0].path);
-      },
+      viewer.load(pathInfoCollection.path3d[0].path);
+    },
     onError);
 
   });
