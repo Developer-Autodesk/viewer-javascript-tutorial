@@ -116,7 +116,7 @@ Open index.js and locate the place where you load the viewable in your viewer co
   };
 ```
 
-and add the event handler immediately before this line of code, then add a method where you will load the extensions:
+Add the event handler immediately before the call to viewer.load:
 
 ```js
         viewer.addEventListener(
@@ -130,7 +130,11 @@ and add the event handler immediately before this line of code, then add a metho
     onError);
 
   });
+``
 
+Add a method that loads the extension:
+
+```js
   function loadExtensions(viewer) {
     viewer.loadExtension('Viewing.Extension.Workshop');
   }
