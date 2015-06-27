@@ -2,7 +2,8 @@
 # Chapter 2 – (Optional) Translating from the client
 
 
-<b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory. Then copy the following basic html skeleton code into the file and save it.
+<b>Step 1:</b> Create a new html page and JavaScript file – i.e. upload.html and upload.js in *www* directory.
+Then copy the following basic html skeleton code into the file and save it.
 
 upload.html
 ```
@@ -246,5 +247,5 @@ and continue with the section [Customize the Viewer Behavior](chapter-3.md#Chapt
 
 =========================
 [Next](chapter-3.md#Chapter3) –
-[Parent](chapter-2.md#Chapter2) – 
+[Parent](chapter-2.md#Chapter2) –
 [Home](README.md)
