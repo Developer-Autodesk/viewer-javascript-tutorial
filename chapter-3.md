@@ -212,70 +212,68 @@ project to another. It helps making your extension independent of the client. Ho
 you could read or write information stored in a separate database, or update a table somewhere else on the webpage, etc.
 
 Add some code to initialize an empty panel in the body of your extension:
-<pre>
+
+```js
+  /////////////////////////////////////////////////////////////////
+  //  base class constructor
+  //
+  /////////////////////////////////////////////////////////////////
+
+  Autodesk.Viewing.Extension.call(this, viewer, options);
+
+  var _self = this;
+
+  var _viewer = viewer;
 
   /////////////////////////////////////////////////////////////////
-    //  base class constructor
-    //
-    /////////////////////////////////////////////////////////////////
+  // create panel and set up inheritance
+  //
+  /////////////////////////////////////////////////////////////////
 
-    Autodesk.Viewing.Extension.call(this, viewer, options);
-
-    var _self = this;
-
-    var _viewer = viewer;
-<b  style='background-color:yellow'>
-    /////////////////////////////////////////////////////////////////
-    // creates panel and sets up inheritance
-    //
-    /////////////////////////////////////////////////////////////////
-
-    Viewing.Extension.Workshop.WorkshopPanel = function(
+  Viewing.Extension.Workshop.WorkshopPanel = function(
     parentContainer,
     id,
     title,
     options)
-    {
+  {
     Autodesk.Viewing.UI.PropertyPanel.call(
       this,
       parentContainer,
       id, title);
-    };
+  };
 
-    Viewing.Extension.Workshop.WorkshopPanel.prototype = Object.create(
+  Viewing.Extension.Workshop.WorkshopPanel.prototype = Object.create(
     Autodesk.Viewing.UI.PropertyPanel.prototype);
 
-    Viewing.Extension.Workshop.WorkshopPanel.prototype.constructor =
+  Viewing.Extension.Workshop.WorkshopPanel.prototype.constructor =
     Viewing.Extension.Workshop.WorkshopPanel;
-</b>
-    /////////////////////////////////////////////////////////////////
-    // load callback: invoked when viewer.loadExtension is called
-    //
-    /////////////////////////////////////////////////////////////////
 
-    _self.load = function () {
-</pre>
+  /////////////////////////////////////////////////////////////////
+  // load callback: invoked when viewer.loadExtension is called
+  //
+  /////////////////////////////////////////////////////////////////
 
-Instantiate the panel in your load method, uninitialize it in unload. Edit _self.load and _self.unload as follows
-<pre>
+  _self.load = function () {
+```
 
+Instantiate the panel in your load method and uninitialize it in unload.
+Edit _self.load and _self.unload as follows:
+
+```js
   /////////////////////////////////////////////////////////////////
   // load callback: invoked when viewer.loadExtension is called
   //
   /////////////////////////////////////////////////////////////////
   _self.load = function () {
 
-
     _viewer.addEventListener(
-    Autodesk.Viewing.SELECTION_CHANGED_EVENT,
-    _self.onSelectionChanged);
+      Autodesk.Viewing.SELECTION_CHANGED_EVENT,
+      _self.onSelectionChanged);
 
-<b  style='background-color:yellow'>
     _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
-    _viewer.container,
-    'WorkshopPanelId',
-    'Workshop Panel');
-</b>
+      _viewer.container,
+      'WorkshopPanelId',
+      'Workshop Panel');
 
     console.log('Viewing.Extension.Workshop loaded');
 
@@ -288,19 +286,15 @@ Instantiate the panel in your load method, uninitialize it in unload. Edit _self
   /////////////////////////////////////////////////////////////////
   _self.unload = function () {
 
-<b  style='background-color:yellow'>
     _self.panel.setVisible(false);
 
-
     _self.panel.uninitialize();
-</b>
 
     console.log('Viewing.Extension.Workshop unloaded');
 
-
     return true;
   };
-</pre>
+```
 
 Replace the implementation of the selection handler with the following code, so the panel is populated with the properties of the selected element and displayed when an item is selected.
 Just for fun, we also isolate the component that is clicked:
