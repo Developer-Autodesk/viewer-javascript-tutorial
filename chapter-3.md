@@ -118,25 +118,22 @@ Open index.js and locate the place where you load the viewable in your viewer co
 
 and add the event handler immediately before this line of code, then add a method where you will load the extensions:
 
-
 ```js
-<b  style='background-color:yellow'>			   viewer.addEventListener(
+        viewer.addEventListener(
 					Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
 					function(event) {
 						loadExtensions(viewer);
 				});
-</b>
 
 				viewer.load(pathInfoCollection.path3d[0].path);
 			},
 		onError);
 
 	});
-<b  style='background-color:yellow'>
+
 	function loadExtensions(viewer) {
 		viewer.loadExtension('Viewing.Extension.Workshop');
 	}
-</b>
 
 	function onError(error) {
 		console.log('Error: ' + error);
