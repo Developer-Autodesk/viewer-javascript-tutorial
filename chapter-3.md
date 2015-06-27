@@ -306,31 +306,29 @@ Just for fun, we also isolate the component that is clicked:
   /////////////////////////////////////////////////////////////////
   _self.onSelectionChanged = function (event) {
 
-  function propertiesHandler(result) {
+    function propertiesHandler(result) {
 
-    if (result.properties) {
-      _self.panel.setProperties(
-      result.properties);
-      _self.panel.setVisible(true);
+      if (result.properties) {
+        _self.panel.setProperties(
+        result.properties);
+        _self.panel.setVisible(true);
+      }
     }
-  }
 
+    if(event.dbIdArray.length) {
+      var dbId = event.dbIdArray[0];
 
-  if(event.dbIdArray.length) {
-    var dbId = event.dbIdArray[0];
+      _viewer.getProperties(
+        dbId,
+        propertiesHandler);
 
-    _viewer.getProperties(
-      dbId,
-      propertiesHandler);
-
-    _viewer.fitToView(dbId);
-    _viewer.isolateById(dbId);
-  }
-  else {
-
-    _viewer.isolateById([]);
-    _viewer.fitToView();
-    _self.panel.setVisible(false);
+      _viewer.fitToView(dbId);
+      _viewer.isolateById(dbId);
+    }
+    else {
+      _viewer.isolateById([]);
+      _viewer.fitToView();
+      _self.panel.setVisible(false);
     }
   }
 ```
