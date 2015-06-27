@@ -23,69 +23,69 @@ Create a file named "Viewing.Extension.Workshop.js" (for example), and save it i
 Then copy the following basic extension skeleton code into the file and save it:
 
 ```js
-	///////////////////////////////////////////////////////////////////////////////
-	// Demo Workshop Viewer Extension
-	// by Philippe Leefsma, April 2015
-	//
-	///////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////
+  // Demo Workshop Viewer Extension
+  // by Philippe Leefsma, April 2015
+  //
+  ///////////////////////////////////////////////////////////////////////////////
 
-	AutodeskNamespace("Viewing.Extension");
+  AutodeskNamespace("Viewing.Extension");
 
-	Viewing.Extension.Workshop = function (viewer, options) {
+  Viewing.Extension.Workshop = function (viewer, options) {
 
-	  /////////////////////////////////////////////////////////////////
-	  //  base class constructor
-	  //
-	  /////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////
+    //  base class constructor
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  Autodesk.Viewing.Extension.call(this, viewer, options);
+    Autodesk.Viewing.Extension.call(this, viewer, options);
 
-	  var _self = this;
-	  var _viewer = viewer;
+    var _self = this;
+    var _viewer = viewer;
 
-	  /////////////////////////////////////////////////////////////////
-	  // load callback: invoked when viewer.loadExtension is called
-	  //
-	  /////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////
+    // load callback: invoked when viewer.loadExtension is called
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  _self.load = function () {
+    _self.load = function () {
 
-		alert('Viewing.Extension.Workshop loaded');
-		console.log('Viewing.Extension.Workshop loaded');
+    alert('Viewing.Extension.Workshop loaded');
+    console.log('Viewing.Extension.Workshop loaded');
 
-		return true;
+    return true;
 
-	  };
+    };
 
-	  /////////////////////////////////////////////////////////////////
-	  // unload callback: invoked when viewer.unloadExtension is called
-	  //
-	  /////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////
+    // unload callback: invoked when viewer.unloadExtension is called
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  _self.unload = function () {
+    _self.unload = function () {
 
-		console.log('Viewing.Extension.Workshop unloaded');
+    console.log('Viewing.Extension.Workshop unloaded');
 
-		return true;
+    return true;
 
-	  };
+    };
 
-	};
+  };
 
-	/////////////////////////////////////////////////////////////////
-	// sets up inheritance for extension and register
-	//
-	/////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////
+  // sets up inheritance for extension and register
+  //
+  /////////////////////////////////////////////////////////////////
 
-	Viewing.Extension.Workshop.prototype =
-	  Object.create(Autodesk.Viewing.Extension.prototype);
+  Viewing.Extension.Workshop.prototype =
+    Object.create(Autodesk.Viewing.Extension.prototype);
 
-	Viewing.Extension.Workshop.prototype.constructor =
-	  Viewing.Extension.Workshop;
+  Viewing.Extension.Workshop.prototype.constructor =
+    Viewing.Extension.Workshop;
 
-	Autodesk.Viewing.theExtensionManager.registerExtension(
-	  'Viewing.Extension.Workshop',
-	  Viewing.Extension.Workshop);
+  Autodesk.Viewing.theExtensionManager.registerExtension(
+    'Viewing.Extension.Workshop',
+    Viewing.Extension.Workshop);
 ```
 
 <a name="Step2"></a>
@@ -106,38 +106,38 @@ event to wait for the GOEMETRY_LOADED event, as some features may not be usable 
 Open index.js and locate the place where you load the viewable in your viewer code:
 
 ```js
-				viewer.load(pathInfoCollection.path3d[0].path);
-			},
-			onError);
-	});
+        viewer.load(pathInfoCollection.path3d[0].path);
+      },
+      onError);
+  });
 
-	function onError(error) {
-		console.log('Error: ' + error);
-	};
+  function onError(error) {
+    console.log('Error: ' + error);
+  };
 ```
 
 and add the event handler immediately before this line of code, then add a method where you will load the extensions:
 
 ```js
         viewer.addEventListener(
-					Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
-					function(event) {
-						loadExtensions(viewer);
-				});
+          Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
+          function(event) {
+            loadExtensions(viewer);
+        });
 
-				viewer.load(pathInfoCollection.path3d[0].path);
-			},
-		onError);
+        viewer.load(pathInfoCollection.path3d[0].path);
+      },
+    onError);
 
-	});
+  });
 
-	function loadExtensions(viewer) {
-		viewer.loadExtension('Viewing.Extension.Workshop');
-	}
+  function loadExtensions(viewer) {
+    viewer.loadExtension('Viewing.Extension.Workshop');
+  }
 
-	function onError(error) {
-		console.log('Error: ' + error);
-	};
+  function onError(error) {
+    console.log('Error: ' + error);
+  };
 ```
 
 <a name="Step4"></a>
@@ -156,42 +156,42 @@ Now we will add some more interesting functionality to the basic extension:
 Start by adding a handler for the SELECTION_CHANGED event to the Extension (i.e. editing the file 'Viewing.Extension.Workshop.js'). This event is triggered when user
 selects a component in the model. Register your handler callback in the _self.load function, and then add the function definition below.
 <pre>
-	_self.load = function () {
+  _self.load = function () {
 
-	<b  style='background-color:yellow'>
-	  _viewer.addEventListener(
-		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
-		_self.onSelectionChanged);
-	</b>
+  <b  style='background-color:yellow'>
+    _viewer.addEventListener(
+    Autodesk.Viewing.SELECTION_CHANGED_EVENT,
+    _self.onSelectionChanged);
+  </b>
 
-	  console.log('Viewing.Extension.Workshop loaded');
+    console.log('Viewing.Extension.Workshop loaded');
 
-	  return true;
-	};
+    return true;
+  };
 
-	<b  style='background-color:yellow'>
-	/////////////////////////////////////////////////////////////////
-	// selection changed callback
-	//
-	/////////////////////////////////////////////////////////////////
-	_self.onSelectionChanged = function (event) {
+  <b  style='background-color:yellow'>
+  /////////////////////////////////////////////////////////////////
+  // selection changed callback
+  //
+  /////////////////////////////////////////////////////////////////
+  _self.onSelectionChanged = function (event) {
 
-	  // event is triggered also when component is unselected
+    // event is triggered also when component is unselected
 
-	  // in that case event.dbIdArray is an empty array
-	  if(event.dbIdArray.length) {
+    // in that case event.dbIdArray is an empty array
+    if(event.dbIdArray.length) {
 
-		var dbId = event.dbIdArray[0];
+    var dbId = event.dbIdArray[0];
 
-		//do stuff with selected component
-	 }
-	  else {
+    //do stuff with selected component
+   }
+    else {
 
 
-		//all components unselected
-	  }
-	}
-	</b>
+    //all components unselected
+    }
+  }
+  </b>
 </pre>
 
 
@@ -213,133 +213,133 @@ you could read or write information stored in a separate database, or update a t
 Add some code to initialize an empty panel in the body of your extension:
 <pre>
 
-	/////////////////////////////////////////////////////////////////
-	  //  base class constructor
-	  //
-	  /////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////
+    //  base class constructor
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  Autodesk.Viewing.Extension.call(this, viewer, options);
+    Autodesk.Viewing.Extension.call(this, viewer, options);
 
-	  var _self = this;
+    var _self = this;
 
-	  var _viewer = viewer;
+    var _viewer = viewer;
 <b  style='background-color:yellow'>
-	  /////////////////////////////////////////////////////////////////
-	  // creates panel and sets up inheritance
-	  //
-	  /////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////
+    // creates panel and sets up inheritance
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  Viewing.Extension.Workshop.WorkshopPanel = function(
-		parentContainer,
-		id,
-		title,
-		options)
-	  {
-		Autodesk.Viewing.UI.PropertyPanel.call(
-		  this,
-		  parentContainer,
-		  id, title);
-	  };
+    Viewing.Extension.Workshop.WorkshopPanel = function(
+    parentContainer,
+    id,
+    title,
+    options)
+    {
+    Autodesk.Viewing.UI.PropertyPanel.call(
+      this,
+      parentContainer,
+      id, title);
+    };
 
-	  Viewing.Extension.Workshop.WorkshopPanel.prototype = Object.create(
-		Autodesk.Viewing.UI.PropertyPanel.prototype);
+    Viewing.Extension.Workshop.WorkshopPanel.prototype = Object.create(
+    Autodesk.Viewing.UI.PropertyPanel.prototype);
 
-	  Viewing.Extension.Workshop.WorkshopPanel.prototype.constructor =
-		Viewing.Extension.Workshop.WorkshopPanel;
+    Viewing.Extension.Workshop.WorkshopPanel.prototype.constructor =
+    Viewing.Extension.Workshop.WorkshopPanel;
 </b>
-	  /////////////////////////////////////////////////////////////////
-	  // load callback: invoked when viewer.loadExtension is called
-	  //
-	  /////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////
+    // load callback: invoked when viewer.loadExtension is called
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  _self.load = function () {
+    _self.load = function () {
 </pre>
 
 Instantiate the panel in your load method, uninitialize it in unload. Edit _self.load and _self.unload as follows
 <pre>
 
-	/////////////////////////////////////////////////////////////////
-	// load callback: invoked when viewer.loadExtension is called
-	//
-	/////////////////////////////////////////////////////////////////
-	_self.load = function () {
+  /////////////////////////////////////////////////////////////////
+  // load callback: invoked when viewer.loadExtension is called
+  //
+  /////////////////////////////////////////////////////////////////
+  _self.load = function () {
 
 
-	  _viewer.addEventListener(
-		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
-		_self.onSelectionChanged);
-
-<b  style='background-color:yellow'>
-	  _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
-		_viewer.container,
-		'WorkshopPanelId',
-		'Workshop Panel');
-</b>
-
-	  console.log('Viewing.Extension.Workshop loaded');
-
-	  return true;
-	};
-
-	/////////////////////////////////////////////////////////////////
-	// unload callback: invoked when viewer.unloadExtension is called
-	//
-	/////////////////////////////////////////////////////////////////
-	_self.unload = function () {
+    _viewer.addEventListener(
+    Autodesk.Viewing.SELECTION_CHANGED_EVENT,
+    _self.onSelectionChanged);
 
 <b  style='background-color:yellow'>
-	  _self.panel.setVisible(false);
-
-
-	  _self.panel.uninitialize();
+    _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
+    _viewer.container,
+    'WorkshopPanelId',
+    'Workshop Panel');
 </b>
 
-	  console.log('Viewing.Extension.Workshop unloaded');
+    console.log('Viewing.Extension.Workshop loaded');
+
+    return true;
+  };
+
+  /////////////////////////////////////////////////////////////////
+  // unload callback: invoked when viewer.unloadExtension is called
+  //
+  /////////////////////////////////////////////////////////////////
+  _self.unload = function () {
+
+<b  style='background-color:yellow'>
+    _self.panel.setVisible(false);
 
 
-	  return true;
-	};
+    _self.panel.uninitialize();
+</b>
+
+    console.log('Viewing.Extension.Workshop unloaded');
+
+
+    return true;
+  };
 </pre>
 
 Replace the implementation of the selection handler with the following code, so the panel is populated with the properties of the selected element and displayed when an item is selected.
 Just for fun, we also isolate the component that is clicked:
 <pre>
 
-	/////////////////////////////////////////////////////////////////
-	// selection changed callback
-	//
-	/////////////////////////////////////////////////////////////////
-	_self.onSelectionChanged = function (event) {
+  /////////////////////////////////////////////////////////////////
+  // selection changed callback
+  //
+  /////////////////////////////////////////////////////////////////
+  _self.onSelectionChanged = function (event) {
 
 <b  style='background-color:yellow'>
-	 function propertiesHandler(result) {
+   function propertiesHandler(result) {
 
-		if (result.properties) {
-		  _self.panel.setProperties(
-			result.properties);
-		  _self.panel.setVisible(true);
-		}
-	  }
+    if (result.properties) {
+      _self.panel.setProperties(
+      result.properties);
+      _self.panel.setVisible(true);
+    }
+    }
 
 
-	  if(event.dbIdArray.length) {
-		var dbId = event.dbIdArray[0];
+    if(event.dbIdArray.length) {
+    var dbId = event.dbIdArray[0];
 
-		_viewer.getProperties(
-		  dbId,
-		  propertiesHandler);
+    _viewer.getProperties(
+      dbId,
+      propertiesHandler);
 
-		_viewer.fitToView(dbId);
-		_viewer.isolateById(dbId);
-	  }
-	  else {
+    _viewer.fitToView(dbId);
+    _viewer.isolateById(dbId);
+    }
+    else {
 
-		_viewer.isolateById([]);
-		_viewer.fitToView();
-		_self.panel.setVisible(false);
-	  }
+    _viewer.isolateById([]);
+    _viewer.fitToView();
+    _self.panel.setVisible(false);
+    }
 </b>
-	}
+  }
 
 </pre>
 
@@ -357,110 +357,110 @@ Finally, we'll add some camera animation – orbiting the camera around the model.
 
 Add a property the extension to hold the interval Id, so we can cancel it.
 <pre>
-	_self.load = function () {
+  _self.load = function () {
 
-	  _viewer.addEventListener(
-		Autodesk.Viewing.SELECTION_CHANGED_EVENT,
-		_self.onSelectionChanged);
+    _viewer.addEventListener(
+    Autodesk.Viewing.SELECTION_CHANGED_EVENT,
+    _self.onSelectionChanged);
 
-	  _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
-		_viewer.container,
-		'WorkshopPanelId',
-		'Workshop Panel');
+    _self.panel = new Viewing.Extension.Workshop.WorkshopPanel (
+    _viewer.container,
+    'WorkshopPanelId',
+    'Workshop Panel');
 
 <b  style='background-color:yellow'>
-	  _self.interval = 0;
+    _self.interval = 0;
 </b>
 
-	  console.log('Viewing.Extension.Workshop loaded');
+    console.log('Viewing.Extension.Workshop loaded');
 
-	  return true;
-	};
+    return true;
+  };
 </pre>
 Add following methods to handle the animation immediately below the end of the _self.onSelectionChanged function implementation.
 
-	  /////////////////////////////////////////////////////////////////
-	  // rotates camera around axis with center origin
-	  //
-	  /////////////////////////////////////////////////////////////////
-	  _self.rotateCamera = function(angle, axis) {
-		var pos = _viewer.navigation.getPosition();
+    /////////////////////////////////////////////////////////////////
+    // rotates camera around axis with center origin
+    //
+    /////////////////////////////////////////////////////////////////
+    _self.rotateCamera = function(angle, axis) {
+    var pos = _viewer.navigation.getPosition();
 
-		var position = new THREE.Vector3( // Point?
-		  pos.x, pos.y, pos.z);
-		var rAxis = new THREE.Vector3(
-		  axis.x, axis.y, axis.z);
+    var position = new THREE.Vector3( // Point?
+      pos.x, pos.y, pos.z);
+    var rAxis = new THREE.Vector3(
+      axis.x, axis.y, axis.z);
 
-		var matrix = new THREE.Matrix4().makeRotationAxis(
-		  rAxis,
-		  angle);
+    var matrix = new THREE.Matrix4().makeRotationAxis(
+      rAxis,
+      angle);
 
-		position.applyMatrix4(matrix);
+    position.applyMatrix4(matrix);
 
-		_viewer.navigation.setPosition(position);
+    _viewer.navigation.setPosition(position);
 
-	  };
+    };
 
-	  /////////////////////////////////////////////////////////////////
-	  // start rotation effect
-	  //
-	  /////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////
+    // start rotation effect
+    //
+    /////////////////////////////////////////////////////////////////
 
-	  _self.startRotation = function() {
-		clearInterval(_self.interval);
+    _self.startRotation = function() {
+    clearInterval(_self.interval);
 
-		// sets small delay before starting rotation
+    // sets small delay before starting rotation
 
-		setTimeout(function() {
-		  _self.interval = setInterval(function () {
-			_self.rotateCamera(0.05, {x:0, y:1, z:0});
-		  }, 100)}, 500);
+    setTimeout(function() {
+      _self.interval = setInterval(function () {
+      _self.rotateCamera(0.05, {x:0, y:1, z:0});
+      }, 100)}, 500);
 
-	  };
+    };
 
 Finally modify the selection handler to trigger the animation when a component is selected:
 <pre>
-	/////////////////////////////////////////////////////////////////
-	// selection changed callback
-	//
-	/////////////////////////////////////////////////////////////////
-	_self.onSelectionChanged = function (event) {
+  /////////////////////////////////////////////////////////////////
+  // selection changed callback
+  //
+  /////////////////////////////////////////////////////////////////
+  _self.onSelectionChanged = function (event) {
 
-	  function propertiesHandler(result) {
+    function propertiesHandler(result) {
 
-		if (result.properties) {
+    if (result.properties) {
 
-		  _self.panel.setProperties(
-			result.properties);
+      _self.panel.setProperties(
+      result.properties);
 
-		  _self.panel.setVisible(true);
-		}
-	  }
+      _self.panel.setVisible(true);
+    }
+    }
 
 
-	  if(event.dbIdArray.length) {
+    if(event.dbIdArray.length) {
 
-		var dbId = event.dbIdArray[0];
+    var dbId = event.dbIdArray[0];
 
-		_viewer.getProperties(
-		  dbId,
-		  propertiesHandler);
+    _viewer.getProperties(
+      dbId,
+      propertiesHandler);
 
-		_viewer.fitToView(dbId);
-		_viewer.isolateById(dbId);
+    _viewer.fitToView(dbId);
+    _viewer.isolateById(dbId);
 <b  style='background-color:yellow'>
-		_self.startRotation();
+    _self.startRotation();
 </b>
-	  }
-	  else {
+    }
+    else {
 <b  style='background-color:yellow'>
-		clearInterval(_self.interval); // where is this function defined?
+    clearInterval(_self.interval); // where is this function defined?
 </b>
-		_viewer.isolateById([]);
-		_viewer.fitToView();
-		_self.panel.setVisible(false);
-	  }
-	}
+    _viewer.isolateById([]);
+    _viewer.fitToView();
+    _self.panel.setVisible(false);
+    }
+  }
 
 
 </pre>
