@@ -93,8 +93,9 @@ Then copy the following basic extension skeleton code into the file and save it:
 
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
 
-	<script src="/Viewing.Extension.Workshop.js"></script>
-
+```js
+<script src="/Viewing.Extension.Workshop.js"></script>
+```
 
 <a name="Step3"></a>
 ## Step 3 – Load the extension in the viewer
@@ -104,6 +105,7 @@ event to wait for the GOEMETRY_LOADED event, as some features may not be usable 
 
 Open index.js and locate the place where you load the viewable in your viewer code:
 
+```js
 				viewer.load(pathInfoCollection.path3d[0].path);
 			},
 			onError);
@@ -112,10 +114,12 @@ Open index.js and locate the place where you load the viewable in your viewer co
 	function onError(error) {
 		console.log('Error: ' + error);
 	};
+```
 
 and add the event handler immediately before this line of code, then add a method where you will load the extensions:
-<pre>
 
+
+```js
 <b  style='background-color:yellow'>			   viewer.addEventListener(
 					Autodesk.Viewing.GEOMETRY_LOADED_EVENT,
 					function(event) {
@@ -137,8 +141,7 @@ and add the event handler immediately before this line of code, then add a metho
 	function onError(error) {
 		console.log('Error: ' + error);
 	};
-</pre>
-
+```
 
 <a name="Step4"></a>
 ## Step 4 – Testing the extension
