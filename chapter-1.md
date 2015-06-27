@@ -92,7 +92,7 @@ as explained in [Prerequisites - Get the sources](prerequisites.md#GetTheSources
 ```
 $ git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api
 $ cd workflow-node.js-view.and.data.api
-git checkout v1.0-workshop
+$ git checkout v1.0-workshop
 ```
 
 
