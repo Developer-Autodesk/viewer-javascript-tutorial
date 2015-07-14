@@ -1,13 +1,13 @@
 <a name="Chapter3"></a>
 # Chapter 3 - Customize the Viewer Behavior
 
-- [Step 1 – Creating a basic extension](#Step1)
-- [Step 2 – Reference the extension script](#Step2)
-- [Step 3 – Load the extension in the viewer](#Step3)
-- [Step 4 – Testing the extension](#Step4)
-- [Step 5 – Adding a selection handler](#Step5)
-- [Step 6 – Displaying a panel](#Step6)
-- [Step 7 (Bonus step) – Moving the camera](#Step7)
+- [Step 1 â€“ Creating a basic extension](#Step1)
+- [Step 2 â€“ Reference the extension script](#Step2)
+- [Step 3 â€“ Load the extension in the viewer](#Step3)
+- [Step 4 â€“ Testing the extension](#Step4)
+- [Step 5 â€“ Adding a selection handler](#Step5)
+- [Step 6 â€“ Displaying a panel](#Step6)
+- [Step 7 (Bonus step) â€“ Moving the camera](#Step7)
 - [Even more bonus steps](#More)
 
 
@@ -17,7 +17,7 @@ Extensions allow you to encapsulate your customized behavior in a separate JavaS
 
 
 <a name="Step1"></a>
-## Step 1 – Creating a basic extension
+## Step 1 â€“ Creating a basic extension
 
 Create a file named "Viewing.Extension.Workshop.js" (for example), and save it in the www subfolder of the project folder you cloned from GitHub (workflow-node.js-view.and.data.api).
 Then copy the following basic extension skeleton code into the file and save it:
@@ -89,7 +89,7 @@ Then copy the following basic extension skeleton code into the file and save it:
 ```
 
 <a name="Step2"></a>
-## Step 2 – Reference the extension script
+## Step 2 â€“ Reference the extension script
 
 Reference the extension file in your index.html by adding the following script element to the header (change the path if you installed the file anywhere other than the www subfolder):
 
@@ -98,10 +98,10 @@ Reference the extension file in your index.html by adding the following script e
 ```
 
 <a name="Step3"></a>
-## Step 3 – Load the extension in the viewer
+## Step 3 â€“ Load the extension in the viewer
 
 All that remains for index.js is to add some code to load the extension into the viewer once it is initialized. If the extension relies on geometry in the model, you should set up an
-event to wait for the GOEMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded.
+event to wait for the GEOMETRY_LOADED event, as some features may not be usable if the geometry in not fully loaded.
 
 Open index.js and locate the place where you load the viewable in your viewer code:
 
@@ -145,7 +145,7 @@ Add a method that loads the extension:
 ```
 
 <a name="Step4"></a>
-## Step 4 – Testing the extension
+## Step 4 â€“ Testing the extension
 
 Your barebones extension should be ready to run now.
 All it does is display an alert when it's loaded.
@@ -156,7 +156,7 @@ Since all our changes are on client side, you can just refresh your browser to t
 
 
 <a name="Step5"></a>
-## Step 5 – Adding a selection handler
+## Step 5 â€“ Adding a selection handler
 
 Now we will add some more interesting functionality to the basic extension:
 
@@ -205,10 +205,10 @@ element by clicking it with you mouse; elements are highlighted in blue when sel
 
 
 <a name="Step6"></a>
-## Step 6 – Displaying a panel
+## Step 6 â€“ Displaying a panel
 
 Now we'll get properties of selected component and display them in a custom viewer panel. Using the viewer UI to create your extensions will help migrating code from one
-project to another. It helps making your extension independent of the client. However, you can manipulate any other component of your web application from the extension –
+project to another. It helps making your extension independent of the client. However, you can manipulate any other component of your web application from the extension â€“
 you could read or write information stored in a separate database, or update a table somewhere else on the webpage, etc.
 
 Add some code to initialize an empty panel in the body of your extension:
@@ -339,7 +339,7 @@ The model and camera view reset if you clear your selection or click in space.
 
 
 <a name="Step7"></a>
-## Step 7 (Bonus step) – Moving the camera
+## Step 7 (Bonus step) â€“ Moving the camera
 
 Finally, we'll add some camera animation orbiting the camera around the model.
 We will use a simple approach with setInterval.
