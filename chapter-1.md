@@ -129,7 +129,8 @@ client_id: process.env.CONSUMERKEY || '<replace with your consumer key>',
 
 client_secret: process.env.CONSUMERSECRET || '<replace with your consumer secret>',
 ```
-Copy the URN which you generated prior installing the server in file /www/index.js at line #18
+Copy the URN which you generated prior installing the server in file /www/index.js at line #18  
+Note: the URN needs to be base64 encoded as mentioned [here](https://developer.autodesk.com/api/view-and-data-api/) under "Step 6: Register Your Data with the Viewing Services"
 ```
 var defaultUrn = '<replace with your encoded urn>';
 ```
