@@ -344,7 +344,7 @@ The model and camera view reset if you clear your selection or click in space.
 Finally, we'll add some camera animation orbiting the camera around the model.
 We will use a simple approach with setInterval.
 For a more robust approach, take a look at the blog post article describing
-[http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html](how to create animations in the viewer).
+[how to create animations in the viewer](http://adndevblog.typepad.com/cloud_and_mobile/2015/04/how-to-create-animations-in-the-viewer.html).
 
 Add a property the extension to hold the interval Id, so we can cancel it.
 
