@@ -2,8 +2,8 @@
 # Chapter 2 – (Optional) Extend your web server to support upload/translation
 
 - [Choose your option](#Options)
-- [Translating from the client](chapters/chapter-2a.md#Chapter2a)
-- [Translating from the server](chapters/chapter-2b.md#Chapter2b)
+- [Translating from the client](chapter-2a.md#Chapter2a)
+- [Translating from the server](chapter-2b.md#Chapter2b)
 
 
 You already uploaded and translated one model earlier in this tutorial, so adding support for uploading/translating to your node.js server is optional.
@@ -11,7 +11,7 @@ For instance, it might be important if your use case involves numerous models an
 If you want to add it now, choose your option below and follow the instructions there.
 You can also come back and work through this step later, if you prefer.
 
-After you've finished or skipped this optional step, move on to the next section – ['Customize the Viewer Behavior'](chapters/chapter-3.md#Chapter3).
+After you've finished or skipped this optional step, move on to the next section – ['Customize the Viewer Behavior'](chapter-3.md#Chapter3).
 
 
 <a name="Options"></a>
@@ -26,8 +26,8 @@ The path you choose depends on what you want to achieve.
 Running on the client side removes the need for the files to transition via your server, saving some resources and server CPU time.
 Running from the server gives you more complete control over what your users are doing.
 
-You can choose either [Translating from the client](chapters/chapter-2a.md#Chapter2a) or
-[Translating from the server](chapters/chapter-2b.md#Chapter2b) as the next step.
+You can choose either [Translating from the client](chapter-2a.md#Chapter2a) or
+[Translating from the server](chapter-2b.md#Chapter2b) as the next step.
 If you've already completed one of them and would like to try another,  please revert back to the original status first.
 You can save your changes with git and checkout the master branch to get a clean starting point:
 ```
@@ -44,5 +44,5 @@ git checkout yourbranchname
 
 
 =========================
-[Next](chapters/chapter-3.md#Chapter3) –
+[Next](chapter-3.md#Chapter3) –
 [Home](README.md)
