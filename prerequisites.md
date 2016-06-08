@@ -199,5 +199,5 @@ The tutorial instructions, from now on, assume you are running all commands from
 
 
 =========================
-[Next](chapter-1.md#Chapter1) -
+[Next](chapters/chapter-1.md#Chapter1) -
 [Home](README.md)
