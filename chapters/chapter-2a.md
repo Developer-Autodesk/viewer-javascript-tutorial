@@ -242,10 +242,10 @@ git checkout v1.0-workshop-client
 
 
 If you're working through this sub-tutorial as part of the main 'getting started' tutorial, [go back there now](https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data/blob/master/README.md)
-and continue with the section [Customize the Viewer Behavior](chapters/chapter-3.md#Chapter3).
+and continue with the section [Customize the Viewer Behavior](chapter-3.md#Chapter3).
 
 
 =========================
-[Next](chapters/chapter-3.md#Chapter3) –
-[Parent](chapters/chapter-2.md#Chapter2) –
-[Home](README.md)
+[Next](chapter-3.md#Chapter3) –
+[Parent](chapter-2.md#Chapter2) –
+[Home](../README.md)

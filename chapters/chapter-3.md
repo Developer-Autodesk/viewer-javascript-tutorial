@@ -484,4 +484,4 @@ git checkout v1.0-workshop-extension
 ```
 
 =========================
-[Home](README.md)
+[Home](../README.md)
