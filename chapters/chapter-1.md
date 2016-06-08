@@ -20,20 +20,20 @@ if you don't already have one.
 
 * Click the 'Create an App' link.
 
- ![Create an App](img/createApp.png)
+ ![Create an App](../img/createApp.png)
 
 * Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
 
- ![Choose view and data API](img/selectAPI.png)
+ ![Choose view and data API](../img/selectAPI.png)
 
 * Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field,
 but you don't have to provide a real URL if you don't have one – just add something like 'http://www.mysite.com').
 
- ![App is created](img/appCreated.png)
+ ![App is created](../img/appCreated.png)
 
 * Click on the newly created App to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
 
- ![](img/showConsummkerKeys.png)
+ ![](../img/showConsummkerKeys.png)
 
 By default, a key can be used on any site and application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent
 use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reusing the same key in multiple applications.
