@@ -1,4 +1,4 @@
-# Autodesk View & Data API – Getting Started Tutorial
+# Autodesk Forge Viewer – Getting Started Tutorial
 
 * Introduction
   - [Audience](#Audience)
@@ -11,7 +11,7 @@
   - [Install a code editor](prerequisites.md#InstallCodeEditor)
   - [Get the sources](prerequisites.md#GetTheSources)
 
-* [Chapter 1 – Get ready with the View & Data API](chapter-1.md#Chapter1)
+* [Chapter 1 – Get ready with the Model Derivative API](chapter-1.md#Chapter1)
   - [Obtaining an API Key](chapter-1.md#ObtainingAnAPIKey)
   - [Prepare a model](chapter-1.md#PrepareAModel)
   - [Create your web server](chapter-1.md#CreateYourWebServer)
@@ -42,17 +42,17 @@
 ## Audience
 
 This documentation is designed for people familiar with [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) programming and object-oriented programming concepts.
-You should also be familiar with the Autodesk View & Data technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) – simply Drag 'n Drop a 2D/3D file,
+You should also be familiar with the Autodesk Viewer and Model Derivative technology from a user's point of view. You can play with the technology [here](https://360.autodesk.com/viewer) – simply Drag 'n Drop a 2D/3D file,
 and enjoy the result in your browser with no extension or plug-in installed on your computer or device.
 
-This conceptual documentation is designed to let you quickly start exploring and developing applications with the Autodesk View & Data API.
+This conceptual documentation is designed to let you quickly start exploring and developing applications with the Autodesk Viewer and Model Derivative API.
 
 
 <a name="WhatDoYouNeed"></a>
 ## What do you need for your project?
 
-The View & Data web service consists of two APIs. The first API is a REST API which allows you to upload and translate 2D/3D models into a light-weight format that can be
-downloaded and displayed by the Second API – a client-side JavaScript API that allows you to embed, customize and automate an interactive 2D/3D model viewer on your web page.
+The Autodesk Viewer and Model Derivative API web service consists of two APIs. The first API(Model Derivative API) is a REST API which allows you to upload and translate 2D/3D models into a light-weight format that can be
+downloaded and displayed by the Second API (Viewer) – a client-side JavaScript API that allows you to embed, customize and automate an interactive 2D/3D model viewer on your web page.
 
 Depending on your needs, you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate,
 and the frequency:
@@ -72,8 +72,8 @@ When you finish the workshop you will be able to:
 - Create a dynamic application that works in all modern browsers.
 - View 2D/3D models in a browser or device without plug-in or additional software.
 - Create and run Node.js application .
-- Extend the View & Data API WEBGL viewer to interact with the 2D/3D models.
-- Identify resources for learning more about the Autodesk View & Data API.
+- Extend Autodesk WEBGL viewer to interact with the 2D/3D models.
+- Identify resources for learning more about the Autodesk Viewer and Model Derivative API.
 
 The tutorial guides you through the entire process of building a simple application, including writing and running viewer extensions. Experiments at the end of each step provide suggestions for you
 to learn more about the Autodesk View & Data API and the application you are building.
