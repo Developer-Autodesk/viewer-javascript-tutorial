@@ -1,5 +1,5 @@
 <a name="Chapter1"></a>
-# Chapter 1 – Get ready with the View & Data API
+# Chapter 1 – Get ready with Model Derivative API
 
 - [Obtaining an API Key](#ObtainingAnAPIKey)
 - [Prepare a model](#PrepareAModel)
@@ -9,7 +9,7 @@
 <a name="ObtainingAnAPIKey"></a>
 ## Obtaining an API Key
 
-All View & Data API applications access the service using an API key.
+All Autodesk Viewer and Model Derivative API applications access the service using an API key.
 The API key enables you to monitor your application's API usage and ensures that Autodesk can contact you
 about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
 
@@ -45,7 +45,7 @@ use on unauthorized sites. We also recommend you create a new App (API key) for 
 Now you have your API key, the next step is to upload and translate a model so it can be displayed on your webpage.
 
 
-### Upload a model on the Autodesk View & Data server
+### Upload a model on the Autodesk server
 
 Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).
 
