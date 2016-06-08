@@ -31,11 +31,11 @@
   - [Step 7 (Bonus step) – Moving the camera](chapter-3.md#Step7)
   - [Even more bonus steps](chapter-3.md#More)
 
-* [Appendix A – More sample and demos](appendix-a.md)
-* [Appendix B – Review of the node.js code](appendix-b.md)
-* [Appendix C – Deploy on the web with Heroku](appendix-c.md)
-* [Appendix D – Automatic deployment on the web with Heroku](appendix-d.md)
-* [Appendix E – Troubleshooting](appendix-e.md)
+* [Appendix A – More sample and demos](appendix/appendix-a.md)
+* [Appendix B – Review of the node.js code](appendix/appendix-b.md)
+* [Appendix C – Deploy on the web with Heroku](appendix/appendix-c.md)
+* [Appendix D – Automatic deployment on the web with Heroku](appendix/appendix-d.md)
+* [Appendix E – Troubleshooting](appendix/appendix-e.md)
 
 
 <a name="Audience"></a>
