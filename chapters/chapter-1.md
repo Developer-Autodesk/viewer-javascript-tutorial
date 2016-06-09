@@ -88,7 +88,7 @@ Each of these solutions will upload and translate models on your account which y
 <a name="CreateYourWebServer"></a>
 ## Create your web server
 
-For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files.
+For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as provide code to access your translated files.
 
 If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
@@ -116,10 +116,10 @@ npm install
 This command will download the following modules into the node_modules directory:
 
 * express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-* request: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+* request: Request is designed to be the simplest way possible to make Http calls. It supports HTTPS and follows redirects by default.
 * serve-favicon: Node.js middleware for serving a favicon.
 
-### Setup your local server
+### Set up your local server
 
 Rename or copy the ./credentials_.js file into ./credentials.js
 
@@ -137,8 +137,8 @@ client_id: process.env.CONSUMERKEY || '<replace with your consumer key>',
 
 client_secret: process.env.CONSUMERSECRET || '<replace with your consumer secret>',
 ```
-Copy the URN which you generated prior installing the server in file /www/index.js at line #18  
-Note: the URN needs to be base64 encoded as mentioned [here](https://developer.autodesk.com/api/view-and-data-api/) under "Step 6: Register Your Data with the Viewing Services"
+Copy the URN which you generated prior to installing the server in file /www/index.js at line #18  
+Note: the URN given to you by using models.autodesk.io is already base64 encoded. In case it is not, you will need to encode it to base 64 as mention [here](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/) under "Step 1: Convert the source URN into a Base64-Encoded URN"
 ```
 var defaultUrn = '<replace with your encoded urn>';
 ```
