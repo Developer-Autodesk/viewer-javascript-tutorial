@@ -470,9 +470,9 @@ To see the source code for those Extensions, go to Extensions and select Source.
 
 Here are two YouTube videos explaining how to use the gallery sample and a couple of the extensions:
 
-[https://www.youtube.com/watch?v=SQJSuqRqiCg](https://www.youtube.com/watch?v=SQJSuqRqiCg)
+[Viewer Gallery Sample](https://www.youtube.com/watch?v=SQJSuqRqiCg)
 
-[https://www.youtube.com/watch?v=tK2ndbvchIM](https://www.youtube.com/watch?v=tK2ndbvchIM)
+[Viewer Physics Engine](https://www.youtube.com/watch?v=tK2ndbvchIM)
 
 
 <a name="End"></a>
