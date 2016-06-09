@@ -89,7 +89,7 @@ If you prefer to use another web server technology, you can adapt these instruct
 
 Check out the appropriate workshop starting point version of the node.js skeleton application from the
 [View and Data API Node.js basic sample](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
-as explained in [Prerequisites - Get the sources](prerequisites.md#GetTheSources):
+as explained in [Prerequisites - Get the sources](../prerequisites.md#GetTheSources):
 
 ```
 $ git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api
