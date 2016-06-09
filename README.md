@@ -12,7 +12,7 @@
   - [Get the sources](prerequisites.md#GetTheSources)
 
 * [Chapter 1 – Get ready with the Model Derivative API](chapters/chapter-1.md#Chapter1)
-  - [Obtaining an API Key](chapters/chapter-1.md#ObtainingAnAPIKey)
+  - [Create an App](chapters/chapter-1.md#CreateAnApp)
   - [Prepare a model](chapters/chapter-1.md#PrepareAModel)
   - [Create your web server](chapters/chapter-1.md#CreateYourWebServer)
 
