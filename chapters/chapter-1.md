@@ -42,7 +42,7 @@ Once you set up an application, you will see a Client ID and Client Secret in yo
 ![View App](../img/view-app.png)
 
 By default, a key can be used on any site and application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent
-use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reusing the same key in multiple applications.
+use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reuse the same key in multiple applications.
 
 If you want to learn more about oAuth 2 legged and 3 legged token, check out the rest of the [Step-by-Step guide](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/).
 
