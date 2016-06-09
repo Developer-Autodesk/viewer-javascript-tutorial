@@ -1,42 +1,50 @@
 <a name="Chapter1"></a>
 # Chapter 1 – Get ready with Model Derivative API
 
-- [Obtaining an API Key](#ObtainingAnAPIKey)
+- [Create an App](#CreateAnApp)
 - [Prepare a model](#PrepareAModel)
 - [Create your web server](#CreateYourWebServer)
 
 
-<a name="ObtainingAnAPIKey"></a>
-## Obtaining an API Key
+<a name="CreateAnApp"></a>
+## Create an App
 
-All Autodesk Viewer and Model Derivative API applications access the service using an API key.
-The API key enables you to monitor your application's API usage and ensures that Autodesk can contact you
-about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
+Before getting started with the Forge Platform, you need to set up an app and get your client ID and secret.
 
-To create your API key:
+* Step 1: Log in to the Dev Portal
+Go to the [Dev Portal](https://developer.autodesk.com/).
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and sign in with your Autodesk Account, or click the Sign Up link to create an account for free
-if you don't already have one.
+![Sign Up](../img/signup.png)
 
-* Click the 'Create an App' link.
+*If You Already Have an Autodesk Account
 
- ![Create an App](../img/createApp.png)
+Click the “SIGN IN” button.
+In the next “Sign In” screen, enter your email address and password, and click “Sign In” to log in to the Dev Portal.
 
-* Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
+![Sign In](../img/singin.png)
 
- ![Choose view and data API](../img/selectAPI.png)
+* Step 2: Create an App
+Once you’re signed in, you can create your application.
 
-* Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field,
-but you don't have to provide a real URL if you don't have one – just add something like 'http://www.mysite.com').
+![Singed In](../img/singed-in.png)
 
- ![App is created](../img/appCreated.png)
+Click the “CREATE APP” button on the top-right in the “My Apps” page, in the next screen,
 
-* Click on the newly created App to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
+![Create App](../img/create-app.png)
 
- ![](../img/showConsummkerKeys.png)
+Select APIs you are going to use.
+Enter your application name and description.
+Enter a callback URL. Note that wildcards are allowed in the path (but not in the hostname). For more information, see the “callback URL” definition in [API Basics](https://developer.autodesk.com/en/docs/oauth/v2/overview/basics).
+
+*Step 3: Note Your Client ID and Secret
+Once you set up an application, you will see a Client ID and Client Secret in your newly created app page. You will need these in all other OAuth flows and, by extension, to complete every other tutorial on this site!
+
+![View App](../img/view-app.png)
 
 By default, a key can be used on any site and application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent
 use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reusing the same key in multiple applications.
+
+If you want to learn more about oAuth 2 legged and 3 legged token, check out the rest of the [Step-by-Step guide](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/).
 
 
 <a name="PrepareAModel"></a>
