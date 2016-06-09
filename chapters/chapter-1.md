@@ -138,7 +138,7 @@ client_id: process.env.CONSUMERKEY || '<replace with your consumer key>',
 client_secret: process.env.CONSUMERSECRET || '<replace with your consumer secret>',
 ```
 Copy the URN which you generated prior to installing the server in file /www/index.js at line #18  
-Note: the URN given to you by using models.autodesk.io is already base64 encoded. In case it is not, you will need to encode it to base 64 as mention [here](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/) under "Step 1: Convert the source URN into a Base64-Encoded URN"
+Note: the URN given to you by using [models.autodesk.io] (http://models.autodesk.io) is already base64 encoded. In case it is not, you will need to encode it to base 64 as mention [here](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/) ,under "Step 1: Convert the source URN into a Base64-Encoded URN"
 ```
 var defaultUrn = '<replace with your encoded urn>';
 ```
