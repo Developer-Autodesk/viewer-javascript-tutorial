@@ -51,8 +51,7 @@ This conceptual documentation is designed to let you quickly start exploring and
 <a name="WhatDoYouNeed"></a>
 ## What do you need for your project?
 
-The Autodesk Viewer and Model Derivative API web service consists of two APIs. The first API(Model Derivative API) is a REST API which allows you to upload and translate 2D/3D models into a light-weight format that can be
-downloaded and displayed by the Second API (Viewer) – a client-side JavaScript API that allows you to embed, customize and automate an interactive 2D/3D model viewer on your web page.
+The Autodesk Viewer and Model Derivative API web service consists of two APIs. The first API ([Model Derivative API](https://developer.autodesk.com/en/docs/model-derivative/v2/overview/))  It is a REST API which enables users to represent and share their designs in different formats, as well as to extract valuable metadata. The Second API ([Viewer](https://developer.autodesk.com/en/docs/viewer/v2/overview/)) – is a WebGL-based, JavaScript library for 3D and 2D model rendering. 3D and 2D model data may come from a wide array of applications, such as AutoCAD, Fusion 360, Revit, and many more.
 
 Depending on your needs, you may prefer to write a server or a desktop application to consume the REST API. Your choice will be mainly based on how many files you need to translate,
 and the frequency:
