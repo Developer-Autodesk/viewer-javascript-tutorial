@@ -461,7 +461,7 @@ This time, in addition to displaying the panel, the camera (your view of the mod
 ## Even more bonus steps
 
 If you've still got some time, go to [http://gallery.autodesk.io](http://gallery.autodesk.io) and play with some of the models and sample extensions available there.
-The 'Car' model is reasonably detailed ( [http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4](http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4)).
+The [Car](http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4) model is reasonably detailed.
 To test one of the sample Extensions, click on the Extensions menu, then click Manage and click on an Extension's name to enable or disable it. We recommend you only
 enable one Extension at a time (i.e. disable the last Extension you used before enabling another), because not all the Extensions have been written to play nicely with
 other Extensions.
