@@ -76,7 +76,7 @@ Each of these solutions will upload and translate models on your account which y
 
 ### Steps to translate a model using the [web page](http://models.autodesk.io).
 
-1. Enter you Consumer key and secret key, and press the 'Get my access token' button
+1. Enter your Client Id and Client Secret, and press the 'Get my access token' button
 
 2. Select one of the models from the 'Samples' list. For example the 'Robot Arm' sample. Or Drag 'n Drop one of yours on the gray area. Then press the 'Translation this one for me' button.
 
