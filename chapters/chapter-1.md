@@ -21,12 +21,12 @@ Go to the [Dev Portal](https://developer.autodesk.com/).
 Click the “SIGN IN” button.
 In the next “Sign In” screen, enter your email address and password, and click “Sign In” to log in to the Dev Portal.
 
-![Sign In](../img/singin.png)
+![Sign In](../img/signin.png)
 
 * Step 2: Create an App
 Once you’re signed in, you can create your application.
 
-![Singed In](../img/singed-in.png)
+![Signed In](../img/signed-in.png)
 
 Click the “CREATE APP” button on the top-right in the “My Apps” page, in the next screen,
 
