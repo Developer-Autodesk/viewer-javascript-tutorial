@@ -77,7 +77,7 @@ A shortcut to add all changes for the next commit is to use `git add -A`.
 git commit -m "my message"
 ```
 Stores the current contents of the index in a new commit along with a log message from the user describing the changes.
--m = this means you need to add a message to your commit.
+   -m = this means you need to add a message to your commit.
 ```
 git push
 ```
