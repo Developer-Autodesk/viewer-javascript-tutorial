@@ -48,7 +48,7 @@ Your repository git url can be obtain from the 'HTTPs clone URL' box or by copyi
 
 This creates the a copy of the entire repository source on your local drive.
 This 'clone' directory contains copies of the repository files for you to work with.
-However, it is important to note here that you cannot save your changes back to the source repo unless you got write permission.
+However, it is important to note here that you cannot save your changes back to the source repo unless you have write permission.
 To be able to save back to the repo you cloned, you either need to be a contributor to that repo, or have cloned one of your own repos.
 If you want to work from somebody else's repo and be able to edit and save your changes, please consider 'forking' the repo in your own account, then cloning that repo instead.
 See the instructions below on [how to fork a repo](#Fork).
@@ -77,7 +77,7 @@ A shortcut to add all changes for the next commit is to use `git add -A`.
 git commit -m "my message"
 ```
 Stores the current contents of the index in a new commit along with a log message from the user describing the changes.
-
+-m = this means you need to add a message to your commit.
 ```
 git push
 ```
