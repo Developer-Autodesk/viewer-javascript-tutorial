@@ -474,6 +474,7 @@ Here are two YouTube videos explaining how to use the gallery sample and a coupl
 
 [Viewer Physics Engine](https://www.youtube.com/watch?v=tK2ndbvchIM)
 
+Here is a tutorial on how to add a Toolbar button [Toolbar Extension](https://developer.autodesk.com/en/docs/viewer/v2/tutorials/toolbar-button/)
 
 <a name="End"></a>
 ## Solution
