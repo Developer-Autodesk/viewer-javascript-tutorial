@@ -44,7 +44,7 @@ Once you set up an application, you will see a Client ID and Client Secret in yo
 By default, a key can be used on any site and application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent
 use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reuse the same key in multiple applications.
 
-If you want to learn more about oAuth 2 legged and 3 legged token, check out the rest of the [Step-by-Step guide](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/).
+If you want to learn more about OAuth 2 legged and 3 legged token, check out the rest of the [Step-by-Step guide](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/).
 
 
 <a name="PrepareAModel"></a>
@@ -82,7 +82,7 @@ Each of these solutions will upload and translate models on your account which y
 
 3. You should see a progress bar in the 'Currently translating...' area, please give it some time, ...
 
-4. Once the translation is over, You would see your model listed int he 'Ready"' section with the 'urn' that you need later. Make sure to copy and save that urn somewhere for later use.
+4. Once the translation is over, You would see your model listed in the 'Ready"' section with the 'urn' that you need later. Make sure to copy and save that urn somewhere for later use.
 
 
 <a name="CreateYourWebServer"></a>
