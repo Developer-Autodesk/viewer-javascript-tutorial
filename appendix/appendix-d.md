@@ -16,47 +16,47 @@ a private repo (ignore Step 4-6), or store your keys as system variables on the 
 
 <b>Step 2</b> Create a node.js server by selecting the '+' sign on the top-right corner
 
- ![](img/heroku-createserver.png)
+ ![](../img/heroku-createserver.png)
  
 <b>Step 3</b> Push the 'Create App' button. You can leave the name field empty, and use the location you prefer.
 
- ![](img/heroku-createapp.png)
+ ![](../img/heroku-createapp.png)
  
 <b>Step 4</b> By default, heroku will show the 'Deploy' page, select 'Settings', and in this page, press the button 'Reveal Config Vars'.
 
- ![](img/heroku-settings-vars.png)
+ ![](../img/heroku-settings-vars.png)
  
 <b>Step 5</b> Create 2 variables, where you store the keys which you obtained in Chapter 1. 
 
- ![](img/heroku-vars.png)
+ ![](../img/heroku-vars.png)
 
 <b>Step 6</b> Switch to the 'Deploy' page by selecting 'Deploy'
 
- ![](img/heroku-deploy.png)
+ ![](../img/heroku-deploy.png)
  
 <b>Step 7</b> Next, select 'GitHub - Connect to GitHub'
 
- ![](img/heroku-github.png)
+ ![](../img/heroku-github.png)
 
 <b>Step 8</b> Next, Press 'Connect to GitHub'
 
- ![](img/heroku-connect.png)
+ ![](../img/heroku-connect.png)
 
 <b>Step 9</b> Search for your repo
 
- ![](img/heroku-search.png)
+ ![](../img/heroku-search.png)
 
 <b>Step 10</b> When your repo was found, press the connect button
 
- ![](img/heroku-github-connect.png)
+ ![](../img/heroku-github-connect.png)
 
 <b>Step 11</b> Finally, choose the branch you want to auto-deploy (usually master), and press the 'Enable Automatic Deploys' button.
 
- ![](img/heroku-auto-deploy.png)
+ ![](../img/heroku-auto-deploy.png)
 
  Now, heroku should show the following when you'll come back on your server dashboard.
  
- ![](img/heroku-results.png)
+ ![](../img/heroku-results.png)
  
  Whenever you will push a change on github, the site will be rebuilt with the source found on your GitHub repository.
  
@@ -101,4 +101,4 @@ and the main server script. An example is provided below:
 
 
 =========================  
-[Home](README.md)
+[Home](../README.md)

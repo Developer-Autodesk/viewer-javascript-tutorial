@@ -59,7 +59,7 @@ Git remote heroku added
 ```
 
 <b>Step 6</b>Now your development is ready, you can work on your app following the tutorial
-[Chapter2](Chapter-2.md) or [Chapter3](Chapter-3.md), and commit your changes to the repository,
+[Chapter2](../chapters/chapter-2.md) or [Chapter3](../chapters/chapter-3.md), and commit your changes to the repository,
 please note that your changes are not pushed to remote Github or Heroku yet.
 ```
 git add .
@@ -140,4 +140,4 @@ and the main server script. An example is provided below:
 
 
 =========================
-[Home](README.md)
+[Home](../README.md)

@@ -358,4 +358,4 @@ and continue with the section [Customize the Viewer Behavior](chapter-3.md#Chapt
 =========================
 [Next](chapter-3.md#Chapter3) –
 [Parent](chapter-2.md#Chapter2) – 
-[Home](README.md)
+[Home](../README.md)

@@ -1,42 +1,50 @@
 <a name="Chapter1"></a>
-# Chapter 1 – Get ready with the View & Data API
+# Chapter 1 – Get ready with Model Derivative API
 
-- [Obtaining an API Key](#ObtainingAnAPIKey)
+- [Create an App](#CreateAnApp)
 - [Prepare a model](#PrepareAModel)
 - [Create your web server](#CreateYourWebServer)
 
 
-<a name="ObtainingAnAPIKey"></a>
-## Obtaining an API Key
+<a name="CreateAnApp"></a>
+## Create an App
 
-All View & Data API applications access the service using an API key.
-The API key enables you to monitor your application's API usage and ensures that Autodesk can contact you
-about your application if necessary. Because these keys are used to authenticate your access to the API, this also protects your data from being accessed without your permission.
+Before getting started with the Forge Platform, you need to set up an app and get your client ID and secret.
 
-To create your API key:
+* Step 1: Log in to the Dev Portal
+Go to the [Dev Portal](https://developer.autodesk.com/).
 
-* Visit the [Autodesk Developers Page](https://developer.autodesk.com/api/view-and-data-api/) and sign in with your Autodesk Account, or click the Sign Up link to create an account for free
-if you don't already have one.
+![Sign Up](../img/signup.png)
 
-* Click the 'Create an App' link.
+*If You Already Have an Autodesk Account
 
- ![Create an App](img/createApp.png)
+Click the “SIGN IN” button.
+In the next “Sign In” screen, enter your email address and password, and click “Sign In” to log in to the Dev Portal.
 
-* Select the API you want to generate a key for. For this tutorial, select the 'View and Data API'.
+![Sign In](../img/signin.png)
 
- ![Choose view and data API](img/selectAPI.png)
+* Step 2: Create an App
+Once you’re signed in, you can create your application.
 
-* Complete the form and submit your request by pushing the 'Create App' button. Your application will appear in your application list. (Note: The 'Redirect URL' field is a required field,
-but you don't have to provide a real URL if you don't have one – just add something like 'http://www.mysite.com').
+![Signed In](../img/signed-in.png)
 
- ![App is created](img/appCreated.png)
+Click the “CREATE APP” button on the top-right in the “My Apps” page, in the next screen,
 
-* Click on the newly created App to access your Consumer Key and Secret. You can review your App and API keys whenever you like by clicking on the 'My Apps' link after signing in.
+![Create App](../img/create-app.png)
 
- ![](img/showConsummkerKeys.png)
+Select APIs you are going to use.
+Enter your application name and description.
+Enter a callback URL. Note that wildcards are allowed in the path (but not in the hostname). For more information, see the “callback URL” definition in [API Basics](https://developer.autodesk.com/en/docs/oauth/v2/overview/basics).
+
+*Step 3: Note Your Client ID and Secret
+Once you set up an application, you will see a Client ID and Client Secret in your newly created app page. You will need these in all other OAuth flows and, by extension, to complete every other tutorial on this site!
+
+![View App](../img/view-app.png)
 
 By default, a key can be used on any site and application. However, we strongly recommend that you restrict the use of your key to domains that you administer, to prevent
-use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reusing the same key in multiple applications.
+use on unauthorized sites. We also recommend you create a new App (API key) for every new application rather than reuse the same key in multiple applications.
+
+If you want to learn more about OAuth 2 legged and 3 legged token, check out the rest of the [Step-by-Step guide](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/).
 
 
 <a name="PrepareAModel"></a>
@@ -45,7 +53,7 @@ use on unauthorized sites. We also recommend you create a new App (API key) for 
 Now you have your API key, the next step is to upload and translate a model so it can be displayed on your webpage.
 
 
-### Upload a model on the Autodesk View & Data server
+### Upload a model on the Autodesk server
 
 Upload one of your models to your account and get its URN using the following [web page](http://models.autodesk.io).
 
@@ -68,19 +76,19 @@ Each of these solutions will upload and translate models on your account which y
 
 ### Steps to translate a model using the [web page](http://models.autodesk.io).
 
-1. Enter you Consumer key and secret key, and press the 'Get my access token' button
+1. Enter your Client Id and Client Secret, and press the 'Get my access token' button
 
 2. Select one of the models from the 'Samples' list. For example the 'Robot Arm' sample. Or Drag 'n Drop one of yours on the gray area. Then press the 'Translation this one for me' button.
 
 3. You should see a progress bar in the 'Currently translating...' area, please give it some time, ...
 
-4. Once the translation is over, You would see your model listed int he 'Ready"' section with the 'urn' that you need later. Make sure to copy and save that urn somewhere for later use.
+4. Once the translation is over, You would see your model listed in the 'Ready"' section with the 'urn' that you need later. Make sure to copy and save that urn somewhere for later use.
 
 
 <a name="CreateYourWebServer"></a>
 ## Create your web server
 
-For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as providing code to access your translated files.
+For this tutorial, we'll create a minimal Node.js web server to serve your html/css/js files as usual as well as provide code to access your translated files.
 
 If you prefer to use another web server technology, you can adapt these instructions yourself to serve the index.html file included with the project.
 
@@ -89,7 +97,7 @@ If you prefer to use another web server technology, you can adapt these instruct
 
 Check out the appropriate workshop starting point version of the node.js skeleton application from the
 [View and Data API Node.js basic sample](https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api)
-as explained in [Prerequisites - Get the sources](prerequisites.md#GetTheSources):
+as explained in [Prerequisites - Get the sources](../prerequisites.md#GetTheSources):
 
 ```
 $ git clone https://github.com/Developer-Autodesk/workflow-node.js-view.and.data.api
@@ -108,10 +116,10 @@ npm install
 This command will download the following modules into the node_modules directory:
 
 * express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-* request: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+* request: Request is designed to be the simplest way possible to make Http calls. It supports HTTPS and follows redirects by default.
 * serve-favicon: Node.js middleware for serving a favicon.
 
-### Setup your local server
+### Set up your local server
 
 Rename or copy the ./credentials_.js file into ./credentials.js
 
@@ -129,8 +137,8 @@ client_id: process.env.CONSUMERKEY || '<replace with your consumer key>',
 
 client_secret: process.env.CONSUMERSECRET || '<replace with your consumer secret>',
 ```
-Copy the URN which you generated prior installing the server in file /www/index.js at line #18  
-Note: the URN needs to be base64 encoded as mentioned [here](https://developer.autodesk.com/api/view-and-data-api/) under "Step 6: Register Your Data with the Viewing Services"
+Copy the URN which you generated prior to installing the server in file /www/index.js at line #18  
+Note: the URN given to you by using [models.autodesk.io] (http://models.autodesk.io) is already base64 encoded. In case it is not, you will need to encode it to base 64 as mention [here](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/) under "Step 1: Convert the source URN into a Base64-Encoded URN"
 ```
 var defaultUrn = '<replace with your encoded urn>';
 ```
@@ -152,4 +160,4 @@ If you want to use port 80 to avoid having to specify the port in the URL, edit 
 
 =========================
 [Next](chapter-2.md#Chapter2) -
-[Home](README.md)
+[Home](../README.md)

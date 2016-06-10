@@ -461,7 +461,7 @@ This time, in addition to displaying the panel, the camera (your view of the mod
 ## Even more bonus steps
 
 If you've still got some time, go to [http://gallery.autodesk.io](http://gallery.autodesk.io) and play with some of the models and sample extensions available there.
-The 'Car' model is reasonably detailed ( [http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4](http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4)).
+The [Car](http://viewer.autodesk.io/node/gallery/#/viewer?id=551d0768be86fc2c1138b4d4) model is reasonably detailed.
 To test one of the sample Extensions, click on the Extensions menu, then click Manage and click on an Extension's name to enable or disable it. We recommend you only
 enable one Extension at a time (i.e. disable the last Extension you used before enabling another), because not all the Extensions have been written to play nicely with
 other Extensions.
@@ -470,10 +470,11 @@ To see the source code for those Extensions, go to Extensions and select Source.
 
 Here are two YouTube videos explaining how to use the gallery sample and a couple of the extensions:
 
-[https://www.youtube.com/watch?v=SQJSuqRqiCg](https://www.youtube.com/watch?v=SQJSuqRqiCg)
+[Viewer Gallery Sample](https://www.youtube.com/watch?v=SQJSuqRqiCg)
 
-[https://www.youtube.com/watch?v=tK2ndbvchIM](https://www.youtube.com/watch?v=tK2ndbvchIM)
+[Viewer Physics Engine](https://www.youtube.com/watch?v=tK2ndbvchIM)
 
+Here is a tutorial on how to add a Toolbar button [Toolbar Extension](https://developer.autodesk.com/en/docs/viewer/v2/tutorials/toolbar-button/)
 
 <a name="End"></a>
 ## Solution
@@ -484,4 +485,4 @@ git checkout v1.0-workshop-extension
 ```
 
 =========================
-[Home](README.md)
+[Home](../README.md)
