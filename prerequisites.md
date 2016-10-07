@@ -118,7 +118,7 @@ To fork a repository, log in to GitHub using your account, go to the repository 
 <a name="InstallNodeJs"></a>
 ## Install Node.js
 
-If you want to run the preconfigured local web-server and the test tools then you will also need [Node.js v0.12.2+](https://nodejs.org/download/).
+If you want to run the preconfigured local web-server and the test tools then you will also need [Node.js v5+](https://nodejs.org/download/).
 
 You can download a Node.js installer for your operating system from [nodejs.org](http://nodejs.org/download/).
 Check the version of Node.js that you have installed by running the following command:
