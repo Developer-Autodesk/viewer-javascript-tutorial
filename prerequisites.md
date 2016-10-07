@@ -154,6 +154,7 @@ Note that they are listed in alphabetical order, not in any order of preference.
 [Notepad++](http://notepad-plus-plus.org/) | yes | - | - | Free | - | -
 [textmate](http://macromates.com/) | - | yes | - | Paid | via scripting | -
 [Sublime Text](http://www.sublimetext.com/) | yes | yes | yes | Paid | via a plugin | -
+[VSStudio](https://www.visualstudio.com/) | yes | yes | yes | Free | yes | yes
 [WebMatrix](http://www.microsoft.com/web/webmatrix/) | yes | - | - | Free | yes | yes
 [WebStorm](https://www.jetbrains.com/webstorm/) | yes| yes | yes | Paid | yes | yes
 
