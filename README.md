@@ -75,7 +75,7 @@ When you finish the workshop you will be able to:
 - Identify resources for learning more about the Autodesk Viewer and Model Derivative API.
 
 The tutorial guides you through the entire process of building a simple application, including writing and running viewer extensions. Experiments at the end of each step provide suggestions for you
-to learn more about the Autodesk View & Data API and the application you are building.
+to learn more about the Autodesk Viewer and Model Derivative API and the application you are building.
 
 
 =========================
